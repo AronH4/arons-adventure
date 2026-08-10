@@ -8,35 +8,27 @@ body {
 
 header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-h1 {
-  margin-top: 0;
-  margin-bottom: 15px;
-  font-size: 24px;
-}
-
-h2 {
-  margin: 15px 0 15px 0;
-  text-align: center;
-}
-
+/* Tabs: Buttons gleich groß und um 100% vergrößert */
 .tabs {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .tab-btn {
-  padding: 8px 18px;
-  font-size: 14px;
+  padding: 16px 36px; /* 100% größer */
+  font-size: 28px;    /* 100% größer */
   font-weight: bold;
   cursor: pointer;
   border: 1px solid #444;
   background: #222;
   color: #fff;
-  border-radius: 6px;
+  border-radius: 8px;
+  width: 180px;       /* Garantiert gleiche Größe für alle 3 Buttons */
+  text-align: center;
 }
 
 .tab-btn.active {
@@ -45,11 +37,11 @@ h2 {
   border-color: #ffcb05;
 }
 
-/* Spieleauswahl */
+/* Spieleauswahl um 50% vergrößert (von 120px auf 180px) */
 .games-grid {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 25px;
 }
@@ -59,7 +51,7 @@ h2 {
   background: transparent;
   text-align: center;
   cursor: pointer;
-  width: 120px;
+  width: 180px; /* 50% größer */
   padding: 5px;
 }
 
@@ -71,7 +63,6 @@ h2 {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Neon-grüner Rahmen für das ausgewählte Spiel */
 .game-card.selected img {
   border-color: #39ff14;
   box-shadow: 0 0 10px #39ff14;
@@ -79,7 +70,7 @@ h2 {
 
 .game-card h4 {
   margin: 8px 0 0 0;
-  font-size: 13px;
+  font-size: 15px;
   color: #eee;
 }
 
@@ -87,7 +78,7 @@ h2 {
   display: none;
 }
 
-/* Fortschritt / Orden (Passt bis zu 13+ Felder nebeneinander) */
+/* Fortschritt / Orden */
 .badges-grid {
   display: flex;
   justify-content: center;
@@ -147,19 +138,20 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Teammitglieder Cards */
+/* Teammitglieder Cards: Farbe entspricht dem Seitenhintergrund (#121212) */
 .pokemon-card {
-  background: #000000;
+  background: #121212;
   border: none;
   border-radius: 6px;
   padding: 10px;
-  width: 150px;
+  width: 170px;
   font-size: 12px;
 }
 
+/* Pokémon-Bild um 50% vergrößert (von 75px auf 112.5px) */
 .pokemon-card img {
-  width: 75px;
-  height: 75px;
+  width: 112.5px;
+  height: 112.5px;
   object-fit: contain;
   display: block;
   margin: 0 auto;
@@ -167,7 +159,7 @@ h2 {
 
 .pokemon-card h4 {
   margin: 6px 0 2px 0;
-  font-size: 15px;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -182,7 +174,6 @@ h2 {
   margin: 3px 0;
 }
 
-/* Abstand zwischen Item und den Attacken erhalten */
 .pokemon-card ul {
   padding-left: 15px;
   margin-top: 12px;
