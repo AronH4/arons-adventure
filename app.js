@@ -1,12 +1,14 @@
 let allGames = [];
 
+// Daten laden und mit 'current' starten
 fetch('games.json')
   .then(response => response.json())
   .then(data => {
     allGames = data;
-    filterGames('past');
+    filterGames('current'); // Startet beim Öffnen immer auf CURRENT
   });
 
+// Event-Listener für Tab-Wechsel
 document.querySelectorAll('.tab-btn').forEach(button => {
   button.addEventListener('click', () => {
     document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
@@ -42,15 +44,17 @@ function showGameDetails(game) {
 
   document.getElementById('detail-title').innerText = game.title;
 
+  // Orden rendern: Statt '✖' lassen wir das Feld leer (''), wenn unvollständig
   const badgesContainer = document.getElementById('badges-container');
   badgesContainer.innerHTML = game.badges.map(b => `
     <div class="badge-card">
       <p>${b.name}</p>
       <img src="${b.image}" alt="${b.name}">
-      <p class="status ${b.completed ? 'done' : 'open'}">${b.completed ? '✔' : '✖'}</p>
+      <p class="status ${b.completed ? 'done' : ''}">${b.completed ? '✔' : ''}</p>
     </div>
   `).join('');
 
+  // Team rendern
   const teamContainer = document.getElementById('team-container');
   teamContainer.innerHTML = game.team.map(p => `
     <div class="pokemon-card">
