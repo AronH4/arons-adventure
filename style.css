@@ -1,9 +1,9 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
   background-color: #121212;
   color: #ffffff;
   margin: 0;
-  padding: 15px;
+  padding: 40px 15px 15px 15px; /* Größerer Abstand zur Fensteroberseite */
 }
 
 header {
@@ -11,7 +11,7 @@ header {
   margin-bottom: 30px;
 }
 
-/* Tabs: Buttons gleich groß und um 100% vergrößert */
+/* Tabs: Flacher, breiter, zentrierter Text */
 .tabs {
   display: flex;
   justify-content: center;
@@ -19,16 +19,20 @@ header {
 }
 
 .tab-btn {
-  padding: 16px 36px; /* 100% größer */
-  font-size: 28px;    /* 100% größer */
+  padding: 10px 0;    /* In der Höhe flacher */
+  font-size: 26px;
   font-weight: bold;
   cursor: pointer;
   border: 1px solid #444;
   background: #222;
   color: #fff;
   border-radius: 8px;
-  width: 180px;       /* Garantiert gleiche Größe für alle 3 Buttons */
-  text-align: center;
+  width: 220px;       /* Etwas breiter als zuvor */
+  text-align: center; /* Text zentrieren */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
 }
 
 .tab-btn.active {
@@ -37,7 +41,7 @@ header {
   border-color: #ffcb05;
 }
 
-/* Spieleauswahl um 50% vergrößert (von 120px auf 180px) */
+/* Spieleauswahl */
 .games-grid {
   display: flex;
   justify-content: center;
@@ -51,7 +55,7 @@ header {
   background: transparent;
   text-align: center;
   cursor: pointer;
-  width: 180px; /* 50% größer */
+  width: 180px;
   padding: 5px;
 }
 
@@ -70,7 +74,7 @@ header {
 
 .game-card h4 {
   margin: 8px 0 0 0;
-  font-size: 15px;
+  font-size: 16px;
   color: #eee;
 }
 
@@ -107,7 +111,7 @@ header {
 
 .badge-card p.badge-name {
   margin: 0;
-  font-size: 10px;
+  font-size: 11px;
   color: #ddd;
   line-height: 1.1;
 }
@@ -138,44 +142,52 @@ header {
   margin-bottom: 20px;
 }
 
-/* Teammitglieder Cards: Farbe entspricht dem Seitenhintergrund (#121212) */
+/* Teammitglieder Cards: Zentrierter Inhalt für perfekte Bildausrichtung */
 .pokemon-card {
   background: #121212;
   border: none;
   border-radius: 6px;
   padding: 10px;
   width: 170px;
-  font-size: 12px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Bild & Inhalte waagerecht zentrieren */
+  text-align: center;  /* Text zentrieren */
 }
 
-/* Pokémon-Bild um 50% vergrößert (von 75px auf 112.5px) */
 .pokemon-card img {
   width: 112.5px;
   height: 112.5px;
   object-fit: contain;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 8px auto;
 }
 
 .pokemon-card h4 {
-  margin: 6px 0 2px 0;
-  font-size: 16px;
-  text-align: center;
+  margin: 4px 0 2px 0;
+  font-size: 17px;
 }
 
 .pokemon-card .level {
-  text-align: center;
-  font-size: 12px;
+  font-size: 13px;
   color: #aaa;
   margin: 0 0 8px 0;
 }
 
 .pokemon-card p {
   margin: 3px 0;
+  width: 100%;
 }
 
 .pokemon-card ul {
-  padding-left: 15px;
-  margin-top: 12px;
+  padding-left: 0;
+  list-style-type: none; /* Keine Einrückung/Punkte, damit Attacken zentriert stehen */
+  margin-top: 10px;
   margin-bottom: 4px;
+  width: 100%;
+}
+
+.pokemon-card ul li {
+  margin: 2px 0;
 }
