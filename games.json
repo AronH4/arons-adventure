@@ -1,0 +1,22 @@
+[
+  {
+    "id": "heartgold",
+    "title": "GEN 2 - HeartGold",
+    "category": "past",
+    "cover": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png",
+    "badges": [
+      { "name": "Orden 1", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png", "completed": true },
+      { "name": "Orden 2", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png", "completed": true },
+      { "name": "Orden 3", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png", "completed": false }
+    ],
+    "team": [
+      {
+        "name": "Tornupto",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png",
+        "ability": "Großbrand",
+        "item": "Zauberwasser",
+        "moves": ["Flammenwurf", "Ruckzuckhieb", "Rauchwolke", "Stumpf"]
+      }
+    ]
+  }
+]
