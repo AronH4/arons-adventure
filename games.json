@@ -41,9 +41,9 @@
         "item": "Wahlglas",
         "moves": ["Energieball", "Blizzard", "Eisstrahl", "Kraxler"]
       }
-      },
-      
-      {
+    ]
+  },
+  {
     "id": "heartgold",
     "title": "GEN 2 - HeartGold",
     "category": "past",
