@@ -17,14 +17,14 @@
       { "name": "Top 4 - Teresa", "image": "https://www.pokewiki.de/images/9/9c/VS_Teresa_Platin.png?20210614090337", "completed": true },
       { "name": "Top 4 - Ignaz", "image": "https://www.pokewiki.de/images/e/eb/VS_Ignaz_Platin.png", "completed": true },
       { "name": "Top 4 - Lucian", "image": "https://www.pokewiki.de/images/2/2e/VS_Lucian_Platin.png", "completed": true },
-      { "name": "Champ - Cynthia", "image": "https://www.pokewiki.de/images/3/3c/VS_Cynthia_Platin.png", "completed": true }
+      { "name": "Champ - Cynthia", "image": "https://www.pokewiki.de/images/3/3c/VS_Cynthia_Platin.png", "completed": true },
       { "name": "Champ - Cynthia | Rematch", "image": "https://www.pokewiki.de/images/3/3c/VS_Cynthia_Platin.png", "completed": true }
     ],
     "team": [
       {
         "name": "Panferno",
         "level": 65,
-        "locaton": "Route 201",
+        "location": "Route 201",
         "image": "https://www.pokewiki.de/images/thumb/2/28/Hauptartwork_392.png/250px-Hauptartwork_392.png",
         "ability": "Großbrand",
         "item": "Seegesang",
@@ -33,7 +33,7 @@
       {
         "name": "Rotom",
         "level": 65,
-        "locaton": "Alte Villa",
+        "location": "Alte Villa",
         "image": "https://www.pokewiki.de/images/thumb/c/cf/Hauptartwork_479.png/250px-Hauptartwork_479.png",
         "ability": "Schwebe",
         "item": "Bannsticker",
@@ -42,7 +42,7 @@
       {
         "name": "Rexblisar",
         "level": 65,
-        "locaton": "Stärkeufer",
+        "location": "Stärkeufer",
         "image": "https://www.pokewiki.de/images/thumb/a/a8/Hauptartwork_460.png/250px-Hauptartwork_460.png",
         "ability": "Hagelsturm",
         "item": "Wahlglas",
@@ -63,6 +63,8 @@
     "team": [
       {
         "name": "Tornupto",
+        "level": 36,
+        "location": "Neuborkia",
         "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png",
         "ability": "Großbrand",
         "item": "Zauberwasser",
