@@ -13,12 +13,12 @@
       { "name": "Minenorden", "image": "https://www.pokewiki.de/images/thumb/8/82/Minenorden.png/70px-Minenorden.png", "completed": true },
       { "name": "Firnorden", "image": "https://www.pokewiki.de/images/thumb/7/71/Firnorden.png/70px-Firnorden.png", "completed": true },
       { "name": "Lichtorden", "image": "https://www.pokewiki.de/images/thumb/f/f9/Lichtorden.png/70px-Lichtorden.png", "completed": true },
-      { "name": "Top 4 - Herbaro", "image": "https://www.pokewiki.de/images/0/03/VS_Herbaro_Platin.png?20210614090136", "completed": true },
-      { "name": "Top 4 - Teresa", "image": "https://www.pokewiki.de/images/9/9c/VS_Teresa_Platin.png?20210614090337", "completed": true },
-      { "name": "Top 4 - Ignaz", "image": "https://www.pokewiki.de/images/e/eb/VS_Ignaz_Platin.png", "completed": true },
-      { "name": "Top 4 - Lucian", "image": "https://www.pokewiki.de/images/2/2e/VS_Lucian_Platin.png", "completed": true },
-      { "name": "Champ - Cynthia", "image": "https://www.pokewiki.de/images/3/3c/VS_Cynthia_Platin.png", "completed": true },
-      { "name": "Champ - Cynthia | Rematch", "image": "https://www.pokewiki.de/images/3/3c/VS_Cynthia_Platin.png", "completed": true }
+      { "name": "T4 - Herbaro", "image": "https://www.pokewiki.de/images/0/03/VS_Herbaro_Platin.png?20210614090136", "completed": true },
+      { "name": "T4 - Teresa", "image": "https://www.pokewiki.de/images/9/9c/VS_Teresa_Platin.png?20210614090337", "completed": true },
+      { "name": "T4 - Ignaz", "image": "https://www.pokewiki.de/images/e/eb/VS_Ignaz_Platin.png", "completed": true },
+      { "name": "T4 - Lucian", "image": "https://www.pokewiki.de/images/2/2e/VS_Lucian_Platin.png", "completed": true },
+      { "name": "Champ Cynthia", "image": "https://www.pokewiki.de/images/3/3c/VS_Cynthia_Platin.png", "completed": true },
+      { "name": "Cynthia Rematch", "image": "https://www.pokewiki.de/images/3/3c/VS_Cynthia_Platin.png", "completed": true }
     ],
     "team": [
       {
@@ -51,24 +51,52 @@
     ]
   },
   {
-    "id": "heartgold",
+    "id": "platinum",
     "title": "GEN 2 - HeartGold",
     "category": "past",
-    "cover": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png",
+    "cover": "https://www.pokewiki.de/images/7/79/Pok%C3%A9mon_HeartGold_Packshot_%28D%29.jpg?20100122211034",
     "badges": [
-      { "name": "Orden 1", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png", "completed": true },
-      { "name": "Orden 2", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png", "completed": true },
-      { "name": "Orden 3", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png", "completed": false }
+      { "name": "Flügelorden", "image": "https://www.pokewiki.de/images/thumb/2/2e/Fl%C3%BCgelorden.png/70px-Fl%C3%BCgelorden.png", "completed": true },
+      { "name": "Insektorden", "image": "https://www.pokewiki.de/images/thumb/5/5c/Insektorden.png/69px-Insektorden.png", "completed": true },
+      { "name": "Basisorden", "image": "https://www.pokewiki.de/images/thumb/e/e5/Basisorden.png/70px-Basisorden.png", "completed": true },
+      { "name": "Phantomorden", "image": "https://www.pokewiki.de/images/thumb/1/17/Phantomorden.png/70px-Phantomorden.png", "completed": true },
+      { "name": "Faustorden", "image": "https://www.pokewiki.de/images/thumb/2/23/Faustorden.png/70px-Faustorden.png", "completed": true },
+      { "name": "Stahlorden", "image": "https://www.pokewiki.de/images/thumb/c/c7/Stahlorden.png/70px-Stahlorden.png", "completed": true },
+      { "name": "Eisorden", "image": "https://www.pokewiki.de/images/thumb/3/39/Eisorden.png/61px-Eisorden.png", "completed": true },
+      { "name": "Drachenorden", "image": "https://www.pokewiki.de/images/thumb/4/4e/Drachenorden.png/70px-Drachenorden.png", "completed": true },
+      { "name": "T4 - Willi", "image": "https://www.pokewiki.de/images/7/7b/VS_Willi_HGSS.png", "completed": true },
+      { "name": "T4 - Koga", "image": "https://www.pokewiki.de/images/c/c6/VS_Koga_HGSS.png", "completed": true },
+      { "name": "T4 - Bruno", "image": "https://www.pokewiki.de/images/5/59/VS_Bruno_HGSS.png", "completed": true },
+      { "name": "T4 - Melanie", "image": "https://www.pokewiki.de/images/a/a1/VS_Melanie_HGSS.png", "completed": true },
+      { "name": "Champ Siegfried", "image": "https://www.pokewiki.de/images/6/62/VS_Siegfried_HGSS.png", "completed": true },
+      { "name": "Donneroden", "image": "https://www.pokewiki.de/images/thumb/5/53/Donnerorden.png/70px-Donnerorden.png", "completed": true },
+      { "name": "Farborden", "image": "https://www.pokewiki.de/images/thumb/8/8b/Farborden.png/70px-Farborden.png", "completed": true },
+      { "name": "Seelenorden", "image": "https://www.pokewiki.de/images/thumb/f/fa/Seelenorden.png/70px-Seelenorden.png", "completed": true },
+      { "name": "Sumpforden", "image": "https://www.pokewiki.de/images/thumb/5/5c/Sumpforden.png/70px-Sumpforden.png", "completed": true },
+      { "name": "Quellorden", "image": "https://www.pokewiki.de/images/thumb/5/55/Quellorden.png/70px-Quellorden.png", "completed": true },
+      { "name": "Felsorden", "image": "https://www.pokewiki.de/images/thumb/8/8b/Felsorden.png/70px-Felsorden.png", "completed": true },
+      { "name": "Vulkanorden", "image": "https://www.pokewiki.de/images/thumb/c/c0/Vulkanorden.png/70px-Vulkanorden.png", "completed": true },
+      { "name": "Erdorden", "image": "https://www.pokewiki.de/images/thumb/7/70/Erdorden.png/31px-Erdorden.png", "completed": true },
+      { "name": "Red", "image": "https://www.pokewiki.de/images/0/01/Trainersprite_Rot_HGSS.gif", "completed": true }
     ],
     "team": [
       {
-        "name": "Tornupto",
-        "level": 36,
+        "name": "Impi",
+        "level": 65,
         "location": "Neuborkia",
-        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png",
-        "ability": "Großbrand",
-        "item": "Zauberwasser",
-        "moves": ["Flammenwurf", "Ruckzuckhieb", "Rauchwolke", "Stumpf"]
+        "image": "https://www.pokewiki.de/images/thumb/6/68/Hauptartwork_160.png/219px-Hauptartwork_160.png",
+        "ability": "Sturzbach",
+        "item": "Expertengurt",
+        "moves": ["Kaskade", "Eiszahn", "Erdbeben", "Kraxler"]
+      },
+      {
+        "name": "Nachtara",
+        "level": 65,
+        "location": "Dukatia City",
+        "image": "https://www.pokewiki.de/images/thumb/5/5e/Hauptartwork_197.png/207px-Hauptartwork_197.png",
+        "ability": "Synchro",
+        "item": "Schlauglas",
+        "moves": ["Finsteraura", "Psychokinese", "Zerschneider", "Blitz"]
       }
     ]
   }
