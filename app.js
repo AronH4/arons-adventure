@@ -4,7 +4,7 @@ fetch('games.json')
   .then(response => response.json())
   .then(data => {
     allGames = data;
-    filterGames('current');
+    filterGames('past'); // Zeigt deine Spiele unter PAST direkt beim Start an
   });
 
 document.querySelectorAll('.tab-btn').forEach(button => {
@@ -33,9 +33,7 @@ function filterGames(category) {
       <h4>${game.title}</h4>
     `;
     card.addEventListener('click', () => {
-      // Entferne Rahmen bei allen anderen Spielen
       document.querySelectorAll('.game-card').forEach(c => c.classList.remove('selected'));
-      // Neon-grünen Rahmen zum geklickten Spiel hinzufügen
       card.classList.add('selected');
       showGameDetails(game);
     });
