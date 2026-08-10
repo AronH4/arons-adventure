@@ -1,5 +1,6 @@
 let allGames = [];
 
+// JSON laden
 fetch('games.json')
   .then(response => {
     if (!response.ok) {
@@ -9,7 +10,7 @@ fetch('games.json')
   })
   .then(data => {
     allGames = data;
-    filterGames('current'); // Direkt CURRENT beim Start laden
+    filterGames('current');
   })
   .catch(error => {
     console.error('Fehler:', error);
@@ -19,6 +20,7 @@ fetch('games.json')
       </p>`;
   });
 
+// Tabs schalten
 document.querySelectorAll('.tab-btn').forEach(button => {
   button.addEventListener('click', () => {
     const category = button.getAttribute('data-tab');
@@ -28,7 +30,6 @@ document.querySelectorAll('.tab-btn').forEach(button => {
 });
 
 function filterGames(category) {
-  // Buttons optisch synchronisieren
   document.querySelectorAll('.tab-btn').forEach(btn => {
     if (btn.getAttribute('data-tab') === category) {
       btn.classList.add('active');
@@ -84,43 +85,22 @@ function showGameDetails(game) {
   const league = progress.league || [];
   const postgame = progress.postgame || [];
 
-  let progressHTML = '';
+  const badgesHTML = badges.map(renderBadgeCard).join('');
+  const leagueHTML = league.map(renderBadgeCard).join('');
+  const postgameHTML = postgame.map(renderBadgeCard).join('');
 
-  // --- ZEILE 1: Orden (max 12) + Lücke (1 Slot) + Liga (max 7) ---
-  
-  // 1. Bis zu 12 Orden rendern
-  for (let i = 0; i < 12; i++) {
-    if (i < badges.length) {
-      progressHTML += renderBadgeCard(badges[i]);
-    } else {
-      progressHTML += `<div class="badge-spacer"></div>`; // Auffüllen falls weniger als 12
-    }
-  }
+  // Zeile 1: Badges (rechts) | Gap | League (links)
+  // Zeile 2: Postgame (zentriert)
+  badgesContainer.innerHTML = `
+    <div class="progress-row-1">
+      <div class="badges-group">${badgesHTML}</div>
+      <div class="row-gap"></div>
+      <div class="league-group">${leagueHTML}</div>
+    </div>
+    ${postgame.length > 0 ? `<div class="progress-row-2">${postgameHTML}</div>` : ''}
+  `;
 
-  // 2. Genau 1 Slot Lücke
-  progressHTML += `<div class="badge-spacer"></div>`;
-
-  // 3. Bis zu 7 Top 4 / Champ Items rendern
-  for (let i = 0; i < 7; i++) {
-    if (i < league.length) {
-      progressHTML += renderBadgeCard(league[i]);
-    } else {
-      progressHTML += `<div class="badge-spacer"></div>`; // Auffüllen falls weniger als 7
-    }
-  }
-
-  // --- ZEILE 2: Post Game (max 20) ---
-  for (let i = 0; i < 20; i++) {
-    if (i < postgame.length) {
-      progressHTML += renderBadgeCard(postgame[i]);
-    } else {
-      progressHTML += `<div class="badge-spacer"></div>`; // Auffüllen falls weniger als 20
-    }
-  }
-
-  badgesContainer.innerHTML = progressHTML;
-
-  // --- TEAM RENDER (OHNE LOCATION) ---
+  // Team Rendern (ohne Location)
   const teamContainer = document.getElementById('team-container');
   const team = game.team || [];
   teamContainer.innerHTML = team.map(p => {
