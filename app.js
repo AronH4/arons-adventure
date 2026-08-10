@@ -9,7 +9,7 @@ fetch('games.json')
   })
   .then(data => {
     allGames = data;
-    filterGames('past');
+    filterGames('current'); // <-- Direkt CURRENT beim Start laden
   })
   .catch(error => {
     console.error('Fehler:', error);
@@ -21,9 +21,6 @@ fetch('games.json')
 
 document.querySelectorAll('.tab-btn').forEach(button => {
   button.addEventListener('click', () => {
-    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-    button.classList.add('active');
-    
     const category = button.getAttribute('data-tab');
     filterGames(category);
     document.getElementById('game-details').classList.add('hidden');
@@ -31,6 +28,15 @@ document.querySelectorAll('.tab-btn').forEach(button => {
 });
 
 function filterGames(category) {
+  // Buttons optisch mit dem aktiven Filter synchronisieren
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    if (btn.getAttribute('data-tab') === category) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+
   const grid = document.getElementById('games-grid');
   grid.innerHTML = '';
 
