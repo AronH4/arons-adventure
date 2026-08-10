@@ -90,17 +90,56 @@ header {
   display: none;
 }
 
-/* Fortschritt / Raster (20 Spalten Grid) */
-.badges-grid {
-  display: grid;
-  grid-template-columns: repeat(20, 75px);
-  gap: 8px;
-  justify-content: center;
+/* -------------------------------------------------- */
+/* FORTSCHRITT / FLEXBOX-STRUKTUR (2 ZEILEN)          */
+/* -------------------------------------------------- */
+
+.badges-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
   margin-bottom: 30px;
-  overflow-x: auto; /* Verhindert Umbrüche auf kleinen Bildschirmen */
-  padding: 10px 0;
+  align-items: center;
 }
 
+/* Zeile 1: Badges rechtsbündig zur Lücke, League linksbündig */
+.progress-row-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow-x: auto;
+  padding: 5px 0;
+}
+
+.badges-group {
+  display: flex;
+  justify-content: flex-end; /* Badges nach rechts zur Lücke schieben */
+  gap: 8px;
+}
+
+.league-group {
+  display: flex;
+  justify-content: flex-start; /* League nach links zur Lücke schieben */
+  gap: 8px;
+}
+
+/* Feste Lücke zwischen Orden und Liga (exakt 1 Fensterbreite = 75px) */
+.row-gap {
+  width: 75px;
+  flex-shrink: 0;
+}
+
+/* Zeile 2: Postgame immer zentriert */
+.progress-row-2 {
+  display: flex;
+  justify-content: center; /* Zentriert beliebige Anzahl Karten */
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+}
+
+/* Einzelne Karte */
 .badge-card {
   display: flex;
   flex-direction: column;
@@ -115,13 +154,7 @@ header {
   height: 105px;
   box-sizing: border-box;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Leerer Platzhalter für die Lücke zwischen Orden und Liga */
-.badge-spacer {
-  width: 75px;
-  height: 105px;
-  visibility: hidden; /* Unsichtbar, reserviert aber exakt ein Fenster Platz */
+  flex-shrink: 0;
 }
 
 .badge-card.done {
@@ -157,7 +190,10 @@ header {
   color: #39ff14;
 }
 
-/* Zentriertes Team Grid */
+/* -------------------------------------------------- */
+/* ZENTRIERTES TEAM GRID                              */
+/* -------------------------------------------------- */
+
 .team-grid {
   display: flex;
   justify-content: center;
