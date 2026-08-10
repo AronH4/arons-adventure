@@ -202,102 +202,60 @@
       }
     ]
   },
- {
+  {
     "id": "white",
     "title": "GEN 5 - White",
     "category": "future",
     "cover": "https://www.pokewiki.de/images/thumb/3/3a/Verpackungsvorderseite_Pok%C3%A9mon_Wei%C3%9Fe_Edition.jpg/290px-Verpackungsvorderseite_Pok%C3%A9mon_Wei%C3%9Fe_Edition.jpg",
-    "badges": [
-    
-    ],
-    "team": [
-      {
-        
-      }
-    ]
+    "badges": [],
+    "team": []
   },
   {
     "id": "y",
     "title": "GEN 6 - Y",
     "category": "future",
     "cover": "https://www.pokewiki.de/images/thumb/5/57/Verpackungsvorderseite_Pok%C3%A9mon_Y_Deutschland.jpg/290px-Verpackungsvorderseite_Pok%C3%A9mon_Y_Deutschland.jpg",
-    "badges": [
-    
-    ],
-    "team": [
-      {
-        
-      }
-    ]
+    "badges": [],
+    "team": []
   },
   {
     "id": "moon",
     "title": "GEN 7 - Moon",
     "category": "future",
     "cover": "https://www.pokewiki.de/images/thumb/4/49/Verpackungsvorderseite_Pok%C3%A9mon_Mond_Deutschland.jpg/290px-Verpackungsvorderseite_Pok%C3%A9mon_Mond_Deutschland.jpg",
-    "badges": [
-    
-    ],
-    "team": [
-      {
-        
-      }
-    ]
+    "badges": [],
+    "team": []
   },
   {
     "id": "sword",
     "title": "GEN 8 - Sword",
     "category": "future",
     "cover": "https://www.pokewiki.de/images/thumb/2/25/Verpackungsvorderseite_Pok%C3%A9mon_Schwert_Deutschland.png/290px-Verpackungsvorderseite_Pok%C3%A9mon_Schwert_Deutschland.png",
-    "badges": [
-    
-    ],
-    "team": [
-      {
-        
-      }
-    ]
+    "badges": [],
+    "team": []
   },
   {
     "id": "arceus",
     "title": "GEN 4 - Legends: Arceus",
     "category": "future",
     "cover": "https://www.pokewiki.de/images/thumb/5/59/Verpackungsvorderseite_Pok%C3%A9mon-Legenden_Arceus_Deutschland.png/290px-Verpackungsvorderseite_Pok%C3%A9mon-Legenden_Arceus_Deutschland.png",
-    "badges": [
-    
-    ],
-    "team": [
-      {
-        
-      }
-    ]
+    "badges": [],
+    "team": []
   },
   {
     "id": "violet",
     "title": "GEN 9 - Violet",
     "category": "future",
     "cover": "https://www.pokewiki.de/images/thumb/5/58/Verpackungsvorderseite_Pok%C3%A9mon_Purpur_Deutschland.png/290px-Verpackungsvorderseite_Pok%C3%A9mon_Purpur_Deutschland.png",
-    "badges": [
-    
-    ],
-    "team": [
-      {
-        
-      }
-    ]
+    "badges": [],
+    "team": []
   },
   {
     "id": "windsandwaves",
     "title": "GEN 10 - Winds & Waves",
     "category": "future",
     "cover": "https://card-binder.com/cdn/shop/collections/Pokemon-winds-and-waves-logos-16x9_3ed3376f-9ec3-4868-9aa8-fc5f5a212efa.webp?v=1784192134&width=1500",
-    "badges": [
-    
-    ],
-    "team": [
-      {
-        
-      }
-    ]
-  },
+    "badges": [],
+    "team": []
+  }
 ]
