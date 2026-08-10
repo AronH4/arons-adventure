@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #000000;
+  background-color: #121212;
   color: #ffffff;
   margin: 0;
   padding: 15px;
@@ -13,10 +13,15 @@ header {
 
 h1 {
   margin-top: 0;
+  margin-bottom: 15px;
   font-size: 24px;
 }
 
-/* Tabs */
+h2 {
+  margin: 15px 0 15px 0;
+  text-align: center;
+}
+
 .tabs {
   display: flex;
   justify-content: center;
@@ -24,22 +29,23 @@ h1 {
 }
 
 .tab-btn {
-  padding: 6px 18px;
+  padding: 8px 18px;
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
-  border: 1px solid #ffffff;
-  background: #000000;
-  color: #ffffff;
+  border: 1px solid #444;
+  background: #222;
+  color: #fff;
   border-radius: 6px;
 }
 
 .tab-btn.active {
-  background: #ffffff;
-  color: #000000;
+  background: #ffcb05;
+  color: #000;
+  border-color: #ffcb05;
 }
 
-/* Spiele-Raster (Ohne Rahmen, schwarzer Hintergrund) */
+/* Spieleauswahl */
 .games-grid {
   display: flex;
   justify-content: center;
@@ -50,125 +56,135 @@ h1 {
 
 .game-card {
   border: none;
-  background: #000000;
+  background: transparent;
   text-align: center;
   cursor: pointer;
-  width: 110px;
+  width: 120px;
   padding: 5px;
 }
 
 .game-card img {
   width: 100%;
   height: auto;
-  border-radius: 4px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Neon-grüner Rahmen für das ausgewählte Spiel */
+.game-card.selected img {
+  border-color: #39ff14;
+  box-shadow: 0 0 10px #39ff14;
 }
 
 .game-card h4 {
-  font-size: 12px;
-  margin: 6px 0 0 0;
+  margin: 8px 0 0 0;
+  font-size: 13px;
+  color: #eee;
 }
 
 .hidden {
   display: none;
 }
 
-/* Detail-Bereich */
-.game-details {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.game-details h2 {
-  font-size: 20px;
-  border-bottom: 1px solid #333;
-  padding-bottom: 5px;
-}
-
-.game-details h3 {
-  font-size: 16px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-/* Orden (Klein, schwarz mit weißem Rahmen, Haken unten bündig) */
+/* Fortschritt / Orden (Passt bis zu 13+ Felder nebeneinander) */
 .badges-grid {
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  gap: 8px;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .badge-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Haken wird immer ganz nach unten gedrückt */
   align-items: center;
+  justify-content: space-between;
+  text-align: center;
   background: #000000;
   border: 1px solid #ffffff;
   border-radius: 6px;
-  padding: 8px;
+  padding: 6px 4px;
   width: 75px;
-  height: 95px; /* Feste Höhe, damit alle Kärtchen exakt gleich groß sind */
+  height: 105px;
   box-sizing: border-box;
 }
 
-.badge-card p {
+.badge-card p.badge-name {
   margin: 0;
-  font-size: 11px;
-  text-align: center;
+  font-size: 10px;
+  color: #ddd;
+  line-height: 1.1;
 }
 
 .badge-card img {
-  width: 35px;
-  height: 35px;
+  width: 36px;
+  height: 36px;
   object-fit: contain;
 }
 
 .badge-card .status {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
-  height: 18px; /* Reserviert den Platz, auch wenn kein Haken da ist */
+  margin: 0;
+  height: 18px;
 }
 
 .badge-card .status.done {
-  color: #2ecc71;
+  color: #39ff14;
 }
 
-/* Team-Karten (Schwarz, ohne Rahmen, kompakt) */
+/* Zentriertes Team Grid */
 .team-grid {
   display: flex;
+  justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
+/* Teammitglieder Cards */
 .pokemon-card {
   background: #000000;
   border: none;
-  padding: 5px;
-  width: 130px;
+  border-radius: 6px;
+  padding: 10px;
+  width: 150px;
   font-size: 12px;
 }
 
 .pokemon-card img {
-  width: 70px;
-  height: 70px;
+  width: 75px;
+  height: 75px;
   object-fit: contain;
   display: block;
-  margin: 0 auto 5px auto;
+  margin: 0 auto;
 }
 
 .pokemon-card h4 {
-  margin: 0 0 5px 0;
-  font-size: 13px;
+  margin: 6px 0 2px 0;
+  font-size: 15px;
   text-align: center;
 }
 
-.pokemon-card p {
-  margin: 2px 0;
+.pokemon-card .level {
+  text-align: center;
+  font-size: 12px;
+  color: #aaa;
+  margin: 0 0 8px 0;
 }
 
+.pokemon-card p {
+  margin: 3px 0;
+}
+
+/* Abstand zwischen Item und den Attacken erhalten */
 .pokemon-card ul {
   padding-left: 15px;
-  margin: 3px 0;
+  margin-top: 12px;
+  margin-bottom: 4px;
 }
