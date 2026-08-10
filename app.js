@@ -64,7 +64,7 @@ function showGameDetails(game) {
   const badgesContainer = document.getElementById('badges-container');
   const badges = game.badges || [];
   badgesContainer.innerHTML = badges.map(b => `
-    <div class="badge-card">
+    <div class="badge-card ${b.completed ? 'done' : ''}">
       <p class="badge-name">${b.name || ''}</p>
       <img src="${b.image || ''}" alt="${b.name || ''}">
       <p class="status ${b.completed ? 'done' : ''}">${b.completed ? '✔' : ''}</p>
