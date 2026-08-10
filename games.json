@@ -23,7 +23,7 @@
     "team": [
       {
         "name": "Panferno",
-        "level": 65,
+        "level": 80,
         "location": "Route 201",
         "image": "https://www.pokewiki.de/images/thumb/2/28/Hauptartwork_392.png/250px-Hauptartwork_392.png",
         "ability": "Großbrand",
@@ -32,7 +32,7 @@
       },
       {
         "name": "Rotom",
-        "level": 65,
+        "level": 79,
         "location": "Alte Villa",
         "image": "https://www.pokewiki.de/images/thumb/c/cf/Hauptartwork_479.png/250px-Hauptartwork_479.png",
         "ability": "Schwebe",
@@ -41,7 +41,7 @@
       },
       {
         "name": "Rexblisar",
-        "level": 65,
+        "level": 78,
         "location": "Stärkeufer",
         "image": "https://www.pokewiki.de/images/thumb/a/a8/Hauptartwork_460.png/250px-Hauptartwork_460.png",
         "ability": "Hagelsturm",
@@ -82,7 +82,7 @@
     "team": [
       {
         "name": "Impi",
-        "level": 65,
+        "level": 93,
         "location": "Neuborkia",
         "image": "https://www.pokewiki.de/images/thumb/6/68/Hauptartwork_160.png/219px-Hauptartwork_160.png",
         "ability": "Sturzbach",
@@ -91,7 +91,7 @@
       },
       {
         "name": "Nachtara",
-        "level": 65,
+        "level": 90,
         "location": "Dukatia City",
         "image": "https://www.pokewiki.de/images/thumb/5/5e/Hauptartwork_197.png/207px-Hauptartwork_197.png",
         "ability": "Synchro",
@@ -124,7 +124,7 @@
     "team": [
       {
         "name": "Pikachu",
-        "level": 65,
+        "level": 68,
         "location": "Prof. Eichs Labor",
         "image": "https://www.pokewiki.de/images/thumb/9/9e/Hauptartwork_025.png/250px-Hauptartwork_025.png",
         "ability": "-",
@@ -133,7 +133,7 @@
       },
       {
         "name": "Gengar",
-        "level": 65,
+        "level": 66,
         "location": "Pokémon-Turm",
         "image": "https://www.pokewiki.de/images/thumb/4/46/Hauptartwork_094.png/244px-Hauptartwork_094.png",
         "ability": "-",
@@ -142,7 +142,7 @@
       },
       {
         "name": "Arkani",
-        "level": 65,
+        "level": 66,
         "location": "Pokémon-Haus",
         "image": "https://www.pokewiki.de/images/thumb/e/e2/Hauptartwork_059.png/250px-Hauptartwork_059.png",
         "ability": "-",
@@ -151,7 +151,7 @@
       },
       {
         "name": "Relaxo",
-        "level": 65,
+        "level": 61,
         "location": "Route 12",
         "image": "https://www.pokewiki.de/images/thumb/6/68/Hauptartwork_143.png/250px-Hauptartwork_143.png",
         "ability": "-",
