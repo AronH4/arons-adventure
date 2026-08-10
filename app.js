@@ -1,10 +1,22 @@
 let allGames = [];
 
 fetch('games.json')
-  .then(response => response.json())
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP-Fehler ${response.status}: games.json konnte nicht geladen werden.`);
+    }
+    return response.json();
+  })
   .then(data => {
     allGames = data;
-    filterGames('past'); // Zeigt deine Spiele unter PAST direkt beim Start an
+    filterGames('past');
+  })
+  .catch(error => {
+    console.error('Fehler:', error);
+    document.getElementById('games-grid').innerHTML = `
+      <p style="color: #ff4d4d; text-align: center; width: 100%;">
+        ⚠️ <strong>Fehler beim Laden!</strong><br>${error.message}
+      </p>`;
   });
 
 document.querySelectorAll('.tab-btn').forEach(button => {
@@ -24,13 +36,17 @@ function filterGames(category) {
 
   const filtered = allGames.filter(game => game.category === category);
 
+  if (filtered.length === 0) {
+    grid.innerHTML = `<p style="color: #aaa; text-align: center; width: 100%;">Keine Spiele in dieser Kategorie.</p>`;
+    return;
+  }
+
   filtered.forEach(game => {
     const card = document.createElement('div');
     card.className = 'game-card';
-    card.setAttribute('data-id', game.id);
     card.innerHTML = `
-      <img src="${game.cover}" alt="${game.title}">
-      <h4>${game.title}</h4>
+      <img src="${game.cover || ''}" alt="${game.title || ''}">
+      <h4>${game.title || ''}</h4>
     `;
     card.addEventListener('click', () => {
       document.querySelectorAll('.game-card').forEach(c => c.classList.remove('selected'));
@@ -45,31 +61,34 @@ function showGameDetails(game) {
   const detailsSection = document.getElementById('game-details');
   detailsSection.classList.remove('hidden');
 
-  document.getElementById('detail-title').innerText = game.title;
+  document.getElementById('detail-title').innerText = game.title || '';
 
-  // Orden rendern
   const badgesContainer = document.getElementById('badges-container');
-  badgesContainer.innerHTML = game.badges.map(b => `
+  const badges = game.badges || [];
+  badgesContainer.innerHTML = badges.map(b => `
     <div class="badge-card">
-      <p class="badge-name">${b.name}</p>
-      <img src="${b.image}" alt="${b.name}">
+      <p class="badge-name">${b.name || ''}</p>
+      <img src="${b.image || ''}" alt="${b.name || ''}">
       <p class="status ${b.completed ? 'done' : ''}">${b.completed ? '✔' : ''}</p>
     </div>
   `).join('');
 
-  // Team rendern
   const teamContainer = document.getElementById('team-container');
-  teamContainer.innerHTML = game.team.map(p => `
-    <div class="pokemon-card">
-      <img src="${p.image}" alt="${p.name}">
-      <h4>${p.name}</h4>
-      <div class="level">${p.level ? 'Lv. ' + p.level : ''}</div>
-      <p><strong>Location:</strong> ${p.location || '-'}</p>
-      <p><strong>Ability:</strong> ${p.ability || '-'}</p>
-      <p><strong>@</strong> ${p.item || '-'}</p>
-      <ul>
-        ${p.moves.map(move => `<li>${move}</li>`).join('')}
-      </ul>
-    </div>
-  `).join('');
+  const team = game.team || [];
+  teamContainer.innerHTML = team.map(p => {
+    const moves = p.moves || [];
+    return `
+      <div class="pokemon-card">
+        <img src="${p.image || ''}" alt="${p.name || ''}">
+        <h4>${p.name || ''}</h4>
+        <div class="level">${p.level ? 'Lv. ' + p.level : ''}</div>
+        <p><strong>Location:</strong> ${p.location || '-'}</p>
+        <p><strong>Ability:</strong> ${p.ability || '-'}</p>
+        <p><strong>Item:</strong> ${p.item || '-'}</p>
+        <ul>
+          ${moves.map(move => `<li>${move}</li>`).join('')}
+        </ul>
+      </div>
+    `;
+  }).join('');
 }
