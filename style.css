@@ -90,16 +90,15 @@ header {
   display: none;
 }
 
-/* Fortschritt / Orden (Maximal 13 Fenster pro Zeile) */
+/* Fortschritt / Raster (20 Spalten Grid) */
 .badges-grid {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(20, 75px);
   gap: 8px;
-  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 30px;
-  max-width: 1071px;
-  margin-left: auto;
-  margin-right: auto;
+  overflow-x: auto; /* Verhindert Umbrüche auf kleinen Bildschirmen */
+  padding: 10px 0;
 }
 
 .badge-card {
@@ -116,6 +115,13 @@ header {
   height: 105px;
   box-sizing: border-box;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Leerer Platzhalter für die Lücke zwischen Orden und Liga */
+.badge-spacer {
+  width: 75px;
+  height: 105px;
+  visibility: hidden; /* Unsichtbar, reserviert aber exakt ein Fenster Platz */
 }
 
 .badge-card.done {
@@ -137,7 +143,7 @@ header {
 .badge-card img {
   width: 36px;
   height: 36px;
-  object-fit: contain; /* Vollständige Ordengrafiken */
+  object-fit: contain;
 }
 
 .badge-card .status {
