@@ -61,8 +61,6 @@ function showGameDetails(game) {
   const detailsSection = document.getElementById('game-details');
   detailsSection.classList.remove('hidden');
 
-  document.getElementById('detail-title').innerText = game.title || '';
-
   const badgesContainer = document.getElementById('badges-container');
   const badges = game.badges || [];
   badgesContainer.innerHTML = badges.map(b => `
