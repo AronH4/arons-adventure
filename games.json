@@ -13,12 +13,12 @@
       { "name": "Minenorden", "image": "https://www.pokewiki.de/images/thumb/8/82/Minenorden.png/70px-Minenorden.png", "completed": true },
       { "name": "Firnorden", "image": "https://www.pokewiki.de/images/thumb/7/71/Firnorden.png/70px-Firnorden.png", "completed": true },
       { "name": "Lichtorden", "image": "https://www.pokewiki.de/images/thumb/f/f9/Lichtorden.png/70px-Lichtorden.png", "completed": true },
-      { "name": "T4 - Herbaro", "image": "https://www.pokewiki.de/images/0/03/VS_Herbaro_Platin.png?20210614090136", "completed": true },
-      { "name": "T4 - Teresa", "image": "https://www.pokewiki.de/images/9/9c/VS_Teresa_Platin.png?20210614090337", "completed": true },
-      { "name": "T4 - Ignaz", "image": "https://www.pokewiki.de/images/e/eb/VS_Ignaz_Platin.png", "completed": true },
-      { "name": "T4 - Lucian", "image": "https://www.pokewiki.de/images/2/2e/VS_Lucian_Platin.png", "completed": true },
-      { "name": "Champ Cynthia", "image": "https://www.pokewiki.de/images/3/3c/VS_Cynthia_Platin.png", "completed": true },
-      { "name": "Cynthia Rematch", "image": "https://www.pokewiki.de/images/3/3c/VS_Cynthia_Platin.png", "completed": true }
+      { "name": "T4 - Herbaro", "image": "https://www.pokewiki.de/images/8/8b/Trainersprite_Herbaro_Platin.gif", "completed": true },
+      { "name": "T4 - Teresa", "image": "https://www.pokewiki.de/images/5/57/Trainersprite_Teresa_Platin.gif", "completed": true },
+      { "name": "T4 - Ignaz", "image": "https://www.pokewiki.de/images/e/ef/Trainersprite_Ignaz_Platin.gif", "completed": true },
+      { "name": "T4 - Lucian", "image": "https://www.pokewiki.de/images/8/80/Trainersprite_Lucian_Platin.gif", "completed": true },
+      { "name": "Champ Cynthia", "image": "https://www.pokewiki.de/images/b/b9/Trainersprite_Cynthia_Platin.gif", "completed": true },
+      { "name": "Cynthia Rematch", "image": "https://www.pokewiki.de/images/b/b9/Trainersprite_Cynthia_Platin.gif", "completed": true }
     ],
     "team": [
       {
@@ -51,7 +51,7 @@
     ]
   },
   {
-    "id": "platinum",
+    "id": "heartgold",
     "title": "GEN 2 - HeartGold",
     "category": "past",
     "cover": "https://www.pokewiki.de/images/7/79/Pok%C3%A9mon_HeartGold_Packshot_%28D%29.jpg?20100122211034",
@@ -64,11 +64,11 @@
       { "name": "Stahlorden", "image": "https://www.pokewiki.de/images/thumb/c/c7/Stahlorden.png/70px-Stahlorden.png", "completed": true },
       { "name": "Eisorden", "image": "https://www.pokewiki.de/images/thumb/3/39/Eisorden.png/61px-Eisorden.png", "completed": true },
       { "name": "Drachenorden", "image": "https://www.pokewiki.de/images/thumb/4/4e/Drachenorden.png/70px-Drachenorden.png", "completed": true },
-      { "name": "T4 - Willi", "image": "https://www.pokewiki.de/images/7/7b/VS_Willi_HGSS.png", "completed": true },
-      { "name": "T4 - Koga", "image": "https://www.pokewiki.de/images/c/c6/VS_Koga_HGSS.png", "completed": true },
-      { "name": "T4 - Bruno", "image": "https://www.pokewiki.de/images/5/59/VS_Bruno_HGSS.png", "completed": true },
-      { "name": "T4 - Melanie", "image": "https://www.pokewiki.de/images/a/a1/VS_Melanie_HGSS.png", "completed": true },
-      { "name": "Champ Siegfried", "image": "https://www.pokewiki.de/images/6/62/VS_Siegfried_HGSS.png", "completed": true },
+      { "name": "T4 - Willi", "image": "https://www.pokewiki.de/images/b/b1/Trainersprite_Willi_HGSS.gif", "completed": true },
+      { "name": "T4 - Koga", "image": "https://www.pokewiki.de/images/1/1f/Trainersprite_Koga_HGSS.gif", "completed": true },
+      { "name": "T4 - Bruno", "image": "https://www.pokewiki.de/images/5/57/Trainersprite_Bruno_HGSS.gif", "completed": true },
+      { "name": "T4 - Melanie", "image": "https://www.pokewiki.de/images/2/28/Trainersprite_Melanie_HGSS.gif", "completed": true },
+      { "name": "Champ Siegfried", "image": "https://www.pokewiki.de/images/3/3c/Trainersprite_Siegfried_HGSS.gif", "completed": true },
       { "name": "Donneroden", "image": "https://www.pokewiki.de/images/thumb/5/53/Donnerorden.png/70px-Donnerorden.png", "completed": true },
       { "name": "Farborden", "image": "https://www.pokewiki.de/images/thumb/8/8b/Farborden.png/70px-Farborden.png", "completed": true },
       { "name": "Seelenorden", "image": "https://www.pokewiki.de/images/thumb/f/fa/Seelenorden.png/70px-Seelenorden.png", "completed": true },
@@ -77,7 +77,7 @@
       { "name": "Felsorden", "image": "https://www.pokewiki.de/images/thumb/8/8b/Felsorden.png/70px-Felsorden.png", "completed": true },
       { "name": "Vulkanorden", "image": "https://www.pokewiki.de/images/thumb/c/c0/Vulkanorden.png/70px-Vulkanorden.png", "completed": true },
       { "name": "Erdorden", "image": "https://www.pokewiki.de/images/thumb/7/70/Erdorden.png/31px-Erdorden.png", "completed": true },
-      { "name": "Red", "image": "https://www.pokewiki.de/images/0/01/Trainersprite_Rot_HGSS.gif", "completed": true }
+      { "name": "Rot", "image": "https://www.pokewiki.de/images/0/01/Trainersprite_Rot_HGSS.gif", "completed": true }
     ],
     "team": [
       {
@@ -97,6 +97,108 @@
         "ability": "Synchro",
         "item": "Schlauglas",
         "moves": ["Finsteraura", "Psychokinese", "Zerschneider", "Blitz"]
+      }
+    ]
+  },
+  {
+    "id": "yellow",
+    "title": "GEN 1 - Yellow Legacy",
+    "category": "past",
+    "cover": "https://www.pokewiki.de/images/thumb/f/f2/Pok%C3%A9mon_Gelb.png/290px-Pok%C3%A9mon_Gelb.png",
+    "badges": [
+      { "name": "Felsorden", "image": "https://www.pokewiki.de/images/thumb/8/8b/Felsorden.png/70px-Felsorden.png", "completed": true },
+      { "name": "Quellorden", "image": "https://www.pokewiki.de/images/thumb/5/55/Quellorden.png/70px-Quellorden.png", "completed": true },
+      { "name": "Donneroden", "image": "https://www.pokewiki.de/images/thumb/5/53/Donnerorden.png/70px-Donnerorden.png", "completed": true },
+      { "name": "Farborden", "image": "https://www.pokewiki.de/images/thumb/8/8b/Farborden.png/70px-Farborden.png", "completed": true },
+      { "name": "Seelenorden", "image": "https://www.pokewiki.de/images/thumb/f/fa/Seelenorden.png/70px-Seelenorden.png", "completed": true },
+      { "name": "Sumpforden", "image": "https://www.pokewiki.de/images/thumb/5/5c/Sumpforden.png/70px-Sumpforden.png", "completed": true },
+      { "name": "Vulkanorden", "image": "https://www.pokewiki.de/images/thumb/c/c0/Vulkanorden.png/70px-Vulkanorden.png", "completed": true },
+      { "name": "Erdorden", "image": "https://www.pokewiki.de/images/thumb/7/70/Erdorden.png/31px-Erdorden.png", "completed": true },
+      { "name": "T4 - Lorelei", "image": "https://www.pokewiki.de/images/2/20/Trainersprite_Lorelei_Gelb.png", "completed": true },
+      { "name": "T4 - Bruno", "image": "https://www.pokewiki.de/images/5/5c/Trainersprite_Bruno_Gelb.png", "completed": true },
+      { "name": "T4 - Agathe", "image": "https://www.pokewiki.de/images/2/20/Trainersprite_Agathe_Gelb.png", "completed": true },
+      { "name": "T4 - Siegfried", "image": "https://www.pokewiki.de/images/a/ab/Trainersprite_Siegfried_Gelb.png", "completed": true },
+      { "name": "Champ Blau", "image": "https://www.pokewiki.de/images/8/8c/Trainersprite_Blau_Gelb.png", "completed": true },
+      { "name": "Prof. Eich", "image": "https://www.pokewiki.de/images/6/6d/Trainersprite_Professor_Eich_Gelb.png", "completed": true }
+    ],
+    "team": [
+      {
+        "name": "Pikachu",
+        "level": 65,
+        "location": "Prof. Eichs Labor",
+        "image": "https://www.pokewiki.de/images/thumb/9/9e/Hauptartwork_025.png/250px-Hauptartwork_025.png",
+        "ability": "-",
+        "item": "-",
+        "moves": ["Donnerblitz", "Surfer", "Fliegen", "Zerschneider"]
+      },
+      {
+        "name": "Gengar",
+        "level": 65,
+        "location": "Pokémon-Turm",
+        "image": "https://www.pokewiki.de/images/thumb/4/46/Hauptartwork_094.png/244px-Hauptartwork_094.png",
+        "ability": "-",
+        "item": "-",
+        "moves": ["Nachtnebel", "Psychokinese", "Megasauger", "Stärke"]
+      },
+      {
+        "name": "Arkani",
+        "level": 65,
+        "location": "Pokémon-Haus",
+        "image": "https://www.pokewiki.de/images/thumb/e/e2/Hauptartwork_059.png/250px-Hauptartwork_059.png",
+        "ability": "-",
+        "item": "-",
+        "moves": ["Flammenwurf", "Bodyslam", "Schaufler", "Reflektor"]
+      },
+      {
+        "name": "Relaxo",
+        "level": 65,
+        "location": "Route 12",
+        "image": "https://www.pokewiki.de/images/thumb/6/68/Hauptartwork_143.png/250px-Hauptartwork_143.png",
+        "ability": "-",
+        "item": "-",
+        "moves": ["Bodyslam", "Erdbeben", "Geowurf", "Erholung"]
+      }
+    ]
+  },
+  {
+    "id": "emerald",
+    "title": "GEN 3 - Emerald",
+    "category": "current",
+    "cover": "https://www.pokewiki.de/images/thumb/1/1c/Pok%C3%A9mon_Smaragd-Edition.jpg/290px-Pok%C3%A9mon_Smaragd-Edition.jpg",
+    "badges": [
+      { "name": "Steinorden", "image": "https://www.pokewiki.de/images/thumb/2/2b/Steinorden.png/70px-Steinorden.png", "completed": true },
+      { "name": "Knöchelorden", "image": "https://www.pokewiki.de/images/thumb/d/dc/Kn%C3%B6chelorden.png/70px-Kn%C3%B6chelorden.png", "completed": true },
+      { "name": "Dynamo-Orden", "image": "https://www.pokewiki.de/images/thumb/f/f5/Dynamo-Orden.png/53px-Dynamo-Orden.png", "completed": true },
+      { "name": "Hitzeorden", "image": "https://www.pokewiki.de/images/thumb/5/50/Hitzeorden.png/70px-Hitzeorden.png", "completed": false },
+      { "name": "Balanceorden", "image": "https://www.pokewiki.de/images/thumb/b/bf/Balanceorden.png/70px-Balanceorden.png", "completed": false },
+      { "name": "Federorden", "image": "https://www.pokewiki.de/images/thumb/c/c7/Federorden.png/61px-Federorden.png", "completed": false },
+      { "name": "Mentalorden", "image": "https://www.pokewiki.de/images/thumb/c/cb/Mentalorden.png/70px-Mentalorden.png", "completed": false },
+      { "name": "Schauerorden", "image": "https://www.pokewiki.de/images/thumb/4/45/Schauerorden.png/64px-Schauerorden.png", "completed": false },
+      { "name": "T4 - Ulrich", "image": "https://www.pokewiki.de/images/1/17/Trainersprite_Ulrich_RSS.png", "completed": false },
+      { "name": "T4 - Antonia", "image": "https://www.pokewiki.de/images/0/0e/Trainersprite_Antonia_RSS.png", "completed": false },
+      { "name": "T4 - Frosina", "image": "https://www.pokewiki.de/images/2/24/Trainersprite_Frosina_RSS.png", "completed": false },
+      { "name": "T4 - Dragan", "image": "https://www.pokewiki.de/images/b/b8/Trainersprite_Dragan_RSS.png", "completed": false },
+      { "name": "Champ Wassili", "image": "https://www.pokewiki.de/images/6/64/Trainersprite_Wassili_Smaragd.png", "completed": false },
+      { "name": "Troy Trumm", "image": "https://www.pokewiki.de/images/a/ac/Trainersprite_Troy_RSS.png", "completed": false }
+    ],
+    "team": [
+      {
+        "name": "Blanas",
+        "level": 32,
+        "location": "Route 102",
+        "image": "https://www.pokewiki.de/images/thumb/d/da/Hauptartwork_274.png/234px-Hauptartwork_274.png",
+        "ability": "Chlorophyll",
+        "item": "Wundersaat",
+        "moves": ["Kugelsaat", "Finte", "Zerschneider", "Blitz"]
+      },
+      {
+        "name": "Stollunior",
+        "level": 26,
+        "location": "Granithöhle",
+        "image": "https://www.pokewiki.de/images/thumb/1/18/Hauptartwork_304.png/250px-Hauptartwork_304.png",
+        "ability": "Robustheit",
+        "item": "Flinkklaue",
+        "moves": ["Metallklaue", "Kopfnuss", "Lehmschelle", "Eisenabwehr"]
       }
     ]
   }
