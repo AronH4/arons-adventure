@@ -9,7 +9,7 @@ fetch('games.json')
   })
   .then(data => {
     allGames = data;
-    filterGames('current'); // <-- Direkt CURRENT beim Start laden
+    filterGames('current'); // Direkt CURRENT beim Start laden
   })
   .catch(error => {
     console.error('Fehler:', error);
@@ -28,7 +28,7 @@ document.querySelectorAll('.tab-btn').forEach(button => {
 });
 
 function filterGames(category) {
-  // Buttons optisch mit dem aktiven Filter synchronisieren
+  // Buttons optisch synchronisieren
   document.querySelectorAll('.tab-btn').forEach(btn => {
     if (btn.getAttribute('data-tab') === category) {
       btn.classList.add('active');
@@ -63,20 +63,64 @@ function filterGames(category) {
   });
 }
 
+function renderBadgeCard(item) {
+  return `
+    <div class="badge-card ${item.completed ? 'done' : ''}">
+      <p class="badge-name">${item.name || ''}</p>
+      <img src="${item.image || ''}" alt="${item.name || ''}">
+      <p class="status ${item.completed ? 'done' : ''}">${item.completed ? '✔' : ''}</p>
+    </div>
+  `;
+}
+
 function showGameDetails(game) {
   const detailsSection = document.getElementById('game-details');
   detailsSection.classList.remove('hidden');
 
   const badgesContainer = document.getElementById('badges-container');
-  const badges = game.badges || [];
-  badgesContainer.innerHTML = badges.map(b => `
-    <div class="badge-card ${b.completed ? 'done' : ''}">
-      <p class="badge-name">${b.name || ''}</p>
-      <img src="${b.image || ''}" alt="${b.name || ''}">
-      <p class="status ${b.completed ? 'done' : ''}">${b.completed ? '✔' : ''}</p>
-    </div>
-  `).join('');
+  const progress = game.progress || {};
+  
+  const badges = progress.badges || [];
+  const league = progress.league || [];
+  const postgame = progress.postgame || [];
 
+  let progressHTML = '';
+
+  // --- ZEILE 1: Orden (max 12) + Lücke (1 Slot) + Liga (max 7) ---
+  
+  // 1. Bis zu 12 Orden rendern
+  for (let i = 0; i < 12; i++) {
+    if (i < badges.length) {
+      progressHTML += renderBadgeCard(badges[i]);
+    } else {
+      progressHTML += `<div class="badge-spacer"></div>`; // Auffüllen falls weniger als 12
+    }
+  }
+
+  // 2. Genau 1 Slot Lücke
+  progressHTML += `<div class="badge-spacer"></div>`;
+
+  // 3. Bis zu 7 Top 4 / Champ Items rendern
+  for (let i = 0; i < 7; i++) {
+    if (i < league.length) {
+      progressHTML += renderBadgeCard(league[i]);
+    } else {
+      progressHTML += `<div class="badge-spacer"></div>`; // Auffüllen falls weniger als 7
+    }
+  }
+
+  // --- ZEILE 2: Post Game (max 20) ---
+  for (let i = 0; i < 20; i++) {
+    if (i < postgame.length) {
+      progressHTML += renderBadgeCard(postgame[i]);
+    } else {
+      progressHTML += `<div class="badge-spacer"></div>`; // Auffüllen falls weniger als 20
+    }
+  }
+
+  badgesContainer.innerHTML = progressHTML;
+
+  // --- TEAM RENDER (OHNE LOCATION) ---
   const teamContainer = document.getElementById('team-container');
   const team = game.team || [];
   teamContainer.innerHTML = team.map(p => {
@@ -86,7 +130,6 @@ function showGameDetails(game) {
         <img src="${p.image || ''}" alt="${p.name || ''}">
         <h4>${p.name || ''}</h4>
         <div class="level">${p.level ? 'Lv. ' + p.level : ''}</div>
-        <p><strong>Location:</strong> ${p.location || '-'}</p>
         <p><strong>Ability:</strong> ${p.ability || '-'}</p>
         <p><strong>Item:</strong> ${p.item || '-'}</p>
         <ul>
