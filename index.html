@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon Abenteuer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Pokémon Abenteuer</h1>
+    <nav class="tabs">
+      <button class="tab-btn active" data-tab="past">PAST</button>
+      <button class="tab-btn" data-tab="current">CURRENT</button>
+      <button class="tab-btn" data-tab="future">FUTURE</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="games-grid" class="games-grid"></section>
+
+    <section id="game-details" class="game-details hidden">
+      <h2 id="detail-title"></h2>
+
+      <h3>Fortschritt:</h3>
+      <div id="badges-container" class="badges-grid"></div>
+
+      <h3>Team:</h3>
+      <div id="team-container" class="team-grid"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
