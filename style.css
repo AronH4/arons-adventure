@@ -1,3 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+body {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  padding: 40px 15px 15px 15px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Tabs: Flacher (schmaler in der Höhe), feste Breite */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.tab-btn {
+  padding: 6px 0;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #444;
+  background: #222;
+  color: #fff;
+  border-radius: 8px;
+  width: 220px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+}
+
+.tab-btn.active {
+  background: #ffcb05;
+  color: #000;
+  border-color: #ffcb05;
+}
+
 /* Spieleauswahl */
 .games-grid {
   display: flex;
@@ -14,7 +59,6 @@
   cursor: pointer;
   width: 180px;
   padding: 5px;
-  /* Flexbox sorgt dafür, dass Titel immer ganz unten auf gleicher Höhe stehen */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -23,8 +67,8 @@
 
 .game-card img {
   width: 100%;
-  height: 180px;        /* Feste Höhe garantiert identische Bildgrößen */
-  object-fit: cover;    /* Verhindert Verzerrung bei unterschiedlichen Bildformaten */
+  height: 180px;
+  object-fit: cover;
   border-radius: 6px;
   border: 2px solid transparent;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
@@ -40,4 +84,117 @@
   margin: 8px 0 0 0;
   font-size: 16px;
   color: #eee;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Fortschritt / Orden (Maximal 13 Fenster pro Zeile) */
+.badges-grid {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  max-width: 1071px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.badge-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  background: #000000;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  padding: 6px 4px;
+  width: 75px;
+  height: 105px;
+  box-sizing: border-box;
+}
+
+.badge-card p.badge-name {
+  margin: 0;
+  font-size: 11px;
+  color: #ddd;
+  line-height: 1.1;
+}
+
+.badge-card img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.badge-card .status {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  height: 18px;
+}
+
+.badge-card .status.done {
+  color: #39ff14;
+}
+
+/* Zentriertes Team Grid */
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.pokemon-card {
+  background: #121212;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  width: 170px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pokemon-card img {
+  width: 112.5px;
+  height: 112.5px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 8px auto;
+}
+
+.pokemon-card h4 {
+  margin: 4px 0 2px 0;
+  font-size: 17px;
+}
+
+.pokemon-card .level {
+  font-size: 13px;
+  color: #aaa;
+  margin: 0 0 8px 0;
+}
+
+.pokemon-card p {
+  margin: 3px 0;
+  width: 100%;
+}
+
+.pokemon-card ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  width: 100%;
+}
+
+.pokemon-card ul li {
+  margin: 2px 0;
 }
