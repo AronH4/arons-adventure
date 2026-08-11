@@ -322,9 +322,7 @@
         { "name": "Dragon Badge", "image": "https://www.pokewiki.de/images/thumb/b/b7/Drachen-Orden.png/130px-Drachen-Orden.png", "completed": false }
       ],
       "league": [
-        { "name": "Marnie", "image": "https://www.pokewiki.de/images/2/20/VS_Mary_SWSH.png", "completed": false },
-        { "name": "Hop", "image": "https://www.pokewiki.de/images/4/48/VS_Hop_SWSH.png", "completed": false },
-        { "name": "Bede", "image": "https://www.pokewiki.de/images/9/99/VS_Betys_SWSH.png", "completed": false },
+        { "name": "Champ-Cup", "image": "https://www.pokewiki.de/images/thumb/2/2f/Ypsi-Com-Icon_Champ-Cup_SWSH.png/200px-Ypsi-Com-Icon_Champ-Cup_SWSH.png", "completed": false },
         { "name": "Nessa", "image": "https://www.pokewiki.de/images/4/42/VS_Kate_SWSH.png", "completed": false },
         { "name": "Bea", "image": "https://www.pokewiki.de/images/f/f2/VS_Saida_SWSH.png", "completed": false },
         { "name": "Raihan", "image": "https://www.pokewiki.de/images/f/fe/VS_Roy_SWSH.png", "completed": false },
