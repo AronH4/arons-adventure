@@ -4,6 +4,9 @@
     "title": "Platinum",
     "category": "past",
     "cover": "https://www.pokewiki.de/images/thumb/1/16/Packshot_Pok%C3%A9mon_Platin-Edition.jpg/992px-Packshot_Pok%C3%A9mon_Platin-Edition.jpg?20131201114035",
+    "year": "2009",
+    "consoleName": "Nintendo DSi",
+    "consoleImage": "https://upload.wikimedia.org/wikipedia/commons/8/89/Nintendo-DSi-Bl-Open.png",
     "progress": {
       "badges": [
         { "name": "Coal Badge", "image": "https://www.pokewiki.de/images/thumb/e/ef/Kohleorden.png/70px-Kohleorden.png", "completed": true },
@@ -58,6 +61,9 @@
     "title": "HeartGold",
     "category": "past",
     "cover": "https://www.pokewiki.de/images/7/79/Pok%C3%A9mon_HeartGold_Packshot_%28D%29.jpg?20100122211034",
+    "year": "2010",
+    "consoleName": "Nintendo DSi",
+    "consoleImage": "https://upload.wikimedia.org/wikipedia/commons/8/89/Nintendo-DSi-Bl-Open.png",
     "progress": {
       "badges": [
         { "name": "Zephyr Badge", "image": "https://www.pokewiki.de/images/thumb/2/2e/Fl%C3%BCgelorden.png/70px-Fl%C3%BCgelorden.png", "completed": true },
@@ -112,6 +118,9 @@
     "title": "Yellow Legacy",
     "category": "past",
     "cover": "https://www.pokewiki.de/images/thumb/f/f2/Pok%C3%A9mon_Gelb.png/290px-Pok%C3%A9mon_Gelb.png",
+    "year": "2010 (2000)",
+    "consoleName": "Game Boy",
+    "consoleImage": "https://i.imgur.com/j6G0Okm.png",
     "progress": {
       "badges": [
         { "name": "Boulder Badge", "image": "https://www.pokewiki.de/images/thumb/8/8b/Felsorden.png/70px-Felsorden.png", "completed": true },
@@ -174,6 +183,9 @@
     "title": "Emerald",
     "category": "current",
     "cover": "https://www.pokewiki.de/images/thumb/1/1c/Pok%C3%A9mon_Smaragd-Edition.jpg/290px-Pok%C3%A9mon_Smaragd-Edition.jpg",
+    "year": "2010 (2005)",
+    "consoleName": "Game Boy Advance SP",
+    "consoleImage": "https://upload.wikimedia.org/wikipedia/commons/2/27/Game-Boy-Advance-SP-Mk1-Blue.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
     "progress": {
       "badges": [
         { "name": "Stone Badge", "image": "https://www.pokewiki.de/images/thumb/2/2b/Steinorden.png/70px-Steinorden.png", "completed": true },
@@ -220,6 +232,9 @@
     "title": "White",
     "category": "upcoming",
     "cover": "https://www.pokewiki.de/images/thumb/3/3a/Verpackungsvorderseite_Pok%C3%A9mon_Wei%C3%9Fe_Edition.jpg/290px-Verpackungsvorderseite_Pok%C3%A9mon_Wei%C3%9Fe_Edition.jpg",
+    "year": "2011",
+    "consoleName": "Nintendo DSi",
+    "consoleImage": "https://upload.wikimedia.org/wikipedia/commons/8/89/Nintendo-DSi-Bl-Open.png",
     "progress": {
       "badges": [
         { "name": "Trio Badge", "image": "https://www.pokewiki.de/images/3/35/Triorden.png", "completed": false },
@@ -249,6 +264,9 @@
     "title": "Y",
     "category": "upcoming",
     "cover": "https://www.pokewiki.de/images/thumb/5/57/Verpackungsvorderseite_Pok%C3%A9mon_Y_Deutschland.jpg/290px-Verpackungsvorderseite_Pok%C3%A9mon_Y_Deutschland.jpg",
+    "year": "2014 (2013)",
+    "consoleName": "Nintendo 2DS",
+    "consoleImage": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Nintendo-2DS-angle.png",
     "progress": {
       "badges": [
         { "name": "Bug Badge", "image": "https://www.pokewiki.de/images/5/55/Krabbelorden.png", "completed": false },
@@ -278,6 +296,9 @@
     "title": "Moon",
     "category": "upcoming",
     "cover": "https://www.pokewiki.de/images/thumb/4/49/Verpackungsvorderseite_Pok%C3%A9mon_Mond_Deutschland.jpg/290px-Verpackungsvorderseite_Pok%C3%A9mon_Mond_Deutschland.jpg",
+    "year": "2016",
+    "consoleName": "Nintendo 2DS",
+    "consoleImage": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Nintendo-2DS-angle.png",
     "progress": {
       "badges": [
         { "name": "Ilima's Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/f/f0/Dream_Normalium_Z_Sprite.png/50px-Dream_Normalium_Z_Sprite.png", "completed": false },
@@ -310,6 +331,9 @@
     "title": "Sword",
     "category": "upcoming",
     "cover": "https://www.pokewiki.de/images/thumb/2/25/Verpackungsvorderseite_Pok%C3%A9mon_Schwert_Deutschland.png/290px-Verpackungsvorderseite_Pok%C3%A9mon_Schwert_Deutschland.png",
+    "year": "2021 (2019)",
+    "consoleName": "Nintendo Switch",
+    "consoleImage": "https://static.vecteezy.com/system/resources/thumbnails/013/007/607/small/set-of-console-game-device-handheld-portable-free-png.png",
     "progress": {
       "badges": [
         { "name": "Grass Badge", "image": "https://www.pokewiki.de/images/thumb/d/d1/Pflanzen-Orden.png/130px-Pflanzen-Orden.png", "completed": false },
@@ -339,6 +363,9 @@
     "title": "Legends: Arceus",
     "category": "upcoming",
     "cover": "https://www.pokewiki.de/images/thumb/5/59/Verpackungsvorderseite_Pok%C3%A9mon-Legenden_Arceus_Deutschland.png/290px-Verpackungsvorderseite_Pok%C3%A9mon-Legenden_Arceus_Deutschland.png",
+    "year": "2022",
+    "consoleName": "Nintendo Switch",
+    "consoleImage": "https://static.vecteezy.com/system/resources/thumbnails/013/007/607/small/set-of-console-game-device-handheld-portable-free-png.png",
     "progress": {
       "badges": [
         { "name": "Mind Plate (Wyrdeer)", "image": "https://www.pokewiki.de/images/thumb/3/3a/Itemsprite_Hirntafel_PLA.png/45px-Itemsprite_Hirntafel_PLA.png", "completed": false },
@@ -373,6 +400,9 @@
     "title": "Violet",
     "category": "upcoming",
     "cover": "https://www.pokewiki.de/images/thumb/5/58/Verpackungsvorderseite_Pok%C3%A9mon_Purpur_Deutschland.png/290px-Verpackungsvorderseite_Pok%C3%A9mon_Purpur_Deutschland.png",
+    "year": "2022",
+    "consoleName": "Nintendo Switch",
+    "consoleImage": "https://static.vecteezy.com/system/resources/thumbnails/013/007/607/small/set-of-console-game-device-handheld-portable-free-png.png",
     "progress": {
       "badges": [
         { "name": "Gym Badge (Bug)", "image": "https://www.pokewiki.de/images/thumb/7/7f/K%C3%A4fer-Arenaorden.png/130px-K%C3%A4fer-Arenaorden.png", "completed": false },
@@ -402,6 +432,9 @@
     "title": "Winds & Waves",
     "category": "upcoming",
     "cover": "https://card-binder.com/cdn/shop/collections/Pokemon-winds-and-waves-logos-16x9_3ed3376f-9ec3-4868-9aa8-fc5f5a212efa.webp?v=1784192134&width=1500",
+    "year": "2027",
+    "consoleName": "Nintendo Switch 2",
+    "consoleImage": "https://pngdownload.io/wp-content/uploads/2025/04/Nintendo-Switch-2-New-Gaming-Console-768x568.webp",
     "progress": {},
     "team": []
   }
