@@ -290,7 +290,7 @@
         { "name": "Ghostium Z", "image": "https://archives.bulbagarden.net/media/upload/thumb/d/d1/Dream_Ghostium_Z_Sprite.png/50px-Dream_Ghostium_Z_Sprite.png", "completed": false },
         { "name": "Ula'ula Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/3/3a/Ula%27ula_Trial_Completion.png/100px-Ula%27ula_Trial_Completion.png", "completed": false },
         { "name": "Dragonium Z", "image": "https://archives.bulbagarden.net/media/upload/thumb/b/ba/Dream_Dragonium_Z_Sprite.png/50px-Dream_Dragonium_Z_Sprite.png", "completed": false },
-        { "name": "Poni Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/e/e3/Poni_Trial_Completion.png/100px-Poni_Trial_Completion.png", "completed": false },
+        { "name": "Poni Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/e/e3/Poni_Trial_Completion.png/100px-Poni_Trial_Completion.png", "completed": false }
       ],
       "league": [
         { "name": "Hala", "image": "https://www.pokewiki.de/images/4/4e/VS_Hala_SoMo.png", "completed": false },
