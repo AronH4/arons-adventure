@@ -1,318 +1,134 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+let allGames = [];
 
-/* Base Styles */
-body {
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
-  background-color: #121212;
-  color: #ffffff;
-  margin: 0;
-  padding: 40px 15px 15px 15px;
-}
+// JSON laden
+fetch('games.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP-Fehler ${response.status}: games.json konnte nicht geladen werden.`);
+    }
+    return response.json();
+  })
+  .then(data => {
+    allGames = data;
+    filterGames('current');
+  })
+  .catch(error => {
+    console.error('Fehler:', error);
+    document.getElementById('games-grid').innerHTML = `
+      <p style="color: #ff4d4d; text-align: center; width: 100%;">
+        ⚠️ <strong>Fehler beim Laden!</strong><br>${error.message}
+      </p>`;
+  });
 
-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
+// Tabs schalten
+document.querySelectorAll('.tab-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const category = button.getAttribute('data-tab');
+    filterGames(category);
+    document.getElementById('game-details').classList.add('hidden');
+  });
+});
 
-.hidden {
-  display: none !important;
-}
+function filterGames(category) {
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    if (btn.getAttribute('data-tab') === category) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
 
-/* Tabs */
-.tabs {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
+  const grid = document.getElementById('games-grid');
+  grid.innerHTML = '';
 
-.tab-btn {
-  padding: 6px 0;
-  font-size: 22px;
-  font-weight: bold;
-  cursor: pointer;
-  border: 1px solid #444;
-  background: #222;
-  color: #fff;
-  border-radius: 8px;
-  width: 220px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: inherit;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
-}
+  const filtered = allGames.filter(game => game.category === category);
 
-.tab-btn.active {
-  background: #ffcb05;
-  color: #000;
-  border-color: #ffcb05;
-}
-
-/* Spieleauswahl */
-.games-grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 25px;
-}
-
-.game-card {
-  border: none;
-  background: transparent;
-  text-align: center;
-  cursor: pointer;
-  width: 171px;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.game-card img {
-  width: 100%;
-  height: 171px;
-  object-fit: contain;
-  border-radius: 6px;
-  border: 2px solid transparent;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-  box-sizing: border-box;
-}
-
-.game-card.selected img {
-  border-color: #39ff14;
-  box-shadow: 0 0 10px #39ff14;
-}
-
-.game-card h4 {
-  margin: 8px 0 0 0;
-  font-size: 16px;
-  color: #eee;
-}
-
-/* -------------------------------------------------- */
-/* FORTSCHRITT / FLEXBOX-STRUKTUR (2 ZEILEN)          */
-/* -------------------------------------------------- */
-
-.badges-container {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-/* Zeile 1: Badges rechtsbündig zur Lücke, League linksbündig */
-.progress-row-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  overflow-x: auto;
-  padding: 5px 0;
-}
-
-.badges-group {
-  display: flex;
-  justify-content: flex-end;
-  gap: 8px;
-}
-
-.league-group {
-  display: flex;
-  justify-content: flex-start;
-  gap: 8px;
-}
-
-/* Feste Lücke zwischen Orden und Liga (1 Slot = 75px) */
-.row-gap {
-  width: 75px;
-  flex-shrink: 0;
-}
-
-/* Zeile 2: Postgame immer zentriert */
-.progress-row-2 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  width: 100%;
-}
-
-/* Einzelne Karte */
-.badge-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-  background: #000000;
-  border: 1px solid #ffffff;
-  border-radius: 6px;
-  padding: 6px 4px;
-  width: 75px;
-  height: 105px;
-  box-sizing: border-box;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-  flex-shrink: 0;
-}
-
-.badge-card.done {
-  border-color: #39ff14;
-  box-shadow: 0 0 6px rgba(57, 255, 20, 0.4);
-}
-
-.badge-card p.badge-name {
-  margin: 0;
-  font-size: 11px;
-  color: #ddd;
-  line-height: 1.1;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.badge-card img {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
-}
-
-.badge-card .status {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-  height: 18px;
-}
-
-.badge-card .status.done {
-  color: #39ff14;
-}
-
-/* -------------------------------------------------- */
-/* UNTERES LAYOUT: LINKS / TEAM MITTE / RECHTS       */
-/* -------------------------------------------------- */
-
-.bottom-layout {
-  display: grid;
-  grid-template-columns: 220px 1fr 220px;
-  gap: 20px;
-  align-items: start;
-  width: 100%;
-  max-width: 1600px;
-  margin: 0 auto;
-}
-
-.side-card-wrapper {
-  display: flex;
-}
-
-.side-card-wrapper.left {
-  justify-content: flex-start;
-}
-
-.side-card-wrapper.right {
-  justify-content: flex-end;
-}
-
-.side-card {
-  background: #121212;
-  border: 1px solid #333333;
-  border-radius: 8px;
-  padding: 12px;
-  width: 180px;
-  text-align: center;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.side-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-
-.side-card-text {
-  margin: 0;
-  font-size: 15px;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-/* -------------------------------------------------- */
-/* ZENTRIERTES TEAM GRID                              */
-/* -------------------------------------------------- */
-
-.team-grid {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-.pokemon-card {
-  background: #121212;
-  border: none;
-  border-radius: 6px;
-  padding: 10px;
-  width: 170px;
-  font-size: 13px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.pokemon-card img {
-  width: 107px;
-  height: 107px;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto 8px auto;
-}
-
-.pokemon-card h4 {
-  margin: 4px 0 2px 0;
-  font-size: 17px;
-}
-
-.pokemon-card .level {
-  font-size: 13px;
-  color: #aaa;
-  margin: 0 0 8px 0;
-}
-
-.pokemon-card p {
-  margin: 3px 0;
-  width: 100%;
-}
-
-.pokemon-card ul {
-  padding-left: 0;
-  list-style-type: none;
-  margin: 10px 0 4px 0;
-  width: 100%;
-}
-
-.pokemon-card ul li {
-  margin: 2px 0;
-}
-
-/* Responsivität für kleine Bildschirme */
-@media (max-width: 1200px) {
-  .bottom-layout {
-    grid-template-columns: 1fr;
+  if (filtered.length === 0) {
+    grid.innerHTML = `<p style="color: #aaa; text-align: center; width: 100%;">Keine Spiele in dieser Kategorie.</p>`;
+    return;
   }
-  .side-card-wrapper.left,
-  .side-card-wrapper.right {
-    justify-content: center;
-  }
+
+  filtered.forEach(game => {
+    const card = document.createElement('div');
+    card.className = 'game-card';
+    card.innerHTML = `
+      <img src="${game.cover || ''}" alt="${game.title || ''}">
+      <h4>${game.title || ''}</h4>
+    `;
+    card.addEventListener('click', () => {
+      document.querySelectorAll('.game-card').forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+      showGameDetails(game);
+    });
+    grid.appendChild(card);
+  });
+}
+
+function renderBadgeCard(item) {
+  return `
+    <div class="badge-card ${item.completed ? 'done' : ''}">
+      <p class="badge-name">${item.name || ''}</p>
+      <img src="${item.image || ''}" alt="${item.name || ''}">
+      <p class="status ${item.completed ? 'done' : ''}">${item.completed ? '✔' : ''}</p>
+    </div>
+  `;
+}
+
+function showGameDetails(game) {
+  const detailsSection = document.getElementById('game-details');
+  detailsSection.classList.remove('hidden');
+
+  // 1. LINKS: Cover & Jahr
+  const coverImg = document.getElementById('detail-cover');
+  const yearText = document.getElementById('detail-year');
+  coverImg.src = game.cover || '';
+  coverImg.alt = game.title || 'Cover';
+  yearText.textContent = game.year || '';
+
+  // 2. RECHTS: Konsolen-Bild & Name
+  const consoleImg = document.getElementById('detail-console-img');
+  const consoleNameText = document.getElementById('detail-console-name');
+  consoleImg.src = game.consoleImage || '';
+  consoleImg.alt = game.consoleName || 'Konsole';
+  consoleNameText.textContent = game.consoleName || '';
+
+  // 3. MITTE: Badges & Fortschritt
+  const badgesContainer = document.getElementById('badges-container');
+  const progress = game.progress || {};
+  
+  const badges = progress.badges || [];
+  const league = progress.league || [];
+  const postgame = progress.postgame || [];
+
+  const badgesHTML = badges.map(renderBadgeCard).join('');
+  const leagueHTML = league.map(renderBadgeCard).join('');
+  const postgameHTML = postgame.map(renderBadgeCard).join('');
+
+  badgesContainer.innerHTML = `
+    <div class="progress-row-1">
+      <div class="badges-group">${badgesHTML}</div>
+      <div class="row-gap"></div>
+      <div class="league-group">${leagueHTML}</div>
+    </div>
+    ${postgame.length > 0 ? `<div class="progress-row-2">${postgameHTML}</div>` : ''}
+  `;
+
+  // 4. MITTE: Team Rendern
+  const teamContainer = document.getElementById('team-container');
+  const team = game.team || [];
+  teamContainer.innerHTML = team.map(p => {
+    const moves = p.moves || [];
+    return `
+      <div class="pokemon-card">
+        <img src="${p.image || ''}" alt="${p.name || ''}">
+        <h4>${p.name || ''}</h4>
+        <div class="level">${p.level ? 'Lv. ' + p.level : ''}</div>
+        <p><strong>Ability:</strong> ${p.ability || '-'}</p>
+        <p><strong>Item:</strong> ${p.item || '-'}</p>
+        <ul>
+          ${moves.map(move => `<li>${move}</li>`).join('')}
+        </ul>
+      </div>
+    `;
+  }).join('');
 }
