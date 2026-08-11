@@ -341,7 +341,33 @@
     "title": "Legends: Arceus",
     "category": "upcoming",
     "cover": "https://www.pokewiki.de/images/thumb/5/59/Verpackungsvorderseite_Pok%C3%A9mon-Legenden_Arceus_Deutschland.png/290px-Verpackungsvorderseite_Pok%C3%A9mon-Legenden_Arceus_Deutschland.png",
-    "progress": {},
+    "progress": {
+      "badges": [
+        { "name": "Mind Plate", "image": "https://www.pokewiki.de/images/thumb/3/3a/Itemsprite_Hirntafel_PLA.png/45px-Itemsprite_Hirntafel_PLA.png", "completed": false },
+        { "name": "Insect Plate", "image": "https://www.pokewiki.de/images/thumb/b/b0/Itemsprite_K%C3%A4fertafel_PLA.png/45px-Itemsprite_K%C3%A4fertafel_PLA.png", "completed": false },
+        { "name": "Earth Plate", "image": "https://www.pokewiki.de/images/thumb/e/ed/Itemsprite_Erdtafel_PLA.png/45px-Itemsprite_Erdtafel_PLA.png", "completed": false },
+        { "name": "Meadow Plate", "image": "https://www.pokewiki.de/images/thumb/0/05/Itemsprite_Wiesentafel_PLA.png/45px-Itemsprite_Wiesentafel_PLA.png", "completed": false },
+        { "name": "Splash Plate", "image": "https://www.pokewiki.de/images/thumb/0/03/Itemsprite_Wassertafel_PLA.png/45px-Itemsprite_Wassertafel_PLA.png", "completed": false },
+        { "name": "Flame Plate", "image": "https://www.pokewiki.de/images/thumb/f/f0/Itemsprite_Feuertafel_PLA.png/45px-Itemsprite_Feuertafel_PLA.png", "completed": false },
+        { "name": "Toxic Plate", "image": "https://www.pokewiki.de/images/thumb/0/04/Itemsprite_Gifttafel_PLA.png/45px-Itemsprite_Gifttafel_PLA.png", "completed": false },
+        { "name": "Zap Plate", "image": "https://www.pokewiki.de/images/thumb/8/8f/Itemsprite_Blitztafel_PLA.png/45px-Itemsprite_Blitztafel_PLA.png", "completed": false },
+        { "name": "Sky Plate", "image": "https://www.pokewiki.de/images/thumb/5/58/Itemsprite_Wolkentafel_PLA.png/45px-Itemsprite_Wolkentafel_PLA.png", "completed": false },
+        { "name": "Icicle Plate", "image": "https://www.pokewiki.de/images/thumb/f/fc/Itemsprite_Frosttafel_PLA.png/45px-Itemsprite_Frosttafel_PLA.png", "completed": false },
+        { "name": "Stone Plate", "image": "https://www.pokewiki.de/images/thumb/f/f0/Itemsprite_Steintafel_PLA.png/45px-Itemsprite_Steintafel_PLA.png", "completed": false }
+      ],
+      "league": [
+        { "name": "Draco Plate", "image": "https://www.pokewiki.de/images/thumb/1/1d/Itemsprite_Dracotafel_PLA.png/45px-Itemsprite_Dracotafel_PLA.png", "completed": false },
+        { "name": "Iron Plate", "image": "https://www.pokewiki.de/images/thumb/c/c6/Itemsprite_Eisentafel_PLA.png/45px-Itemsprite_Eisentafel_PLA.png", "completed": false },
+        { "name": "Dread Plate", "image": "https://www.pokewiki.de/images/thumb/c/c0/Itemsprite_Furchttafel_PLA.png/45px-Itemsprite_Furchttafel_PLA.png", "completed": false },
+        { "name": "Blank Plate", "image": "https://www.pokewiki.de/images/thumb/2/20/Itemsprite_Neutraltafel_PLA.png/45px-Itemsprite_Neutraltafel_PLA.png", "completed": false },
+        { "name": "Fist Plate", "image": "https://www.pokewiki.de/images/thumb/2/2a/Itemsprite_Fausttafel_PLA.png/45px-Itemsprite_Fausttafel_PLA.png", "completed": false },
+        { "name": "Pixie Plate", "image": "https://www.pokewiki.de/images/thumb/8/86/Itemsprite_Feentafel_PLA.png/45px-Itemsprite_Feentafel_PLA.png", "completed": false },
+        { "name": "Spooky Plate", "image": "https://www.pokewiki.de/images/thumb/a/a9/Itemsprite_Spuktafel_PLA.png/45px-Itemsprite_Spuktafel_PLA.png", "completed": false }
+      ],
+      "postgame": [
+        { "name": "Legend Plate", "image": "https://www.pokewiki.de/images/thumb/5/56/Itemsprite_Legendentafel_PLA.png/45px-Itemsprite_Legendentafel_PLA.png", "completed": false }
+      ]
+    },
     "team": []
   },
   {
