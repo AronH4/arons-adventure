@@ -101,7 +101,7 @@ header {
   flex-direction: column;
   gap: 12px;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 /* Zeile 1: Badges rechtsbündig zur Lücke, League linksbündig */
@@ -193,6 +193,60 @@ header {
 }
 
 /* -------------------------------------------------- */
+/* UNTERES LAYOUT: LINKS / TEAM MITTE / RECHTS       */
+/* -------------------------------------------------- */
+
+.bottom-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr 220px;
+  gap: 20px;
+  align-items: start;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.side-card-wrapper {
+  display: flex;
+}
+
+.side-card-wrapper.left {
+  justify-content: flex-start;
+}
+
+.side-card-wrapper.right {
+  justify-content: flex-end;
+}
+
+.side-card {
+  background: #121212;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  padding: 12px;
+  width: 180px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.side-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.side-card-text {
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* -------------------------------------------------- */
 /* ZENTRIERTES TEAM GRID                              */
 /* -------------------------------------------------- */
 
@@ -201,7 +255,6 @@ header {
   justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
-  padding-top: 25px; /* Garantiert den Abstand zu den Badges darüber */
   margin-bottom: 20px;
 }
 
@@ -251,4 +304,15 @@ header {
 
 .pokemon-card ul li {
   margin: 2px 0;
+}
+
+/* Responsivität für kleine Bildschirme */
+@media (max-width: 1200px) {
+  .bottom-layout {
+    grid-template-columns: 1fr;
+  }
+  .side-card-wrapper.left,
+  .side-card-wrapper.right {
+    justify-content: center;
+  }
 }
