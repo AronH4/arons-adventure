@@ -249,7 +249,28 @@
     "title": "Y",
     "category": "upcoming",
     "cover": "https://www.pokewiki.de/images/thumb/5/57/Verpackungsvorderseite_Pok%C3%A9mon_Y_Deutschland.jpg/290px-Verpackungsvorderseite_Pok%C3%A9mon_Y_Deutschland.jpg",
-    "progress": {},
+    "progress": {
+      "badges": [
+        { "name": "Bug Badge", "image": "https://www.pokewiki.de/images/5/55/Krabbelorden.png", "completed": false },
+        { "name": "Cliff Badge", "image": "https://www.pokewiki.de/images/9/95/Wallorden.png", "completed": false },
+        { "name": "Rumble Badge", "image": "https://www.pokewiki.de/images/2/2f/Rauforden.png", "completed": false },
+        { "name": "Plant Badge", "image": "https://www.pokewiki.de/images/6/6a/Blattorden.png", "completed": false },
+        { "name": "Voltage Badge", "image": "https://www.pokewiki.de/images/8/80/Ampere-Orden.png", "completed": false },
+        { "name": "Fairy Badge", "image": "https://www.pokewiki.de/images/5/58/Feenorden.png", "completed": false },
+        { "name": "Psychic Badge", "image": "https://www.pokewiki.de/images/7/75/Psi-Orden.png", "completed": false },
+        { "name": "Iceberg Badge", "image": "https://www.pokewiki.de/images/6/66/Eisbergorden.png", "completed": false }
+      ],
+      "league": [
+        { "name": "Wikstrom", "image": "https://www.pokewiki.de/images/b/b6/Trainersprite_Thymelot_XY.png", "completed": false },
+        { "name": "Malva", "image": "https://www.pokewiki.de/images/5/57/Trainersprite_Pachira_XY.png", "completed": false },
+        { "name": "Drasna", "image": "https://www.pokewiki.de/images/f/f5/Trainersprite_Dracena_XY.png", "completed": false },
+        { "name": "Siebold", "image": "https://www.pokewiki.de/images/1/15/Trainersprite_Narcisse_XY.png", "completed": false },
+        { "name": "Diantha", "image": "https://www.pokewiki.de/images/8/85/Trainersprite_Diantha_XY.png", "completed": false }
+      ],
+      "postgame": [
+        { "name": "Zygarde", "image": "https://www.pokewiki.de/images/thumb/b/b4/Hauptartwork_718.png/244px-Hauptartwork_718.png", "completed": false }
+      ]
+    },
     "team": []
   },
   {
