@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arons Adventure</title>
   
-  <!-- IBM Plex Sans Condensed Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -26,16 +25,12 @@
   <main>
     <section id="games-grid" class="games-grid"></section>
 
-    <!-- Details-Bereich mit Layout für Sidebars links & rechts -->
     <section id="game-details" class="game-details hidden">
-      
-      <!-- Der Fortschritt (Badges) bleibt oben drüber -->
+      <!-- Oben: Orden & Fortschritt -->
       <div id="badges-container" class="badges-container"></div>
 
-      <!-- Unterer Bereich: Links Cover/Jahr | Mitte Team | Rechts Konsole -->
+      <!-- Unten: Links Cover | Mitte Pokémon | Rechts Konsole -->
       <div class="bottom-layout">
-        
-        <!-- Unten Links -->
         <div class="side-card-wrapper left">
           <div class="side-card">
             <img id="detail-cover" src="" alt="Spiele Cover">
@@ -43,19 +38,15 @@
           </div>
         </div>
 
-        <!-- Mitte: Pokémon-Team -->
         <div id="team-container" class="team-grid"></div>
 
-        <!-- Unten Rechts -->
         <div class="side-card-wrapper right">
           <div class="side-card">
             <img id="detail-console-img" src="" alt="Konsole Bild">
             <p id="detail-console-name" class="side-card-text"></p>
           </div>
         </div>
-
       </div>
-
     </section>
   </main>
 
