@@ -280,16 +280,16 @@
     "cover": "https://www.pokewiki.de/images/thumb/4/49/Verpackungsvorderseite_Pok%C3%A9mon_Mond_Deutschland.jpg/290px-Verpackungsvorderseite_Pok%C3%A9mon_Mond_Deutschland.jpg",
     "progress": {
       "badges": [
-        { "name": "Normalium Z", "image": "https://archives.bulbagarden.net/media/upload/thumb/f/f0/Dream_Normalium_Z_Sprite.png/50px-Dream_Normalium_Z_Sprite.png", "completed": false },
+        { "name": "Ilima's Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/f/f0/Dream_Normalium_Z_Sprite.png/50px-Dream_Normalium_Z_Sprite.png", "completed": false },
         { "name": "Melemele Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/c/cb/Melemele_Trial_Completion.png/100px-Melemele_Trial_Completion.png", "completed": false },
-        { "name": "Waterium Z", "image": "https://archives.bulbagarden.net/media/upload/thumb/e/ee/Dream_Waterium_Z_Sprite.png/50px-Dream_Waterium_Z_Sprite.png", "completed": false },
-        { "name": "Firium Z", "image": "https://archives.bulbagarden.net/media/upload/thumb/f/f1/Dream_Firium_Z_Sprite.png/50px-Dream_Firium_Z_Sprite.png", "completed": false },
-        { "name": "Grassium Z", "image": "https://archives.bulbagarden.net/media/upload/thumb/d/d7/Dream_Grassium_Z_Sprite.png/50px-Dream_Grassium_Z_Sprite.png", "completed": false },
+        { "name": "Lana's Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/e/ee/Dream_Waterium_Z_Sprite.png/50px-Dream_Waterium_Z_Sprite.png", "completed": false },
+        { "name": "Kiawe's Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/f/f1/Dream_Firium_Z_Sprite.png/50px-Dream_Firium_Z_Sprite.png", "completed": false },
+        { "name": "Mallow's Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/d/d7/Dream_Grassium_Z_Sprite.png/50px-Dream_Grassium_Z_Sprite.png", "completed": false },
         { "name": "Akala Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/d/d7/Akala_Trial_Completion.png/100px-Akala_Trial_Completion.png", "completed": false },
-        { "name": "Electrium Z", "image": "https://archives.bulbagarden.net/media/upload/thumb/e/e4/Dream_Electrium_Z_Sprite.png/50px-Dream_Electrium_Z_Sprite.png", "completed": false },
-        { "name": "Ghostium Z", "image": "https://archives.bulbagarden.net/media/upload/thumb/d/d1/Dream_Ghostium_Z_Sprite.png/50px-Dream_Ghostium_Z_Sprite.png", "completed": false },
+        { "name": "Sophocles' Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/e/e4/Dream_Electrium_Z_Sprite.png/50px-Dream_Electrium_Z_Sprite.png", "completed": false },
+        { "name": "Acerola's Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/d/d1/Dream_Ghostium_Z_Sprite.png/50px-Dream_Ghostium_Z_Sprite.png", "completed": false },
         { "name": "Ula'ula Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/3/3a/Ula%27ula_Trial_Completion.png/100px-Ula%27ula_Trial_Completion.png", "completed": false },
-        { "name": "Dragonium Z", "image": "https://www.pokewiki.de/images/1/14/Dracium_Z_PGL.png", "completed": false },
+        { "name": "Vast Poni Canyon Trial", "image": "https://www.pokewiki.de/images/1/14/Dracium_Z_PGL.png", "completed": false },
         { "name": "Poni Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/e/e3/Poni_Trial_Completion.png/100px-Poni_Trial_Completion.png", "completed": false }
       ],
       "league": [
