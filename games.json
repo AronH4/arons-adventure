@@ -322,14 +322,16 @@
         { "name": "Dragon Badge", "image": "https://www.pokewiki.de/images/thumb/b/b7/Drachen-Orden.png/130px-Drachen-Orden.png", "completed": false }
       ],
       "league": [
-        { "name": "Hala", "image": "https://www.pokewiki.de/images/4/4e/VS_Hala_SoMo.png", "completed": false },
-        { "name": "Olivia", "image": "https://www.pokewiki.de/images/8/8f/VS_Mayla_SoMo.png", "completed": false },
-        { "name": "Acerola", "image": "https://www.pokewiki.de/images/9/9e/VS_Lola_SoMo.png", "completed": false },
-        { "name": "Kahili", "image": "https://www.pokewiki.de/images/e/e4/VS_Kahili_SoMo.png", "completed": false },
-        { "name": "Prof. Kukui", "image": "https://www.pokewiki.de/images/2/2c/VS_Professor_Kukui_2_SoMo.png", "completed": false }
+        { "name": "Marnie", "image": "https://www.pokewiki.de/images/2/20/VS_Mary_SWSH.png", "completed": false },
+        { "name": "Hop", "image": "https://www.pokewiki.de/images/4/48/VS_Hop_SWSH.png", "completed": false },
+        { "name": "Bede", "image": "https://www.pokewiki.de/images/9/99/VS_Betys_SWSH.png", "completed": false },
+        { "name": "Nessa", "image": "https://www.pokewiki.de/images/4/42/VS_Kate_SWSH.png", "completed": false },
+        { "name": "Bea", "image": "https://www.pokewiki.de/images/f/f2/VS_Saida_SWSH.png", "completed": false },
+        { "name": "Raihan", "image": "https://www.pokewiki.de/images/f/fe/VS_Roy_SWSH.png", "completed": false },
+        { "name": "Leon", "image": "https://www.pokewiki.de/images/3/30/VS_Delion_SWSH.png", "completed": false }
       ],
       "postgame": [
-        { "name": "Necrozma", "image": "https://www.pokewiki.de/images/thumb/6/6a/Hauptartwork_800.png/250px-Hauptartwork_800.png", "completed": false }
+        { "name": "Battle Tower", "image": "https://www.pokewiki.de/images/thumb/c/cc/Meisterturmband.png/35px-Meisterturmband.png", "completed": false }
       ]
     },
     "team": []
