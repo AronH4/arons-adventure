@@ -220,7 +220,28 @@
     "title": "White",
     "category": "upcoming",
     "cover": "https://www.pokewiki.de/images/thumb/3/3a/Verpackungsvorderseite_Pok%C3%A9mon_Wei%C3%9Fe_Edition.jpg/290px-Verpackungsvorderseite_Pok%C3%A9mon_Wei%C3%9Fe_Edition.jpg",
-    "progress": {},
+    "progress": {
+      "badges": [
+        { "name": "Trio Badge", "image": "https://www.pokewiki.de/images/3/35/Triorden.png", "completed": false },
+        { "name": "Basic Badge", "image": "https://www.pokewiki.de/images/c/ce/Grundorden.png", "completed": false },
+        { "name": "Insect Badge", "image": "https://www.pokewiki.de/images/9/9a/K%C3%A4ferorden.png", "completed": false },
+        { "name": "Bolt Badge", "image": "https://www.pokewiki.de/images/d/de/Voltorden.png", "completed": false },
+        { "name": "Quake Badge", "image": "https://www.pokewiki.de/images/0/08/Seismo-Orden.png", "completed": false },
+        { "name": "Jet Badge", "image": "https://www.pokewiki.de/images/4/44/Jetorden.png", "completed": false },
+        { "name": "Freeze Badge", "image": "https://www.pokewiki.de/images/0/0d/Eiszapforden.png", "completed": false },
+        { "name": "Legend Badge", "image": "https://www.pokewiki.de/images/a/a2/Legendenorden.png", "completed": false }
+      ],
+      "league": [
+        { "name": "Shauntal", "image": "https://www.pokewiki.de/images/2/2c/Trainersprite_Anissa_S2W2.png", "completed": false },
+        { "name": "Grimsley", "image": "https://www.pokewiki.de/images/0/0e/Trainersprite_Astor_S2W2.png", "completed": false },
+        { "name": "Caitlin", "image": "https://www.pokewiki.de/images/e/eb/Trainersprite_Kattlea_S2W2.png", "completed": false },
+        { "name": "Marshal", "image": "https://www.pokewiki.de/images/4/4f/Trainersprite_Eugen_S2W2.png", "completed": false },
+        { "name": "N", "image": "https://www.pokewiki.de/images/8/8d/Trainersprite_N_S2W2.png", "completed": false }
+      ],
+      "postgame": [
+        { "name": "Alder", "image": "https://www.pokewiki.de/images/d/da/Trainersprite_Lauro_S2W2.png", "completed": false }
+      ]
+    },
     "team": []
   },
   {
