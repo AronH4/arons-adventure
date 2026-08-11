@@ -78,6 +78,21 @@ function showGameDetails(game) {
   const detailsSection = document.getElementById('game-details');
   detailsSection.classList.remove('hidden');
 
+  // 1. LINKS: Cover & Jahr
+  const coverImg = document.getElementById('detail-cover');
+  const yearText = document.getElementById('detail-year');
+  coverImg.src = game.cover || '';
+  coverImg.alt = game.title || 'Cover';
+  yearText.textContent = game.year || '';
+
+  // 2. RECHTS: Konsolen-Bild & Name
+  const consoleImg = document.getElementById('detail-console-img');
+  const consoleNameText = document.getElementById('detail-console-name');
+  consoleImg.src = game.consoleImage || '';
+  consoleImg.alt = game.consoleName || 'Konsole';
+  consoleNameText.textContent = game.consoleName || '';
+
+  // 3. MITTE: Badges & Fortschritt
   const badgesContainer = document.getElementById('badges-container');
   const progress = game.progress || {};
   
@@ -89,8 +104,6 @@ function showGameDetails(game) {
   const leagueHTML = league.map(renderBadgeCard).join('');
   const postgameHTML = postgame.map(renderBadgeCard).join('');
 
-  // Zeile 1: Badges (rechts) | Gap | League (links)
-  // Zeile 2: Postgame (zentriert)
   badgesContainer.innerHTML = `
     <div class="progress-row-1">
       <div class="badges-group">${badgesHTML}</div>
@@ -100,7 +113,7 @@ function showGameDetails(game) {
     ${postgame.length > 0 ? `<div class="progress-row-2">${postgameHTML}</div>` : ''}
   `;
 
-  // Team Rendern (ohne Location)
+  // 4. MITTE: Team Rendern
   const teamContainer = document.getElementById('team-container');
   const team = game.team || [];
   teamContainer.innerHTML = team.map(p => {
