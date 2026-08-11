@@ -278,7 +278,31 @@
     "title": "Moon",
     "category": "upcoming",
     "cover": "https://www.pokewiki.de/images/thumb/4/49/Verpackungsvorderseite_Pok%C3%A9mon_Mond_Deutschland.jpg/290px-Verpackungsvorderseite_Pok%C3%A9mon_Mond_Deutschland.jpg",
-    "progress": {},
+    "progress": {
+      "badges": [
+        { "name": "Normalium Z", "image": "https://archives.bulbagarden.net/media/upload/thumb/f/f0/Dream_Normalium_Z_Sprite.png/50px-Dream_Normalium_Z_Sprite.png", "completed": false },
+        { "name": "Melemele Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/c/cb/Melemele_Trial_Completion.png/100px-Melemele_Trial_Completion.png", "completed": false },
+        { "name": "Waterium Z", "image": "https://archives.bulbagarden.net/media/upload/thumb/e/ee/Dream_Waterium_Z_Sprite.png/50px-Dream_Waterium_Z_Sprite.png", "completed": false },
+        { "name": "Firium Z", "image": "https://archives.bulbagarden.net/media/upload/thumb/f/f1/Dream_Firium_Z_Sprite.png/50px-Dream_Firium_Z_Sprite.png", "completed": false },
+        { "name": "Grassium Z", "image": "https://archives.bulbagarden.net/media/upload/thumb/d/d7/Dream_Grassium_Z_Sprite.png/50px-Dream_Grassium_Z_Sprite.png", "completed": false },
+        { "name": "Akala Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/d/d7/Akala_Trial_Completion.png/100px-Akala_Trial_Completion.png", "completed": false },
+        { "name": "Electrium Z", "image": "https://archives.bulbagarden.net/media/upload/thumb/e/e4/Dream_Electrium_Z_Sprite.png/50px-Dream_Electrium_Z_Sprite.png", "completed": false },
+        { "name": "Ghostium Z", "image": "https://archives.bulbagarden.net/media/upload/thumb/d/d1/Dream_Ghostium_Z_Sprite.png/50px-Dream_Ghostium_Z_Sprite.png", "completed": false }
+        { "name": "Ula'ula Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/3/3a/Ula%27ula_Trial_Completion.png/100px-Ula%27ula_Trial_Completion.png", "completed": false }
+        { "name": "Dragonium Z", "image": "https://archives.bulbagarden.net/media/upload/thumb/b/ba/Dream_Dragonium_Z_Sprite.png/50px-Dream_Dragonium_Z_Sprite.png", "completed": false }
+        { "name": "Poni Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/e/e3/Poni_Trial_Completion.png/100px-Poni_Trial_Completion.png", "completed": false }
+      ],
+      "league": [
+        { "name": "Hala", "image": "https://www.pokewiki.de/images/4/4e/VS_Hala_SoMo.png", "completed": false },
+        { "name": "Olivia", "image": "https://www.pokewiki.de/images/8/8f/VS_Mayla_SoMo.png", "completed": false },
+        { "name": "Acerola", "image": "https://www.pokewiki.de/images/9/9e/VS_Lola_SoMo.png", "completed": false },
+        { "name": "Kahili", "image": "https://www.pokewiki.de/images/e/e4/VS_Kahili_SoMo.png", "completed": false },
+        { "name": "Prof. Kukui", "image": "https://www.pokewiki.de/images/2/2c/VS_Professor_Kukui_2_SoMo.png", "completed": false }
+      ],
+      "postgame": [
+        { "name": "Necrozma", "image": "https://www.pokewiki.de/images/thumb/6/6a/Hauptartwork_800.png/250px-Hauptartwork_800.png", "completed": false }
+      ]
+    },
     "team": []
   },
   {
