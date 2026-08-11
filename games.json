@@ -389,8 +389,7 @@
         { "name": "Poppy", "image": "https://www.pokewiki.de/images/6/69/VS_Poppy_KAPU.png", "completed": false },
         { "name": "Larry", "image": "https://www.pokewiki.de/images/5/53/VS_Aoki_2_KAPU.png", "completed": false },
         { "name": "Hassel", "image": "https://www.pokewiki.de/images/7/73/VS_Sinius_KAPU.png", "completed": false },
-        { "name": "Geeta", "image": "https://www.pokewiki.de/images/f/fd/VS_Sagaria_KAPU.png", "completed": false },
-        { "name": "Nemona", "image": "https://www.pokewiki.de/images/2/25/VS_Nemila_2_Purpur_KAPU.png", "completed": false }
+        { "name": "Geeta", "image": "https://www.pokewiki.de/images/f/fd/VS_Sagaria_KAPU.png", "completed": false }
       ],
       "postgame": [
         { "name": "AI Turo", "image": "https://www.pokewiki.de/images/3/32/VS_Futurus-KI_KAPU.png", "completed": false }
