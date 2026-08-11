@@ -1,7 +1,7 @@
 [
   {
     "id": "platinum",
-    "title": "Platinum",
+    "title": "PLATINUM",
     "category": "past",
     "cover": "https://www.pokewiki.de/images/thumb/1/16/Packshot_Pok%C3%A9mon_Platin-Edition.jpg/992px-Packshot_Pok%C3%A9mon_Platin-Edition.jpg?20131201114035",
     "year": "2009",
@@ -58,7 +58,7 @@
   },
   {
     "id": "heartgold",
-    "title": "HeartGold",
+    "title": "HEARTGOLD",
     "category": "past",
     "cover": "https://www.pokewiki.de/images/7/79/Pok%C3%A9mon_HeartGold_Packshot_%28D%29.jpg?20100122211034",
     "year": "2010",
@@ -115,7 +115,7 @@
   },
   {
     "id": "yellow",
-    "title": "Yellow Legacy",
+    "title": "YELLOW LEGACY",
     "category": "past",
     "cover": "https://www.pokewiki.de/images/thumb/f/f2/Pok%C3%A9mon_Gelb.png/290px-Pok%C3%A9mon_Gelb.png",
     "year": "2010 (2000)",
@@ -180,7 +180,7 @@
   },
   {
     "id": "emerald",
-    "title": "Emerald",
+    "title": "EMERALD",
     "category": "current",
     "cover": "https://www.pokewiki.de/images/thumb/1/1c/Pok%C3%A9mon_Smaragd-Edition.jpg/290px-Pok%C3%A9mon_Smaragd-Edition.jpg",
     "year": "2010 (2005)",
@@ -229,7 +229,7 @@
   },
   {
     "id": "white",
-    "title": "White",
+    "title": "WHITE",
     "category": "upcoming",
     "cover": "https://www.pokewiki.de/images/thumb/3/3a/Verpackungsvorderseite_Pok%C3%A9mon_Wei%C3%9Fe_Edition.jpg/290px-Verpackungsvorderseite_Pok%C3%A9mon_Wei%C3%9Fe_Edition.jpg",
     "year": "2011",
@@ -293,7 +293,7 @@
   },
   {
     "id": "moon",
-    "title": "Moon",
+    "title": "MOON",
     "category": "upcoming",
     "cover": "https://www.pokewiki.de/images/thumb/4/49/Verpackungsvorderseite_Pok%C3%A9mon_Mond_Deutschland.jpg/290px-Verpackungsvorderseite_Pok%C3%A9mon_Mond_Deutschland.jpg",
     "year": "2016",
@@ -328,7 +328,7 @@
   },
   {
     "id": "sword",
-    "title": "Sword",
+    "title": "SWORD",
     "category": "upcoming",
     "cover": "https://www.pokewiki.de/images/thumb/2/25/Verpackungsvorderseite_Pok%C3%A9mon_Schwert_Deutschland.png/290px-Verpackungsvorderseite_Pok%C3%A9mon_Schwert_Deutschland.png",
     "year": "2021 (2019)",
@@ -360,7 +360,7 @@
   },
   {
     "id": "arceus",
-    "title": "Legends: Arceus",
+    "title": "LEGENDS: ARCEUS",
     "category": "upcoming",
     "cover": "https://www.pokewiki.de/images/thumb/5/59/Verpackungsvorderseite_Pok%C3%A9mon-Legenden_Arceus_Deutschland.png/290px-Verpackungsvorderseite_Pok%C3%A9mon-Legenden_Arceus_Deutschland.png",
     "year": "2022",
@@ -397,7 +397,7 @@
   },
   {
     "id": "violet",
-    "title": "Violet",
+    "title": "VIOLET",
     "category": "upcoming",
     "cover": "https://www.pokewiki.de/images/thumb/5/58/Verpackungsvorderseite_Pok%C3%A9mon_Purpur_Deutschland.png/290px-Verpackungsvorderseite_Pok%C3%A9mon_Purpur_Deutschland.png",
     "year": "2022",
@@ -429,7 +429,7 @@
   },
   {
     "id": "windsandwaves",
-    "title": "Winds & Waves",
+    "title": "WINDS & WAVES",
     "category": "upcoming",
     "cover": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLsHiPiZ8kaYcjAcaChGkl74fsk643-9SWIHxrfN8aps866Adb021M9BAO&s=10",
     "year": "2027",
