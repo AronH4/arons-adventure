@@ -385,7 +385,7 @@
         { "name": "Iron Plate (Heatran)", "image": "https://www.pokewiki.de/images/thumb/c/c6/Itemsprite_Eisentafel_PLA.png/45px-Itemsprite_Eisentafel_PLA.png", "completed": false },
         { "name": "Dread Plate (Cresselia)", "image": "https://www.pokewiki.de/images/thumb/c/c0/Itemsprite_Furchttafel_PLA.png/45px-Itemsprite_Furchttafel_PLA.png", "completed": false },
         { "name": "Blank Plate (Regigigas)", "image": "https://www.pokewiki.de/images/thumb/2/20/Itemsprite_Neutraltafel_PLA.png/45px-Itemsprite_Neutraltafel_PLA.png", "completed": false },
-        { "name": "Fist Plate (BKamado)", "image": "https://www.pokewiki.de/images/thumb/2/2a/Itemsprite_Fausttafel_PLA.png/45px-Itemsprite_Fausttafel_PLA.png", "completed": false },
+        { "name": "Fist Plate (Kamado)", "image": "https://www.pokewiki.de/images/thumb/2/2a/Itemsprite_Fausttafel_PLA.png/45px-Itemsprite_Fausttafel_PLA.png", "completed": false },
         { "name": "Pixie Plate (Cogita)", "image": "https://www.pokewiki.de/images/thumb/8/86/Itemsprite_Feentafel_PLA.png/45px-Itemsprite_Feentafel_PLA.png", "completed": false },
         { "name": "Spooky Plate (Volo & Giratina)", "image": "https://www.pokewiki.de/images/thumb/a/a9/Itemsprite_Spuktafel_PLA.png/45px-Itemsprite_Spuktafel_PLA.png", "completed": false }
       ],
