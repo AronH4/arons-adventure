@@ -211,16 +211,16 @@
     "team": [
       {
         "name": "Blanas",
-        "level": 33,
+        "level": 35,
         "image": "https://www.pokewiki.de/images/thumb/d/da/Hauptartwork_274.png/234px-Hauptartwork_274.png",
         "ability": "Chlorophyll",
         "item": "Wundersaat",
         "moves": ["Kugelsaat", "Finte", "Zerschneider", "Blitz"]
       },
       {
-        "name": "Stollunior",
-        "level": 30,
-        "image": "https://www.pokewiki.de/images/thumb/1/18/Hauptartwork_304.png/250px-Hauptartwork_304.png",
+        "name": "Stollrak",
+        "level": 32,
+        "image": "https://www.pokewiki.de/images/3/3e/Hauptartwork_305.png",
         "ability": "Robustheit",
         "item": "Flinkklaue",
         "moves": ["Eisenschweif", "Kopfnuss", "Lehmschelle", "Eisenabwehr"]
