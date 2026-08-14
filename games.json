@@ -191,7 +191,7 @@
         { "name": "Stone Badge", "image": "https://www.pokewiki.de/images/thumb/2/2b/Steinorden.png/70px-Steinorden.png", "completed": true },
         { "name": "Knuckle Badge", "image": "https://www.pokewiki.de/images/thumb/d/dc/Kn%C3%B6chelorden.png/70px-Kn%C3%B6chelorden.png", "completed": true },
         { "name": "Dynamo Badge", "image": "https://www.pokewiki.de/images/thumb/f/f5/Dynamo-Orden.png/53px-Dynamo-Orden.png", "completed": true },
-        { "name": "Heat Badge", "image": "https://www.pokewiki.de/images/thumb/5/50/Hitzeorden.png/70px-Hitzeorden.png", "completed": false },
+        { "name": "Heat Badge", "image": "https://www.pokewiki.de/images/thumb/5/50/Hitzeorden.png/70px-Hitzeorden.png", "completed": true },
         { "name": "Balance Badge", "image": "https://www.pokewiki.de/images/thumb/b/bf/Balanceorden.png/70px-Balanceorden.png", "completed": false },
         { "name": "Feather Badge", "image": "https://www.pokewiki.de/images/thumb/c/c7/Federorden.png/61px-Federorden.png", "completed": false },
         { "name": "Mind Badge", "image": "https://www.pokewiki.de/images/thumb/c/cb/Mentalorden.png/70px-Mentalorden.png", "completed": false },
@@ -211,7 +211,7 @@
     "team": [
       {
         "name": "Blanas",
-        "level": 35,
+        "level": 36,
         "image": "https://www.pokewiki.de/images/thumb/d/da/Hauptartwork_274.png/234px-Hauptartwork_274.png",
         "ability": "Chlorophyll",
         "item": "Wundersaat",
@@ -219,11 +219,11 @@
       },
       {
         "name": "Stollrak",
-        "level": 32,
+        "level": 35,
         "image": "https://www.pokewiki.de/images/3/3e/Hauptartwork_305.png",
         "ability": "Robustheit",
         "item": "Flinkklaue",
-        "moves": ["Eisenschweif", "Kopfnuss", "Lehmschelle", "Eisenabwehr"]
+        "moves": ["Eisenschweif", "Kopfnuss", "Lehmschelle", "Stärke"]
       }
     ]
   },
