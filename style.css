@@ -235,15 +235,10 @@ header {
 }
 
 .side-card-text {
-  margin: 2px 0;
+  margin: 1px 0;
   font-size: 14px;
   color: #aaa;
-}
-
-.side-card-text.console-title {
-  font-size: 15px;
-  font-weight: bold;
-  color: #ddd;
+  font-weight: normal; /* Gleiche Schriftstärke wie Year */
 }
 
 /* -------------------------------------------------- */
@@ -319,7 +314,7 @@ header {
 }
 
 /* -------------------------------------------------- */
-/* DETAILED POKEMON PANEL (RECHTS UNTEN)             */
+/* DETAILED POKEMON PANEL (KOMPAKT & OPTIMIERT)       */
 /* -------------------------------------------------- */
 
 .poke-details-card {
@@ -327,23 +322,22 @@ header {
   border: 2px solid #ffffff;
   border-radius: 8px;
   width: 340px;
-  padding: 10px;
+  padding: 8px;
   box-sizing: border-box;
   color: #fff;
   font-size: 12px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  position: relative;
+  gap: 6px;
 }
 
-/* Header: Typen */
+/* Header: Typen ZENTRIERT */
 .pd-types-header {
   display: flex;
-  justify-content: flex-end;
-  gap: 6px;
+  justify-content: center;
+  gap: 8px;
   background: #2b2b2b;
-  padding: 4px 8px;
+  padding: 4px;
   border-radius: 4px;
 }
 
@@ -381,72 +375,98 @@ header {
 .pd-gender-symbol.male { color: #3b82f6; }
 .pd-gender-symbol.female { color: #ec4899; }
 
-/* Zeile 2: Kat | Dex | H/W */
-.pd-info-row-2 {
-  display: flex;
-  flex-direction: column;
+/* Kombinierte Zeile 2: Ruf | Kat + Dex + H/W | GIF */
+.pd-combined-row {
+  display: grid;
+  grid-template-columns: 55px 1fr 60px;
   align-items: center;
-  justify-content: center;
+  gap: 6px;
   background: #222;
-  padding: 6px;
+  padding: 4px 6px;
   border-radius: 4px;
-  text-align: center;
 }
 
-.pd-category {
-  font-size: 11px;
-  letter-spacing: 1px;
-  color: #ccc;
-  text-transform: uppercase;
-}
-
-.pd-dex-num {
-  font-size: 20px;
-  font-weight: bold;
-  color: #fff;
-  margin: 2px 0;
-}
-
-.pd-height-weight {
-  font-size: 11px;
-  color: #bbb;
-}
-
-/* Audio Cry Button */
+/* Ruf-Button */
 .pd-cry-btn {
   background: #333;
   border: 1px solid #555;
   color: #fff;
   border-radius: 4px;
-  padding: 4px 8px;
+  padding: 6px 2px;
   cursor: pointer;
   font-size: 11px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 2px;
   transition: background 0.2s;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .pd-cry-btn:hover {
   background: #444;
 }
 
-/* Haupt-Raster unten (Stats | GIF | Showdown | Flavor) */
-.pd-main-grid {
-  display: grid;
-  grid-template-columns: 130px 1fr;
-  gap: 8px;
+/* Mitte Kat + Dex + HW */
+.pd-info-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-/* Base Stats */
+.pd-category {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #ccc;
+  text-transform: uppercase;
+}
+
+.pd-dex-num {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.1;
+  margin: 1px 0;
+}
+
+.pd-height-weight {
+  font-size: 10px;
+  color: #bbb;
+}
+
+/* GIF-Rechts */
+.pd-gif-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+}
+
+.pd-gif-container img {
+  max-height: 50px;
+  max-width: 55px;
+  object-fit: contain;
+}
+
+/* Mittleres Grid: Base Stats (Links) & Showdown (Rechts) */
+.pd-mid-grid {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 6px;
+}
+
+/* Base Stats Box */
 .pd-stats-box {
   background: #222;
-  padding: 6px;
+  padding: 5px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 2px;
 }
 
 .pd-stats-title {
@@ -455,18 +475,17 @@ header {
   font-size: 11px;
   border-bottom: 1px solid #444;
   padding-bottom: 2px;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
 }
 
 .pd-stat-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   font-size: 10px;
 }
 
 .pd-stat-label {
-  width: 26px;
+  width: 24px;
   font-weight: bold;
   color: #aaa;
 }
@@ -482,7 +501,7 @@ header {
   height: 6px;
   background: #111;
   border-radius: 3px;
-  margin-left: 5px;
+  margin-left: 4px;
   overflow: hidden;
 }
 
@@ -492,37 +511,22 @@ header {
   border-radius: 3px;
 }
 
-/* Rechter Bereich: GIF + Showdown + Flavor */
-.pd-right-column {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.pd-gif-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 65px;
-  background: #222;
-  border-radius: 4px;
-}
-
-.pd-gif-container img {
-  max-height: 55px;
-  object-fit: contain;
-}
-
+/* Showdown Box */
 .pd-showdown-box {
   background: #222;
   border-radius: 4px;
-  padding: 4px;
+  padding: 5px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .pd-showdown-text {
   width: 100%;
-  height: 45px;
+  height: 100%;
+  min-height: 85px;
   background: transparent;
   border: none;
   color: #aaa;
@@ -530,34 +534,38 @@ header {
   font-family: monospace;
   resize: none;
   outline: none;
+  padding-right: 20px; /* Platz für Copy Button */
 }
 
+/* Vergrößerter Copy Button */
 .pd-copy-btn {
   position: absolute;
-  top: 4px;
-  right: 4px;
+  top: 5px;
+  right: 5px;
   background: #333;
   border: 1px solid #666;
   color: #fff;
-  border-radius: 3px;
-  padding: 2px 5px;
-  font-size: 9px;
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-size: 13px;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
 .pd-copy-btn:hover {
   background: #555;
 }
 
+/* Pokédex Eintrag ganz unten über die volle Breite */
 .pd-flavor-box {
   background: #222;
-  padding: 6px;
+  padding: 6px 8px;
   border-radius: 4px;
   font-size: 10px;
-  line-height: 1.2;
+  line-height: 1.25;
   color: #ddd;
-  max-height: 50px;
-  overflow-y: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 @media (max-width: 1300px) {
