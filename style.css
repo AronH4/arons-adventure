@@ -92,7 +92,7 @@ header {
 }
 
 /* -------------------------------------------------- */
-/* FORTSCHRITT / FLEXBOX-STRUKTUR (ALLES IN 1 ZEILE)  */
+/* FORTSCHRITT / TOUCH-SCROLLBAR (EINE ZEILE)        */
 /* -------------------------------------------------- */
 
 .badges-container {
@@ -104,11 +104,37 @@ header {
 
 .progress-row-1 {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 100%;
-  overflow-x: auto; /* Falls der Bildschirm zu schmal ist, kann man wischen/scrollen */
-  padding: 5px 0;
+  /* Erlaubt echtes, flüssiges Scrollen / Wischen */
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; 
+  
+  /* Verhindert Zeilenumbrüche */
+  flex-wrap: nowrap; 
+  
+  /* Verhindert das Zusammenquetschen auf schmalen Displays */
+  max-width: 100%;
+  padding: 10px 15px; 
+  box-sizing: border-box;
+}
+
+/* Scrollbar für Desktop/Mobile unaufdringlich/subtil gestalten */
+.progress-row-1::-webkit-scrollbar {
+  height: 6px;
+}
+
+.progress-row-1::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+
+.progress-row-1::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+.progress-row-1::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .badges-group,
@@ -116,10 +142,11 @@ header {
 .postgame-group {
   display: flex;
   gap: 8px;
+  flex-shrink: 0; /* Karten behalten ihre feste Breite und werden nicht gequetscht */
 }
 
 .row-gap {
-  width: 75px; /* Abstand zwischen den drei Kategorien */
+  width: 75px; /* Lücke zwischen den Kategorien */
   flex-shrink: 0;
 }
 
