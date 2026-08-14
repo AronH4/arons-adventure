@@ -211,7 +211,7 @@
     "team": [
       {
         "name": "Blanas",
-        "level": 37,
+        "level": 40,
         "image": "https://www.pokewiki.de/images/thumb/d/da/Hauptartwork_274.png/234px-Hauptartwork_274.png",
         "ability": "Chlorophyll",
         "item": "Wundersaat",
@@ -219,7 +219,7 @@
       },
       {
         "name": "Stollrak",
-        "level": 35,
+        "level": 37,
         "image": "https://www.pokewiki.de/images/3/3e/Hauptartwork_305.png",
         "ability": "Robustheit",
         "item": "Flinkklaue",
