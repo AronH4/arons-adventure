@@ -94,7 +94,7 @@
             "spe": 91
           },
           "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/rotom.gif",
-          "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
+          "showdown": "Rotom @ Choice Scarf\nAbility: Levitate\nShiny: No\nTera Type: Electric\nEVs: 252 SpA / 4 SpD / 252 Spe\nModest Nature\nIVs: 0 Atk\n- Thunderbolt\n- Volt Switch\n- Shadow Ball\n- Trick",
           "flavorText": "Es kann mit seinem Körper in elektrische Geräte eindringen und dann für Chaos sorgen. Es wurde lange Zeit erforscht, um als Energiequelle für einen besonderen Motor zu dienen."
         }
       },
@@ -128,7 +128,7 @@
             "spe": 60
           },
           "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/abomasnow.gif",
-          "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
+          "showdown": "Abomasnow (M) @ Icy Rock\nAbility: Snow Warning\nShiny: No\nTera Type: Water\nEVs: 252 HP / 4 SpD / 252 SpA\nModest Nature\nIVs: 0 Atk\n- Giga Drain\n- Blizzard\n- Aurora Veil\n- Earth Power",
           "flavorText": "Sie erscheinen beim Blühen der Schneeblumen und verschwinden wieder, sobald diese verblüht sind.  Es haust im Gebirge, wo ewiger Schnee liegt, und löst Blizzards aus, um sich zu verstecken."
         }
       }
@@ -202,7 +202,7 @@
             "spe": 78
           },
           "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/feraligatr.gif",
-          "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
+          "showdown": "Feraligatr (M) @ Life Orb\nAbility: Sheer Force\nShiny: No\nTera Type: Water\nEVs: 252 Atk / 4 Def / 252 Spe\nAdamant Nature\n- Liquidation\n- Ice Punch\n- Crunch\n- Dragon Dance",
           "flavorText": "Es schüchtert seine Feinde mit seinem riesigen Maul und Kiefer ein. Aufgrund seines Gewichts verlässt es das Wasser nur selten. Daher läuft es an Land auf allen Vieren."
         }
       },
@@ -235,7 +235,7 @@
             "spe": 65
           },
           "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/umbreon.gif",
-          "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
+          "showdown": "Umbreon (F) @ Leftovers\nAbility: Synchronize\nShiny: No\nTera Type: Poison\nEVs: 252 HP / 4 Def / 252 SpD\nCalm Nature\n- Foul Play\n- Toxic\n- Tickle\n- Moonlight",
           "flavorText": "Bei starkem Mondlicht oder bei Aufregung leuchten die ringförmigen Muster auf seinem Körper gelb auf. Fühlt es sich bedroht, sondert es einen starken Giftschweiß aus seinen Poren ab, um sich zu schützen. "
         }
       }
@@ -301,7 +301,7 @@
             "spe": 90
           },
           "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/pikachu.gif",
-          "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
+          "showdown": "Pikachu (M) @ Light Ball\nAbility: Lightning Rod\nShiny: No\nTera Type: Electric\nEVs: 252 SpA / 4 SpD / 252 Spe\nModest Nature\nIVs: 0 Atk\n- Thunderbolt\n- Surf\n- Grass Knot\n- Agility",
           "flavorText": "Es hat kleine Backentaschen, die mit Elektrizität gefüllt sind. Bei Gefahr entlädt es sie. Mit seinem gestreckten Schweif kann es sowohl die Umgebung prüfen, als auch harte Beeren grillen, um sie anschließend zu essen. "
         }
       },
@@ -335,7 +335,7 @@
             "spe": 110
           },
           "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/gengar.gif",
-          "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
+          "showdown": "Gengar (M) @ Focus Sash\nAbility: Cursed Body\nShiny: No\nTera Type: Ghost\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\nIVs: 0 Atk\n- Shadow Ball\n- Sludge Wave\n- Focus Blast\n- Nasty Plot",
           "flavorText": "Es entzieht seiner Umgebung Wärme. Wird dir plötzlich kalt, ist bestimmt ein Gengar in der Nähe. Es erschreckt bei Vollmond gerne Passanten mit Furcht erregenden Schattenspielen."
         }
       },
@@ -368,7 +368,7 @@
             "spe": 95
           },
           "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/arcanine.gif",
-          "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
+          "showdown": "Arcanine (M) @ Leftovers\nAbility: Intimidate\nShiny: No\nTera Type: Normal\nEVs: 160 HP / 80 Atk / 144 Def / 28 SpD / 96 Spe\nAdamant Nature\n- Flare Blitz\n- Will-O-Wisp\n- Extreme Speed\n- Curse",
           "flavorText": "Es entzieht seiner Umgebung Wärme. Wird dir plötzlich kalt, ist bestimmt ein Gengar in der Nähe. Es erschreckt bei Vollmond gerne Passanten mit Furcht erregenden Schattenspielen."
         }
       },
@@ -401,7 +401,7 @@
             "spe": 30
           },
           "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/snorlax.gif",
-          "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
+          "showdown": "Snorlax (M) @ Leftovers\nAbility: Thick Fat\nShiny: No\nTera Type: Ghost \nEVs: 4 HP / 252 Def / 252 SpD\nCareful Nature\n- Body Slam\n- Crunch\n- Earthquake\n- Curse",
           "flavorText": "Es wird in chinesischen Legenden beschrieben. Man sagt, es bewegt sich mit schier unglaublicher Geschwindigkeit. Sein bezauberndes Bellen klingt majestätisch und für sein wunderschönes Fell und seine Mähne wird es verehrt."
         }
       }
@@ -468,7 +468,7 @@
             "spe": 80
           },
           "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/shiftry.gif",
-          "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
+          "showdown": "Shiftry (M) @ Focus Sash\nAbility: Wind Rider\nShiny: No\nTera Type: Normal\nEVs: 252 Atk / 4 Def / 252 Spe\nAdamant Nature\n- Leaf Blade\n- Sucker Punch\n- Explosion\n- Swords Dance",
           "flavorText": "Es soll mit den eisigen Winterwinden auftauchen. Seit langer Zeit wird es als Wächter des Waldes gefürchtet und es lebt tief im Wald, wo kein Mensch hingelangt. Es kann die Gedanken des Gegners lesen und präventiv handeln."
         }
       },
