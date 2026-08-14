@@ -39,29 +39,29 @@
         "moves": ["Flammenblitz", "Nahkampf", "Zertrümmerer", "Erdbeben"],
         "details": {
           "types": [
-            "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
-            "https://www.pokewiki.de/images/2/20/Typ-Icon_Gestein_Gen8.png"
+            "https://www.pokewiki.de/images/thumb/4/4c/Typ-Icon_Feuer_Gen8.png/137px-Typ-Icon_Feuer_Gen8.png",
+            "https://www.pokewiki.de/images/thumb/f/f6/Typ-Icon_Kampf_Gen8.png/137px-Typ-Icon_Kampf_Gen8.png"
           ],
           "ball": "https://www.pokewiki.de/images/6/6a/Itemsprite_Pok%C3%A9ball_KAPU.png",
-          "location": "Granithöhle",
-          "catchDate": "19.07.2010",
+          "location": "Route 201",
+          "catchDate": "22.05.2009",
           "gender": "male",
-          "category": "Eisenpanzer",
-          "dexNumber": 306,
-          "height": "2,1 m",
-          "weight": "360 kg",
-          "cry": "https://play.pokemonshowdown.com/audio/cries/aggron.mp3",
+          "category": "Schimpanse",
+          "dexNumber": 392,
+          "height": "1,2 m",
+          "weight": "55 kg",
+          "cry": "https://play.pokemonshowdown.com/audio/cries/infernape.mp3",
           "stats": {
-            "hp": 70,
-            "atk": 110,
-            "def": 180,
-            "spa": 60,
-            "spd": 60,
-            "spe": 50
+            "hp": 76,
+            "atk": 104,
+            "def": 71,
+            "spa": 104,
+            "spd": 71,
+            "spe": 108
           },
-          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/aggron.gif",
-          "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
-          "flavorText": "Seine Stahlhörner werden ständig ein wenig länger. Daran kann man sein Alter ablesen. Die Kratzer und Abschürfungen in seinem Panzer sind stolze Andenken an Kämpfe. Auf der Suche nach Eisen, seiner Nahrung, gräbt es mit seinen Stahlhörnern sogar Tunnel durch Felsen."
+          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/infernape.gif",
+          "showdown": "Infernape (M) @ Choice Band\nAbility: Iron Fist\nShiny: No\nTera Type: Fighting\nEVs: 252 Atk / 4 SpD / 252 Spe\nJolly Nature\n- Flare Blitz\n- Close Combat\n- Mach Punch\n- U-turn",
+          "flavorText": "Es verwendet einzigarige Attacken mit dem Feuer an seinen Händen und Füßen. Die Krone aus Feuer ist Zeichen seines feurigen Wesens. Es stellt sich ausnahmslos jedem Gegner und hält diese mit seinen flinken Bewegungen zum Narren."
         }
       },
       {
@@ -73,29 +73,29 @@
         "moves": ["Donnerblitz", "Ladestrahl", "Spukball", "Blitz"],
         "details": {
           "types": [
-            "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
-            "https://www.pokewiki.de/images/2/20/Typ-Icon_Gestein_Gen8.png"
+            "https://www.pokewiki.de/images/thumb/c/cd/Typ-Icon_Elektro_Gen8.png/137px-Typ-Icon_Elektro_Gen8.png",
+            "https://www.pokewiki.de/images/thumb/0/06/Typ-Icon_Geist_Gen8.png/137px-Typ-Icon_Geist_Gen8.png"
           ],
           "ball": "https://www.pokewiki.de/images/6/6a/Itemsprite_Pok%C3%A9ball_KAPU.png",
-          "location": "Granithöhle",
-          "catchDate": "19.07.2010",
-          "gender": "male",
-          "category": "Eisenpanzer",
-          "dexNumber": 306,
-          "height": "2,1 m",
-          "weight": "360 kg",
-          "cry": "https://play.pokemonshowdown.com/audio/cries/aggron.mp3",
+          "location": "Alte Villa",
+          "catchDate": "26.05.2009",
+          "gender": null,
+          "category": "Plasma",
+          "dexNumber": 479,
+          "height": "0,3 m",
+          "weight": "0,3 kg",
+          "cry": "https://play.pokemonshowdown.com/audio/cries/rotom.mp3",
           "stats": {
-            "hp": 70,
-            "atk": 110,
-            "def": 180,
-            "spa": 60,
-            "spd": 60,
-            "spe": 50
+            "hp": 50,
+            "atk": 50,
+            "def": 77,
+            "spa": 95,
+            "spd": 77,
+            "spe": 91
           },
-          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/aggron.gif",
+          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/rotom.gif",
           "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
-          "flavorText": "Seine Stahlhörner werden ständig ein wenig länger. Daran kann man sein Alter ablesen. Die Kratzer und Abschürfungen in seinem Panzer sind stolze Andenken an Kämpfe. Auf der Suche nach Eisen, seiner Nahrung, gräbt es mit seinen Stahlhörnern sogar Tunnel durch Felsen."
+          "flavorText": "Es kann mit seinem Körper in elektrische Geräte eindringen und dann für Chaos sorgen. Es wurde lange Zeit erforscht, um als Energiequelle für einen besonderen Motor zu dienen."
         }
       },
       {
@@ -107,29 +107,29 @@
         "moves": ["Energieball", "Blizzard", "Eisstrahl", "Kraxler"],
         "details": {
           "types": [
-            "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
-            "https://www.pokewiki.de/images/2/20/Typ-Icon_Gestein_Gen8.png"
+            "https://www.pokewiki.de/images/thumb/c/c0/Typ-Icon_Pflanze_Gen8.png/137px-Typ-Icon_Pflanze_Gen8.png",
+            "https://www.pokewiki.de/images/thumb/e/e4/Typ-Icon_Eis_Gen8.png/137px-Typ-Icon_Eis_Gen8.png"
           ],
           "ball": "https://www.pokewiki.de/images/6/6a/Itemsprite_Pok%C3%A9ball_KAPU.png",
-          "location": "Granithöhle",
-          "catchDate": "19.07.2010",
+          "location": "Stärkeufer",
+          "catchDate": "06.06.2009",
           "gender": "male",
-          "category": "Eisenpanzer",
-          "dexNumber": 306,
-          "height": "2,1 m",
-          "weight": "360 kg",
-          "cry": "https://play.pokemonshowdown.com/audio/cries/aggron.mp3",
+          "category": "Frostbaum",
+          "dexNumber": 460,
+          "height": "2,2 m",
+          "weight": "135,5 kg",
+          "cry": "https://play.pokemonshowdown.com/audio/cries/abomasnow.mp3",
           "stats": {
-            "hp": 70,
-            "atk": 110,
-            "def": 180,
-            "spa": 60,
-            "spd": 60,
-            "spe": 50
+            "hp": 90,
+            "atk": 92,
+            "def": 75,
+            "spa": 92,
+            "spd": 85,
+            "spe": 60
           },
-          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/aggron.gif",
+          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/abomasnow.gif",
           "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
-          "flavorText": "Seine Stahlhörner werden ständig ein wenig länger. Daran kann man sein Alter ablesen. Die Kratzer und Abschürfungen in seinem Panzer sind stolze Andenken an Kämpfe. Auf der Suche nach Eisen, seiner Nahrung, gräbt es mit seinen Stahlhörnern sogar Tunnel durch Felsen."
+          "flavorText": "Sie erscheinen beim Blühen der Schneeblumen und verschwinden wieder, sobald diese verblüht sind.  Es haust im Gebirge, wo ewiger Schnee liegt, und löst Blizzards aus, um sich zu verstecken."
         }
       }
     ]
@@ -182,29 +182,28 @@
         "moves": ["Kaskade", "Eiszahn", "Erdbeben", "Kraxler"],
         "details": {
           "types": [
-            "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
-            "https://www.pokewiki.de/images/2/20/Typ-Icon_Gestein_Gen8.png"
+            "https://www.pokewiki.de/images/thumb/9/9b/Typ-Icon_Wasser_Gen8.png/137px-Typ-Icon_Wasser_Gen8.png"
           ],
           "ball": "https://www.pokewiki.de/images/6/6a/Itemsprite_Pok%C3%A9ball_KAPU.png",
-          "location": "Granithöhle",
-          "catchDate": "19.07.2010",
+          "location": "Neuborkia",
+          "catchDate": "27.03.2010",
           "gender": "male",
-          "category": "Eisenpanzer",
-          "dexNumber": 306,
-          "height": "2,1 m",
-          "weight": "360 kg",
-          "cry": "https://play.pokemonshowdown.com/audio/cries/aggron.mp3",
+          "category": "Alligator",
+          "dexNumber": 160,
+          "height": "2,3 m",
+          "weight": "88,8 kg",
+          "cry": "https://play.pokemonshowdown.com/audio/cries/feraligatr.mp3",
           "stats": {
-            "hp": 70,
-            "atk": 110,
-            "def": 180,
-            "spa": 60,
-            "spd": 60,
-            "spe": 50
+            "hp": 85,
+            "atk": 105,
+            "def": 100,
+            "spa": 79,
+            "spd": 83,
+            "spe": 78
           },
-          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/aggron.gif",
+          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/feraligatr.gif",
           "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
-          "flavorText": "Seine Stahlhörner werden ständig ein wenig länger. Daran kann man sein Alter ablesen. Die Kratzer und Abschürfungen in seinem Panzer sind stolze Andenken an Kämpfe. Auf der Suche nach Eisen, seiner Nahrung, gräbt es mit seinen Stahlhörnern sogar Tunnel durch Felsen."
+          "flavorText": "Es schüchtert seine Feinde mit seinem riesigen Maul und Kiefer ein. Aufgrund seines Gewichts verlässt es das Wasser nur selten. Daher läuft es an Land auf allen Vieren."
         }
       },
       {
@@ -216,29 +215,28 @@
         "moves": ["Finsteraura", "Psychokinese", "Zerschneider", "Blitz"],
         "details": {
           "types": [
-            "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
-            "https://www.pokewiki.de/images/2/20/Typ-Icon_Gestein_Gen8.png"
+            "https://www.pokewiki.de/images/thumb/7/73/Typ-Icon_Unlicht_Gen8.png/137px-Typ-Icon_Unlicht_Gen8.png"
           ],
           "ball": "https://www.pokewiki.de/images/6/6a/Itemsprite_Pok%C3%A9ball_KAPU.png",
-          "location": "Granithöhle",
-          "catchDate": "19.07.2010",
-          "gender": "male",
-          "category": "Eisenpanzer",
-          "dexNumber": 306,
-          "height": "2,1 m",
-          "weight": "360 kg",
-          "cry": "https://play.pokemonshowdown.com/audio/cries/aggron.mp3",
+          "location": "Dukatia City",
+          "catchDate": "30.03.2010",
+          "gender": "female",
+          "category": "Mondkatze",
+          "dexNumber": 197,
+          "height": "1,0 m",
+          "weight": "27 kg",
+          "cry": "https://play.pokemonshowdown.com/audio/cries/umbreon.mp3",
           "stats": {
-            "hp": 70,
-            "atk": 110,
-            "def": 180,
+            "hp": 95,
+            "atk": 65,
+            "def": 110,
             "spa": 60,
-            "spd": 60,
-            "spe": 50
+            "spd": 130,
+            "spe": 65
           },
-          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/aggron.gif",
+          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/umbreon.gif",
           "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
-          "flavorText": "Seine Stahlhörner werden ständig ein wenig länger. Daran kann man sein Alter ablesen. Die Kratzer und Abschürfungen in seinem Panzer sind stolze Andenken an Kämpfe. Auf der Suche nach Eisen, seiner Nahrung, gräbt es mit seinen Stahlhörnern sogar Tunnel durch Felsen."
+          "flavorText": "Bei starkem Mondlicht oder bei Aufregung leuchten die ringförmigen Muster auf seinem Körper gelb auf. Fühlt es sich bedroht, sondert es einen starken Giftschweiß aus seinen Poren ab, um sich zu schützen. "
         }
       }
     ]
@@ -283,29 +281,28 @@
         "moves": ["Donnerblitz", "Surfer", "Fliegen", "Zerschneider"],
         "details": {
           "types": [
-            "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
-            "https://www.pokewiki.de/images/2/20/Typ-Icon_Gestein_Gen8.png"
+            "https://www.pokewiki.de/images/thumb/c/cd/Typ-Icon_Elektro_Gen8.png/137px-Typ-Icon_Elektro_Gen8.png"
           ],
           "ball": "https://www.pokewiki.de/images/6/6a/Itemsprite_Pok%C3%A9ball_KAPU.png",
-          "location": "Granithöhle",
-          "catchDate": "19.07.2010",
+          "location": "Prof. Eichs Labor",
+          "catchDate": "09.04.2010",
           "gender": "male",
-          "category": "Eisenpanzer",
-          "dexNumber": 306,
-          "height": "2,1 m",
-          "weight": "360 kg",
-          "cry": "https://play.pokemonshowdown.com/audio/cries/aggron.mp3",
+          "category": "Maus",
+          "dexNumber": 025,
+          "height": "0,4 m",
+          "weight": "6 kg",
+          "cry": "https://play.pokemonshowdown.com/audio/cries/pikachu-starter.mp3",
           "stats": {
-            "hp": 70,
-            "atk": 110,
-            "def": 180,
-            "spa": 60,
-            "spd": 60,
-            "spe": 50
+            "hp": 35,
+            "atk": 55,
+            "def": 40,
+            "spa": 50,
+            "spd": 50,
+            "spe": 90
           },
-          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/aggron.gif",
+          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/pikachu.gif",
           "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
-          "flavorText": "Seine Stahlhörner werden ständig ein wenig länger. Daran kann man sein Alter ablesen. Die Kratzer und Abschürfungen in seinem Panzer sind stolze Andenken an Kämpfe. Auf der Suche nach Eisen, seiner Nahrung, gräbt es mit seinen Stahlhörnern sogar Tunnel durch Felsen."
+          "flavorText": "Es hat kleine Backentaschen, die mit Elektrizität gefüllt sind. Bei Gefahr entlädt es sie. Mit seinem gestreckten Schweif kann es sowohl die Umgebung prüfen, als auch harte Beeren grillen, um sie anschließend zu essen. "
         }
       },
       {
@@ -317,29 +314,29 @@
         "moves": ["Nachtnebel", "Psychokinese", "Megasauger", "Stärke"],
         "details": {
           "types": [
-            "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
-            "https://www.pokewiki.de/images/2/20/Typ-Icon_Gestein_Gen8.png"
+            "https://www.pokewiki.de/images/thumb/0/06/Typ-Icon_Geist_Gen8.png/137px-Typ-Icon_Geist_Gen8.png",
+            "https://www.pokewiki.de/images/thumb/4/4b/Typ-Icon_Gift_Gen8.png/137px-Typ-Icon_Gift_Gen8.png"
           ],
           "ball": "https://www.pokewiki.de/images/6/6a/Itemsprite_Pok%C3%A9ball_KAPU.png",
-          "location": "Granithöhle",
-          "catchDate": "19.07.2010",
+          "location": "Pokémon-Turm",
+          "catchDate": "11.04.2010",
           "gender": "male",
-          "category": "Eisenpanzer",
-          "dexNumber": 306,
-          "height": "2,1 m",
-          "weight": "360 kg",
-          "cry": "https://play.pokemonshowdown.com/audio/cries/aggron.mp3",
+          "category": "Schatten",
+          "dexNumber": 094,
+          "height": "1,5 m",
+          "weight": "40,5 kg",
+          "cry": "https://play.pokemonshowdown.com/audio/cries/gengar.mp3",
           "stats": {
-            "hp": 70,
-            "atk": 110,
-            "def": 180,
-            "spa": 60,
-            "spd": 60,
-            "spe": 50
+            "hp": 60,
+            "atk": 65,
+            "def": 60,
+            "spa": 130,
+            "spd": 75,
+            "spe": 110
           },
-          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/aggron.gif",
+          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/gengar.gif",
           "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
-          "flavorText": "Seine Stahlhörner werden ständig ein wenig länger. Daran kann man sein Alter ablesen. Die Kratzer und Abschürfungen in seinem Panzer sind stolze Andenken an Kämpfe. Auf der Suche nach Eisen, seiner Nahrung, gräbt es mit seinen Stahlhörnern sogar Tunnel durch Felsen."
+          "flavorText": "Es entzieht seiner Umgebung Wärme. Wird dir plötzlich kalt, ist bestimmt ein Gengar in der Nähe. Es erschreckt bei Vollmond gerne Passanten mit Furcht erregenden Schattenspielen."
         }
       },
       {
@@ -351,29 +348,28 @@
         "moves": ["Flammenwurf", "Bodyslam", "Schaufler", "Reflektor"],
         "details": {
           "types": [
-            "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
-            "https://www.pokewiki.de/images/2/20/Typ-Icon_Gestein_Gen8.png"
+            "https://www.pokewiki.de/images/thumb/4/4c/Typ-Icon_Feuer_Gen8.png/137px-Typ-Icon_Feuer_Gen8.png"
           ],
           "ball": "https://www.pokewiki.de/images/6/6a/Itemsprite_Pok%C3%A9ball_KAPU.png",
-          "location": "Granithöhle",
-          "catchDate": "19.07.2010",
+          "location": "Pokémon-Haus",
+          "catchDate": "15.04.2010",
           "gender": "male",
-          "category": "Eisenpanzer",
-          "dexNumber": 306,
-          "height": "2,1 m",
-          "weight": "360 kg",
-          "cry": "https://play.pokemonshowdown.com/audio/cries/aggron.mp3",
+          "category": "Shishi",
+          "dexNumber": 059,
+          "height": "1,9 m",
+          "weight": "155 kg",
+          "cry": "https://play.pokemonshowdown.com/audio/cries/arcanine.mp3",
           "stats": {
-            "hp": 70,
+            "hp": 90,
             "atk": 110,
-            "def": 180,
-            "spa": 60,
-            "spd": 60,
-            "spe": 50
+            "def": 80,
+            "spa": 100,
+            "spd": 80,
+            "spe": 95
           },
-          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/aggron.gif",
+          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/arcanine.gif",
           "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
-          "flavorText": "Seine Stahlhörner werden ständig ein wenig länger. Daran kann man sein Alter ablesen. Die Kratzer und Abschürfungen in seinem Panzer sind stolze Andenken an Kämpfe. Auf der Suche nach Eisen, seiner Nahrung, gräbt es mit seinen Stahlhörnern sogar Tunnel durch Felsen."
+          "flavorText": "Es entzieht seiner Umgebung Wärme. Wird dir plötzlich kalt, ist bestimmt ein Gengar in der Nähe. Es erschreckt bei Vollmond gerne Passanten mit Furcht erregenden Schattenspielen."
         }
       },
       {
@@ -385,29 +381,28 @@
         "moves": ["Bodyslam", "Erdbeben", "Geowurf", "Erholung"],
         "details": {
           "types": [
-            "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
-            "https://www.pokewiki.de/images/2/20/Typ-Icon_Gestein_Gen8.png"
+            "https://www.pokewiki.de/images/thumb/b/bc/Typ-Icon_Normal_Gen8.png/137px-Typ-Icon_Normal_Gen8.png"
           ],
           "ball": "https://www.pokewiki.de/images/6/6a/Itemsprite_Pok%C3%A9ball_KAPU.png",
-          "location": "Granithöhle",
-          "catchDate": "19.07.2010",
+          "location": "Route 12",
+          "catchDate": "13.04.2010",
           "gender": "male",
-          "category": "Eisenpanzer",
-          "dexNumber": 306,
+          "category": "Tagträumer",
+          "dexNumber": 143,
           "height": "2,1 m",
-          "weight": "360 kg",
-          "cry": "https://play.pokemonshowdown.com/audio/cries/aggron.mp3",
+          "weight": "460 kg",
+          "cry": "https://play.pokemonshowdown.com/audio/cries/snorlax.mp3",
           "stats": {
-            "hp": 70,
+            "hp": 160,
             "atk": 110,
-            "def": 180,
-            "spa": 60,
-            "spd": 60,
-            "spe": 50
+            "def": 65,
+            "spa": 65,
+            "spd": 110,
+            "spe": 30
           },
-          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/aggron.gif",
+          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/snorlax.gif",
           "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
-          "flavorText": "Seine Stahlhörner werden ständig ein wenig länger. Daran kann man sein Alter ablesen. Die Kratzer und Abschürfungen in seinem Panzer sind stolze Andenken an Kämpfe. Auf der Suche nach Eisen, seiner Nahrung, gräbt es mit seinen Stahlhörnern sogar Tunnel durch Felsen."
+          "flavorText": "Es wird in chinesischen Legenden beschrieben. Man sagt, es bewegt sich mit schier unglaublicher Geschwindigkeit. Sein bezauberndes Bellen klingt majestätisch und für sein wunderschönes Fell und seine Mähne wird es verehrt."
         }
       }
     ]
@@ -452,29 +447,29 @@
         "moves": ["Kugelsaat", "Finte", "Zerschneider", "Blitz"],
         "details": {
           "types": [
-            "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
-            "https://www.pokewiki.de/images/2/20/Typ-Icon_Gestein_Gen8.png"
+            "https://www.pokewiki.de/images/thumb/c/c0/Typ-Icon_Pflanze_Gen8.png/137px-Typ-Icon_Pflanze_Gen8.png",
+            "https://www.pokewiki.de/images/thumb/7/73/Typ-Icon_Unlicht_Gen8.png/137px-Typ-Icon_Unlicht_Gen8.png"
           ],
           "ball": "https://www.pokewiki.de/images/6/6a/Itemsprite_Pok%C3%A9ball_KAPU.png",
-          "location": "Granithöhle",
-          "catchDate": "19.07.2010",
+          "location": "Route 102",
+          "catchDate": "18.07.2010",
           "gender": "male",
-          "category": "Eisenpanzer",
-          "dexNumber": 306,
-          "height": "2,1 m",
-          "weight": "360 kg",
-          "cry": "https://play.pokemonshowdown.com/audio/cries/aggron.mp3",
+          "category": "Eichel",
+          "dexNumber": 275,
+          "height": "1,3 m",
+          "weight": "59,6 kg",
+          "cry": "https://play.pokemonshowdown.com/audio/cries/shiftry.mp3",
           "stats": {
-            "hp": 70,
-            "atk": 110,
-            "def": 180,
-            "spa": 60,
+            "hp": 90,
+            "atk": 100,
+            "def": 60,
+            "spa": 90,
             "spd": 60,
-            "spe": 50
+            "spe": 80
           },
-          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/aggron.gif",
+          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/shiftry.gif",
           "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
-          "flavorText": "Seine Stahlhörner werden ständig ein wenig länger. Daran kann man sein Alter ablesen. Die Kratzer und Abschürfungen in seinem Panzer sind stolze Andenken an Kämpfe. Auf der Suche nach Eisen, seiner Nahrung, gräbt es mit seinen Stahlhörnern sogar Tunnel durch Felsen."
+          "flavorText": "Es soll mit den eisigen Winterwinden auftauchen. Seit langer Zeit wird es als Wächter des Waldes gefürchtet und es lebt tief im Wald, wo kein Mensch hingelangt. Es kann die Gedanken des Gegners lesen und präventiv handeln."
         }
       },
       {
@@ -520,29 +515,29 @@
         "moves": ["Aquaknarre", "Flügelschlag", "Superschall", "Weißnebel"],
         "details": {
           "types": [
-            "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
-            "https://www.pokewiki.de/images/2/20/Typ-Icon_Gestein_Gen8.png"
+            "https://www.pokewiki.de/images/thumb/9/9b/Typ-Icon_Wasser_Gen8.png/137px-Typ-Icon_Wasser_Gen8.png",
+            "https://www.pokewiki.de/images/thumb/c/c9/Typ-Icon_Flug_Gen8.png/137px-Typ-Icon_Flug_Gen8.png"
           ],
           "ball": "https://www.pokewiki.de/images/6/6a/Itemsprite_Pok%C3%A9ball_KAPU.png",
-          "location": "Granithöhle",
-          "catchDate": "19.07.2010",
+          "location": "Route 119",
+          "catchDate": "23.07.2010",
           "gender": "male",
-          "category": "Eisenpanzer",
-          "dexNumber": 306,
-          "height": "2,1 m",
-          "weight": "360 kg",
-          "cry": "https://play.pokemonshowdown.com/audio/cries/aggron.mp3",
+          "category": "Pelikan",
+          "dexNumber": 279,
+          "height": "1,2 m",
+          "weight": "28 kg",
+          "cry": "https://play.pokemonshowdown.com/audio/cries/pelipper.mp3",
           "stats": {
-            "hp": 70,
-            "atk": 110,
-            "def": 180,
-            "spa": 60,
-            "spd": 60,
-            "spe": 50
+            "hp": 60,
+            "atk": 50,
+            "def": 100,
+            "spa": 95,
+            "spd": 70,
+            "spe": 65
           },
-          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/aggron.gif",
+          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/pelipper.gif",
           "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
-          "flavorText": "Seine Stahlhörner werden ständig ein wenig länger. Daran kann man sein Alter ablesen. Die Kratzer und Abschürfungen in seinem Panzer sind stolze Andenken an Kämpfe. Auf der Suche nach Eisen, seiner Nahrung, gräbt es mit seinen Stahlhörnern sogar Tunnel durch Felsen."
+          "flavorText": "to be added soon :)"
         }
       }
     ]
