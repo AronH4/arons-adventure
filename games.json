@@ -36,7 +36,7 @@
         "image": "https://www.pokewiki.de/images/thumb/2/28/Hauptartwork_392.png/250px-Hauptartwork_392.png",
         "ability": "Großbrand",
         "item": "Seegesang",
-        "moves": ["Flammenblitz", "Nahkampf", "Zertrümmerer", "Erdbeben"]
+        "moves": ["Flammenblitz", "Nahkampf", "Zertrümmerer", "Erdbeben"],
         "details": {
           "types": [
             "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
@@ -70,7 +70,7 @@
         "image": "https://www.pokewiki.de/images/thumb/c/cf/Hauptartwork_479.png/250px-Hauptartwork_479.png",
         "ability": "Schwebe",
         "item": "Bannsticker",
-        "moves": ["Donnerblitz", "Ladestrahl", "Spukball", "Blitz"]
+        "moves": ["Donnerblitz", "Ladestrahl", "Spukball", "Blitz"],
         "details": {
           "types": [
             "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
@@ -104,7 +104,7 @@
         "image": "https://www.pokewiki.de/images/thumb/a/a8/Hauptartwork_460.png/250px-Hauptartwork_460.png",
         "ability": "Hagelsturm",
         "item": "Wahlglas",
-        "moves": ["Energieball", "Blizzard", "Eisstrahl", "Kraxler"]
+        "moves": ["Energieball", "Blizzard", "Eisstrahl", "Kraxler"],
         "details": {
           "types": [
             "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
@@ -179,7 +179,7 @@
         "image": "https://www.pokewiki.de/images/thumb/6/68/Hauptartwork_160.png/219px-Hauptartwork_160.png",
         "ability": "Sturzbach",
         "item": "Expertengurt",
-        "moves": ["Kaskade", "Eiszahn", "Erdbeben", "Kraxler"]
+        "moves": ["Kaskade", "Eiszahn", "Erdbeben", "Kraxler"],
         "details": {
           "types": [
             "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
@@ -213,7 +213,7 @@
         "image": "https://www.pokewiki.de/images/thumb/5/5e/Hauptartwork_197.png/207px-Hauptartwork_197.png",
         "ability": "Synchro",
         "item": "Schlauglas",
-        "moves": ["Finsteraura", "Psychokinese", "Zerschneider", "Blitz"]
+        "moves": ["Finsteraura", "Psychokinese", "Zerschneider", "Blitz"],
         "details": {
           "types": [
             "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
@@ -280,7 +280,7 @@
         "image": "https://www.pokewiki.de/images/thumb/9/9e/Hauptartwork_025.png/250px-Hauptartwork_025.png",
         "ability": "-",
         "item": "-",
-        "moves": ["Donnerblitz", "Surfer", "Fliegen", "Zerschneider"]
+        "moves": ["Donnerblitz", "Surfer", "Fliegen", "Zerschneider"],
         "details": {
           "types": [
             "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
@@ -314,7 +314,7 @@
         "image": "https://www.pokewiki.de/images/thumb/4/46/Hauptartwork_094.png/244px-Hauptartwork_094.png",
         "ability": "-",
         "item": "-",
-        "moves": ["Nachtnebel", "Psychokinese", "Megasauger", "Stärke"]
+        "moves": ["Nachtnebel", "Psychokinese", "Megasauger", "Stärke"],
         "details": {
           "types": [
             "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
@@ -348,7 +348,7 @@
         "image": "https://www.pokewiki.de/images/thumb/e/e2/Hauptartwork_059.png/250px-Hauptartwork_059.png",
         "ability": "-",
         "item": "-",
-        "moves": ["Flammenwurf", "Bodyslam", "Schaufler", "Reflektor"]
+        "moves": ["Flammenwurf", "Bodyslam", "Schaufler", "Reflektor"],
         "details": {
           "types": [
             "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
@@ -382,7 +382,7 @@
         "image": "https://www.pokewiki.de/images/thumb/6/68/Hauptartwork_143.png/250px-Hauptartwork_143.png",
         "ability": "-",
         "item": "-",
-        "moves": ["Bodyslam", "Erdbeben", "Geowurf", "Erholung"]
+        "moves": ["Bodyslam", "Erdbeben", "Geowurf", "Erholung"],
         "details": {
           "types": [
             "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
@@ -449,7 +449,7 @@
         "image": "https://www.pokewiki.de/images/thumb/d/da/Hauptartwork_274.png/234px-Hauptartwork_274.png",
         "ability": "Chlorophyll",
         "item": "Wundersaat",
-        "moves": ["Kugelsaat", "Finte", "Zerschneider", "Blitz"]
+        "moves": ["Kugelsaat", "Finte", "Zerschneider", "Blitz"],
         "details": {
           "types": [
             "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
@@ -517,7 +517,7 @@
         "image": "https://www.pokewiki.de/images/thumb/3/34/Hauptartwork_278.png/375px-Hauptartwork_278.png",
         "ability": "Adlerauge",
         "item": "noch kein Item",
-        "moves": ["Aquaknarre", "Flügelschlag", "Superschall", "Weißnebel"]
+        "moves": ["Aquaknarre", "Flügelschlag", "Superschall", "Weißnebel"],
         "details": {
           "types": [
             "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
