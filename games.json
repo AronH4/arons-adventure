@@ -223,7 +223,33 @@
         "image": "https://www.pokewiki.de/images/thumb/c/cb/Hauptartwork_306.png/374px-Hauptartwork_306.png",
         "ability": "Robustheit",
         "item": "Flinkklaue",
-        "moves": ["Eisenschweif", "Kopfnuss", "Lehmschelle", "Stärke"]
+        "moves": ["Eisenschweif", "Kopfnuss", "Lehmschelle", "Stärke"],
+        "details": {
+          "types": [
+            "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
+            "https://www.pokewiki.de/images/2/20/Typ-Icon_Gestein_Gen8.png"
+          ],
+          "ball": "https://www.pokewiki.de/images/6/6a/Itemsprite_Pok%C3%A9ball_KAPU.png",
+          "location": "Granithöhle",
+          "catchDate": "19.07.2010",
+          "gender": "male",
+          "category": "Eisenpanzer",
+          "dexNumber": 306,
+          "height": "2,1 m",
+          "weight": "360 kg",
+          "cry": "https://play.pokemonshowdown.com/audio/cries/aggron.mp3",
+          "stats": {
+            "hp": 70,
+            "atk": 110,
+            "def": 180,
+            "spa": 60,
+            "spd": 60,
+            "spe": 50
+          },
+          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/aggron.gif",
+          "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
+          "flavorText": "Seine Stahlhörner werden ständig ein wenig länger. Daran kann man sein Alter ablesen. Die Kratzer und Abschürfungen in seinem Panzer sind stolze Andenken an Kämpfe. Auf der Suche nach Eisen, seiner Nahrung, gräbt es mit seinen Stahlhörnern sogar Tunnel durch Felsen."
+        } 
       },
       {
         "name": "Wingull",
