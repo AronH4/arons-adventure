@@ -162,9 +162,8 @@ function renderPokemonDetails(poke) {
   const stats = d.stats || { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 };
   const totalStats = Object.values(stats).reduce((a, b) => a + b, 0);
 
- // ✅ NEU:
-const genderSymbol = d.gender === 'female' ? '<span class="pd-gender-symbol female">♀</span>' : 
-                     d.gender === 'male' ? '<span class="pd-gender-symbol male">♂</span>' : '<div></div>';
+  const genderSymbol = d.gender === 'female' ? '<span class="pd-gender-symbol female">♀</span>' : 
+                       d.gender === 'male' ? '<span class="pd-gender-symbol male">♂</span>' : '<div></div>';
 
   const typesHTML = (d.types || []).map(t => `<img src="${t}" alt="Typ">`).join('');
 
@@ -175,14 +174,14 @@ const genderSymbol = d.gender === 'female' ? '<span class="pd-gender-symbol fema
     </div>
 
     <!-- Row 1: Ball, Ort/Datum, Geschlecht -->
-   <div class="pd-info-row-1">
-  ${d.ball ? `<img src="${d.ball}" class="pd-ball-img" alt="Ball">` : '<div></div>'}
-  <div class="pd-loc-date">
-    <div>${d.location || ''}</div>
-    <div>${d.catchDate || ''}</div>
-  </div>
-  ${genderSymbol}
-</div>
+    <div class="pd-info-row-1">
+      ${d.ball ? `<img src="${d.ball}" class="pd-ball-img" alt="Ball">` : '<div></div>'}
+      <div class="pd-loc-date">
+        <div>${d.location || ''}</div>
+        <div>${d.catchDate || ''}</div>
+      </div>
+      ${genderSymbol}
+    </div>
 
     <!-- Row 2 (Kombiniert): Ruf | Kat + Dex + H/W | GIF -->
     <div class="pd-combined-row">
@@ -222,10 +221,12 @@ const genderSymbol = d.gender === 'female' ? '<span class="pd-gender-symbol fema
         </div>
       </div>
 
-      <!-- Showdown Box (Nutzt Platz rechts komplett) -->
-      <div class="pd-showdown-box">
-        <textarea id="showdown-text" class="pd-showdown-text" readonly>${d.showdown || ''}</textarea>
-        <button class="pd-copy-btn" onclick="copyShowdown()" title="In Zwischenablage kopieren">📋</button>
+      <!-- Showdown Box (Nutzt Platz rechts komplett, Copy-Button unten rechts) -->
+      <div class="pd-showdown-box" style="display: flex; flex-direction: column; justify-content: space-between; position: relative;">
+        <textarea id="showdown-text" class="pd-showdown-text" readonly style="flex-grow: 1;">${d.showdown || ''}</textarea>
+        <div style="display: flex; justify-content: flex-end; margin-top: 4px;">
+          <button class="pd-copy-btn" onclick="copyShowdown()" title="In Zwischenablage kopieren">📋</button>
+        </div>
       </div>
     </div>
 
@@ -236,14 +237,27 @@ const genderSymbol = d.gender === 'female' ? '<span class="pd-gender-symbol fema
   `;
 }
 
+// Hilfsfunktion zur Ermittlung der Farbe basierend auf dem Wert
+function getStatColor(value) {
+  if (value < 30) return '#ff4d4d';      // Rot (0 - 29)
+  if (value < 60) return '#ff944d';      // Orange (30 - 59)
+  if (value < 90) return '#ffdd4d';      // Gelb (60 - 89)
+  if (value < 120) return '#a3ff4d';     // Hellgrün (90 - 119)
+  if (value < 150) return '#2eb82e';     // Dunkelgrün (120 - 149)
+  return '#00b3b3';                      // Dunkles Türkis (150+)
+}
+
 function renderStatRow(label, value) {
-  const percent = Math.min(100, Math.round((value / 255) * 100));
+  // Prozentualer Anteil bezogen auf den Max-Wert 200 (max. 100%)
+  const percent = Math.min(100, Math.round((value / 200) * 100));
+  const color = getStatColor(value);
+
   return `
     <div class="pd-stat-row">
       <span class="pd-stat-label">${label}</span>
       <span class="pd-stat-val">${value}</span>
       <div class="pd-stat-bar-bg">
-        <div class="pd-stat-bar-fill" style="width: ${percent}%;"></div>
+        <div class="pd-stat-bar-fill" style="width: ${percent}%; background-color: ${color};"></div>
       </div>
     </div>
   `;
