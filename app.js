@@ -77,7 +77,7 @@ function showGameDetails(game) {
   const detailsSection = document.getElementById('game-details');
   detailsSection.classList.remove('hidden');
 
-  // Links: Cover, Jahr & Konsolenname
+  // Links: Cover, Jahr & Konsolenname (beide gleicher Style)
   const coverImg = document.getElementById('detail-cover');
   const yearText = document.getElementById('detail-year');
   const consoleNameText = document.getElementById('detail-console-name');
@@ -119,7 +119,7 @@ function showGameDetails(game) {
   const team = game.team || [];
   teamContainer.innerHTML = '';
 
-  team.forEach((p, index) => {
+  team.forEach((p) => {
     const card = document.createElement('div');
     card.className = 'pokemon-card';
     const moves = p.moves || [];
@@ -168,7 +168,7 @@ function renderPokemonDetails(poke) {
   const typesHTML = (d.types || []).map(t => `<img src="${t}" alt="Typ">`).join('');
 
   panel.innerHTML = `
-    <!-- Header: Typen -->
+    <!-- Header: Typen (Zentriert) -->
     <div class="pd-types-header">
       ${typesHTML}
     </div>
@@ -183,22 +183,28 @@ function renderPokemonDetails(poke) {
       ${genderSymbol}
     </div>
 
-    <!-- Row 2: Kategorie, Dex-Nr, H/W -->
-    <div class="pd-info-row-2">
-      <div class="pd-category">${d.category || 'POKÉMON'}</div>
-      <div class="pd-dex-num"># ${d.dexNumber || '???'}</div>
-      <div class="pd-height-weight">${d.height || '-'} | ${d.weight || '-'}</div>
+    <!-- Row 2 (Kombiniert): Ruf | Kat + Dex + H/W | GIF -->
+    <div class="pd-combined-row">
+      ${d.cry ? `
+        <button class="pd-cry-btn" onclick="new Audio('${d.cry}').play()">
+          <span>🔊</span>
+          <span>Ruf</span>
+        </button>
+      ` : '<div></div>'}
+
+      <div class="pd-info-center">
+        <div class="pd-category">${d.category || 'POKÉMON'}</div>
+        <div class="pd-dex-num"># ${d.dexNumber || '???'}</div>
+        <div class="pd-height-weight">${d.height || '-'} | ${d.weight || '-'}</div>
+      </div>
+
+      <div class="pd-gif-container">
+        <img src="${d.gif || poke.image}" alt="${poke.name}">
+      </div>
     </div>
 
-    <!-- Ruf-Button -->
-    ${d.cry ? `
-      <button class="pd-cry-btn" onclick="new Audio('${d.cry}').play()">
-        🔊 Ruf abspielen
-      </button>
-    ` : ''}
-
-    <!-- Main Grid: Stats & Rechte Spalte -->
-    <div class="pd-main-grid">
+    <!-- Mittleres Grid: Base Stats (Links) & Showdown (Rechts) -->
+    <div class="pd-mid-grid">
       <!-- Base Stats -->
       <div class="pd-stats-box">
         <div class="pd-stats-title">Base Stats</div>
@@ -210,33 +216,26 @@ function renderPokemonDetails(poke) {
         ${renderStatRow('SPE', stats.spe)}
         <div class="pd-stat-row" style="margin-top:2px; border-top:1px solid #444; padding-top:2px;">
           <span class="pd-stat-label">SUM</span>
-          <span class="pd-stat-val" style="width:auto;">${totalStats}</span>
+          <span class="pd-stat-val">${totalStats}</span>
+          <div class="pd-stat-bar-bg" style="background:transparent;"></div>
         </div>
       </div>
 
-      <!-- Rechte Spalte: GIF, Showdown, Flavor -->
-      <div class="pd-right-column">
-        <div class="pd-gif-container">
-          <img src="${d.gif || poke.image}" alt="${poke.name}">
-        </div>
-
-        ${d.showdown ? `
-          <div class="pd-showdown-box">
-            <textarea id="showdown-text" class="pd-showdown-text" readonly>${d.showdown}</textarea>
-            <button class="pd-copy-btn" onclick="copyShowdown()">📋</button>
-          </div>
-        ` : ''}
-
-        <div class="pd-flavor-box">
-          ${d.flavorText || 'Kein Pokédex-Eintrag vorhanden.'}
-        </div>
+      <!-- Showdown Box (Nutzt Platz rechts komplett) -->
+      <div class="pd-showdown-box">
+        <textarea id="showdown-text" class="pd-showdown-text" readonly>${d.showdown || ''}</textarea>
+        <button class="pd-copy-btn" onclick="copyShowdown()" title="In Zwischenablage kopieren">📋</button>
       </div>
+    </div>
+
+    <!-- Pokédex-Eintrag ganz unten über die volle Breite -->
+    <div class="pd-flavor-box">
+      ${d.flavorText || 'Kein Pokédex-Eintrag vorhanden.'}
     </div>
   `;
 }
 
 function renderStatRow(label, value) {
-  // Max Stat im Diagramm = 255 (z.B. Heiteira HP)
   const percent = Math.min(100, Math.round((value / 255) * 100));
   return `
     <div class="pd-stat-row">
@@ -251,7 +250,7 @@ function renderStatRow(label, value) {
 
 function copyShowdown() {
   const textarea = document.getElementById('showdown-text');
-  if (textarea) {
+  if (textarea && textarea.value) {
     textarea.select();
     navigator.clipboard.writeText(textarea.value);
     alert('Showdown-Code in die Zwischenablage kopiert!');
