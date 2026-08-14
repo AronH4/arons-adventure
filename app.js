@@ -1,6 +1,6 @@
 let allGames = [];
+let currentSelectedPokemon = null;
 
-// JSON laden
 fetch('games.json')
   .then(response => {
     if (!response.ok) {
@@ -20,7 +20,6 @@ fetch('games.json')
       </p>`;
   });
 
-// Tabs schalten
 document.querySelectorAll('.tab-btn').forEach(button => {
   button.addEventListener('click', () => {
     const category = button.getAttribute('data-tab');
@@ -78,21 +77,22 @@ function showGameDetails(game) {
   const detailsSection = document.getElementById('game-details');
   detailsSection.classList.remove('hidden');
 
-  // 1. LINKS: Cover & Jahr
+  // Links: Cover, Jahr & Konsolenname
   const coverImg = document.getElementById('detail-cover');
   const yearText = document.getElementById('detail-year');
+  const consoleNameText = document.getElementById('detail-console-name');
+  
   coverImg.src = game.cover || '';
   coverImg.alt = game.title || 'Cover';
   yearText.textContent = game.year || '';
-
-  // 2. RECHTS: Konsolen-Bild & Name
-  const consoleImg = document.getElementById('detail-console-img');
-  const consoleNameText = document.getElementById('detail-console-name');
-  consoleImg.src = game.consoleImage || '';
-  consoleImg.alt = game.consoleName || 'Konsole';
   consoleNameText.textContent = game.consoleName || '';
 
-// Mitte: Badges, Liga & Postgame in EINER Zeile
+  // Detail-Panel zurücksetzen/verstecken
+  const detailsPanel = document.getElementById('poke-details-panel');
+  detailsPanel.classList.add('hidden');
+  currentSelectedPokemon = null;
+
+  // Mitte: Badges, Liga & Postgame in 1 Zeile
   const badgesContainer = document.getElementById('badges-container');
   const progress = game.progress || {};
   
@@ -113,23 +113,147 @@ function showGameDetails(game) {
       <div class="postgame-group">${postgameHTML}</div>
     </div>
   `;
-  
-  // 4. MITTE: Team Rendern
+
+  // Mitte: Team
   const teamContainer = document.getElementById('team-container');
   const team = game.team || [];
-  teamContainer.innerHTML = team.map(p => {
+  teamContainer.innerHTML = '';
+
+  team.forEach((p, index) => {
+    const card = document.createElement('div');
+    card.className = 'pokemon-card';
     const moves = p.moves || [];
-    return `
-      <div class="pokemon-card">
-        <img src="${p.image || ''}" alt="${p.name || ''}">
-        <h4>${p.name || ''}</h4>
-        <div class="level">${p.level ? 'Lv. ' + p.level : ''}</div>
-        <p><strong>Ability:</strong> ${p.ability || '-'}</p>
-        <p><strong>Item:</strong> ${p.item || '-'}</p>
-        <ul>
-          ${moves.map(move => `<li>${move}</li>`).join('')}
-        </ul>
-      </div>
+
+    card.innerHTML = `
+      <img src="${p.image || ''}" alt="${p.name || ''}">
+      <h4>${p.name || ''}</h4>
+      <div class="level">${p.level ? 'Lv. ' + p.level : ''}</div>
+      <p><strong>Ability:</strong> ${p.ability || '-'}</p>
+      <p><strong>Item:</strong> ${p.item || '-'}</p>
+      <ul>
+        ${moves.map(move => `<li>${move}</li>`).join('')}
+      </ul>
     `;
-  }).join('');
+
+    // Klick auf Pokémon schaltet das Detail-Fenster
+    card.addEventListener('click', () => {
+      document.querySelectorAll('.pokemon-card').forEach(c => c.classList.remove('active-poke'));
+      
+      if (currentSelectedPokemon === p) {
+        detailsPanel.classList.add('hidden');
+        currentSelectedPokemon = null;
+      } else {
+        card.classList.add('active-poke');
+        renderPokemonDetails(p);
+        currentSelectedPokemon = p;
+      }
+    });
+
+    teamContainer.appendChild(card);
+  });
+}
+
+// Rendert das rechte Detail-Fenster
+function renderPokemonDetails(poke) {
+  const panel = document.getElementById('poke-details-panel');
+  panel.classList.remove('hidden');
+
+  const d = poke.details || {};
+  const stats = d.stats || { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 };
+  const totalStats = Object.values(stats).reduce((a, b) => a + b, 0);
+
+  const genderSymbol = d.gender === 'female' ? '<span class="pd-gender-symbol female">♀</span>' : 
+                      d.gender === 'male' ? '<span class="pd-gender-symbol male">♂</span>' : '';
+
+  const typesHTML = (d.types || []).map(t => `<img src="${t}" alt="Typ">`).join('');
+
+  panel.innerHTML = `
+    <!-- Header: Typen -->
+    <div class="pd-types-header">
+      ${typesHTML}
+    </div>
+
+    <!-- Row 1: Ball, Ort/Datum, Geschlecht -->
+    <div class="pd-info-row-1">
+      ${d.ball ? `<img src="${d.ball}" class="pd-ball-img" alt="Ball">` : '<div></div>'}
+      <div class="pd-loc-date">
+        <div>${d.location || ''}</div>
+        <div>${d.catchDate || ''}</div>
+      </div>
+      ${genderSymbol}
+    </div>
+
+    <!-- Row 2: Kategorie, Dex-Nr, H/W -->
+    <div class="pd-info-row-2">
+      <div class="pd-category">${d.category || 'POKÉMON'}</div>
+      <div class="pd-dex-num"># ${d.dexNumber || '???'}</div>
+      <div class="pd-height-weight">${d.height || '-'} | ${d.weight || '-'}</div>
+    </div>
+
+    <!-- Ruf-Button -->
+    ${d.cry ? `
+      <button class="pd-cry-btn" onclick="new Audio('${d.cry}').play()">
+        🔊 Ruf abspielen
+      </button>
+    ` : ''}
+
+    <!-- Main Grid: Stats & Rechte Spalte -->
+    <div class="pd-main-grid">
+      <!-- Base Stats -->
+      <div class="pd-stats-box">
+        <div class="pd-stats-title">Base Stats</div>
+        ${renderStatRow('HP', stats.hp)}
+        ${renderStatRow('ATK', stats.atk)}
+        ${renderStatRow('DEF', stats.def)}
+        ${renderStatRow('SPA', stats.spa)}
+        ${renderStatRow('SPD', stats.spd)}
+        ${renderStatRow('SPE', stats.spe)}
+        <div class="pd-stat-row" style="margin-top:2px; border-top:1px solid #444; padding-top:2px;">
+          <span class="pd-stat-label">SUM</span>
+          <span class="pd-stat-val" style="width:auto;">${totalStats}</span>
+        </div>
+      </div>
+
+      <!-- Rechte Spalte: GIF, Showdown, Flavor -->
+      <div class="pd-right-column">
+        <div class="pd-gif-container">
+          <img src="${d.gif || poke.image}" alt="${poke.name}">
+        </div>
+
+        ${d.showdown ? `
+          <div class="pd-showdown-box">
+            <textarea id="showdown-text" class="pd-showdown-text" readonly>${d.showdown}</textarea>
+            <button class="pd-copy-btn" onclick="copyShowdown()">📋</button>
+          </div>
+        ` : ''}
+
+        <div class="pd-flavor-box">
+          ${d.flavorText || 'Kein Pokédex-Eintrag vorhanden.'}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderStatRow(label, value) {
+  // Max Stat im Diagramm = 255 (z.B. Heiteira HP)
+  const percent = Math.min(100, Math.round((value / 255) * 100));
+  return `
+    <div class="pd-stat-row">
+      <span class="pd-stat-label">${label}</span>
+      <span class="pd-stat-val">${value}</span>
+      <div class="pd-stat-bar-bg">
+        <div class="pd-stat-bar-fill" style="width: ${percent}%;"></div>
+      </div>
+    </div>
+  `;
+}
+
+function copyShowdown() {
+  const textarea = document.getElementById('showdown-text');
+  if (textarea) {
+    textarea.select();
+    navigator.clipboard.writeText(textarea.value);
+    alert('Showdown-Code in die Zwischenablage kopiert!');
+  }
 }
