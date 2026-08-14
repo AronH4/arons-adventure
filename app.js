@@ -92,7 +92,7 @@ function showGameDetails(game) {
   consoleImg.alt = game.consoleName || 'Konsole';
   consoleNameText.textContent = game.consoleName || '';
 
-  // 3. MITTE: Badges & Fortschritt
+// Mitte: Badges, Liga & Postgame in EINER Zeile
   const badgesContainer = document.getElementById('badges-container');
   const progress = game.progress || {};
   
@@ -107,12 +107,13 @@ function showGameDetails(game) {
   badgesContainer.innerHTML = `
     <div class="progress-row-1">
       <div class="badges-group">${badgesHTML}</div>
-      <div class="row-gap"></div>
+      ${league.length > 0 ? '<div class="row-gap"></div>' : ''}
       <div class="league-group">${leagueHTML}</div>
+      ${postgame.length > 0 ? '<div class="row-gap"></div>' : ''}
+      <div class="postgame-group">${postgameHTML}</div>
     </div>
-    ${postgame.length > 0 ? `<div class="progress-row-2">${postgameHTML}</div>` : ''}
   `;
-
+  
   // 4. MITTE: Team Rendern
   const teamContainer = document.getElementById('team-container');
   const team = game.team || [];
