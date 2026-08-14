@@ -211,7 +211,7 @@
     "team": [
       {
         "name": "Blanas",
-        "level": 41,
+        "level": 43,
         "image": "https://www.pokewiki.de/images/thumb/d/da/Hauptartwork_274.png/234px-Hauptartwork_274.png",
         "ability": "Chlorophyll",
         "item": "Wundersaat",
@@ -224,6 +224,14 @@
         "ability": "Robustheit",
         "item": "Flinkklaue",
         "moves": ["Eisenschweif", "Kopfnuss", "Lehmschelle", "Stärke"]
+      },
+      {
+        "name": "Wingull",
+        "level": 27,
+        "image": "https://www.pokewiki.de/images/thumb/3/34/Hauptartwork_278.png/375px-Hauptartwork_278.png",
+        "ability": "Adlerauge",
+        "item": "noch kein Item",
+        "moves": ["Aquaknarre", "Flügelschlag", "Superschall", "Weißnebel"]
       }
     ]
   },
