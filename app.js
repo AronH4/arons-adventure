@@ -162,8 +162,9 @@ function renderPokemonDetails(poke) {
   const stats = d.stats || { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 };
   const totalStats = Object.values(stats).reduce((a, b) => a + b, 0);
 
-  const genderSymbol = d.gender === 'female' ? '<span class="pd-gender-symbol female">♀</span>' : 
-                      d.gender === 'male' ? '<span class="pd-gender-symbol male">♂</span>' : '';
+ // ✅ NEU:
+const genderSymbol = d.gender === 'female' ? '<span class="pd-gender-symbol female">♀</span>' : 
+                     d.gender === 'male' ? '<span class="pd-gender-symbol male">♂</span>' : '<div></div>';
 
   const typesHTML = (d.types || []).map(t => `<img src="${t}" alt="Typ">`).join('');
 
@@ -174,14 +175,14 @@ function renderPokemonDetails(poke) {
     </div>
 
     <!-- Row 1: Ball, Ort/Datum, Geschlecht -->
-    <div class="pd-info-row-1">
-      ${d.ball ? `<img src="${d.ball}" class="pd-ball-img" alt="Ball">` : '<div></div>'}
-      <div class="pd-loc-date">
-        <div>${d.location || ''}</div>
-        <div>${d.catchDate || ''}</div>
-      </div>
-      ${genderSymbol}
-    </div>
+   <div class="pd-info-row-1">
+  ${d.ball ? `<img src="${d.ball}" class="pd-ball-img" alt="Ball">` : '<div></div>'}
+  <div class="pd-loc-date">
+    <div>${d.location || ''}</div>
+    <div>${d.catchDate || ''}</div>
+  </div>
+  ${genderSymbol}
+</div>
 
     <!-- Row 2 (Kombiniert): Ruf | Kat + Dex + H/W | GIF -->
     <div class="pd-combined-row">
