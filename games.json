@@ -536,7 +536,7 @@
             "spe": 65
           },
           "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/pelipper.gif",
-          "showdown": "Aggron (M) @ Aggronite\nAbility: Sturdy\nShiny: No\nTera Type: Steel\nEVs: 252 HP / 4 Def / 252 SpD\nCareful Nature\n- Heavy Slam\n- Stealth Rock\n- Earthquake\n- Thunder Wave",
+          "showdown": "Pelipper (M) @ Choice Specs\nAbility: Drizzle\nShiny: No\nTera Type: Grass\nEVs: 252 SpA / 4 SpD / 252 Spe\nTimid Nature\n- Weather Ball\n- Hurricane\n- Ice Beam\n- U-turn",
           "flavorText": "to be added soon :)"
         }
       }
