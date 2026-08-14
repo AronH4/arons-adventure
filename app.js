@@ -188,7 +188,6 @@ function renderPokemonDetails(poke) {
       ${d.cry ? `
         <button class="pd-cry-btn" onclick="new Audio('${d.cry}').play()">
           <span>🔊</span>
-          <span>Ruf</span>
         </button>
       ` : '<div></div>'}
 
