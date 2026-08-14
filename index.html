@@ -26,24 +26,25 @@
     <section id="games-grid" class="games-grid"></section>
 
     <section id="game-details" class="game-details hidden">
-      <!-- Oben: Orden & Fortschritt -->
+      <!-- Oben: Orden & Fortschritt in 1 Zeile -->
       <div id="badges-container" class="badges-container"></div>
 
-      <!-- Unten: Links Cover | Mitte Pokémon | Rechts Konsole -->
+      <!-- Unten: Links Cover | Mitte Pokémon | Rechts Details Panel -->
       <div class="bottom-layout">
         <div class="side-card-wrapper left">
           <div class="side-card">
             <img id="detail-cover" src="" alt="Spiele Cover">
             <p id="detail-year" class="side-card-text"></p>
+            <p id="detail-console-name" class="side-card-text console-title"></p>
           </div>
         </div>
 
         <div id="team-container" class="team-grid"></div>
 
+        <!-- Rechts: Interaktives Pokémon Details Fenster -->
         <div class="side-card-wrapper right">
-          <div class="side-card">
-            <img id="detail-console-img" src="" alt="Konsole Bild">
-            <p id="detail-console-name" class="side-card-text"></p>
+          <div id="poke-details-panel" class="poke-details-card hidden">
+            <!-- Dynamischer Inhalt via JavaScript -->
           </div>
         </div>
       </div>
