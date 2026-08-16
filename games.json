@@ -508,11 +508,11 @@
       },
       {
         "name": "Pelipper",
-        "level": 28,
+        "level": 35,
         "image": "https://www.pokewiki.de/images/thumb/1/1f/Hauptartwork_279.png/586px-Hauptartwork_279.png?20161224112032",
         "ability": "Adlerauge",
         "item": "Zauberwasser",
-        "moves": ["Surfer", "Flügelschlag", "Eisstrahl", "Schockwelle"],
+        "moves": ["Surfer", "Fliegen", "Eisstrahl", "Schockwelle"],
         "details": {
           "types": [
             "https://www.pokewiki.de/images/thumb/9/9b/Typ-Icon_Wasser_Gen8.png/137px-Typ-Icon_Wasser_Gen8.png",
