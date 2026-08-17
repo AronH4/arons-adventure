@@ -422,7 +422,7 @@
         { "name": "Dynamo Badge", "image": "https://www.pokewiki.de/images/thumb/f/f5/Dynamo-Orden.png/53px-Dynamo-Orden.png", "completed": true },
         { "name": "Heat Badge", "image": "https://www.pokewiki.de/images/thumb/5/50/Hitzeorden.png/70px-Hitzeorden.png", "completed": true },
         { "name": "Balance Badge", "image": "https://www.pokewiki.de/images/thumb/b/bf/Balanceorden.png/70px-Balanceorden.png", "completed": true },
-        { "name": "Feather Badge", "image": "https://www.pokewiki.de/images/thumb/c/c7/Federorden.png/61px-Federorden.png", "completed": false },
+        { "name": "Feather Badge", "image": "https://www.pokewiki.de/images/thumb/c/c7/Federorden.png/61px-Federorden.png", "completed": true },
         { "name": "Mind Badge", "image": "https://www.pokewiki.de/images/thumb/c/cb/Mentalorden.png/70px-Mentalorden.png", "completed": false },
         { "name": "Rain Badge", "image": "https://www.pokewiki.de/images/thumb/4/45/Schauerorden.png/64px-Schauerorden.png", "completed": false }
       ],
