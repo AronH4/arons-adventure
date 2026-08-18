@@ -424,7 +424,7 @@
         { "name": "Balance Badge", "image": "https://www.pokewiki.de/images/thumb/b/bf/Balanceorden.png/70px-Balanceorden.png", "completed": true },
         { "name": "Feather Badge", "image": "https://www.pokewiki.de/images/thumb/c/c7/Federorden.png/61px-Federorden.png", "completed": true },
         { "name": "Mind Badge", "image": "https://www.pokewiki.de/images/thumb/c/cb/Mentalorden.png/70px-Mentalorden.png", "completed": true },
-        { "name": "Rain Badge", "image": "https://www.pokewiki.de/images/thumb/4/45/Schauerorden.png/64px-Schauerorden.png", "completed": false }
+        { "name": "Rain Badge", "image": "https://www.pokewiki.de/images/thumb/4/45/Schauerorden.png/64px-Schauerorden.png", "completed": true }
       ],
       "league": [
         { "name": "Sidney", "image": "https://www.pokewiki.de/images/1/17/Trainersprite_Ulrich_RSS.png", "completed": false },
@@ -440,7 +440,7 @@
     "team": [
       {
         "name": "Tengulist",
-        "level": 50,
+        "level": 55,
         "image": "https://www.pokewiki.de/images/thumb/a/ab/Hauptartwork_275.png/649px-Hauptartwork_275.png?20190509121448",
         "ability": "Chlorophyll",
         "item": "Wundersaat",
