@@ -478,7 +478,7 @@
         "image": "https://www.pokewiki.de/images/thumb/c/cb/Hauptartwork_306.png/374px-Hauptartwork_306.png",
         "ability": "Robustheit",
         "item": "Flinkklaue",
-        "moves": ["Eisenschweif", "Kopfnuss", "Erdbeben", "Stärke"],
+        "moves": ["Eisenschweif", "Erdbeben", "Durchbruch", "Stärke"],
         "details": {
           "types": [
             "https://www.pokewiki.de/images/e/e5/Typ-Icon_Stahl_Gen8.png",
