@@ -427,11 +427,11 @@
         { "name": "Rain Badge", "image": "https://www.pokewiki.de/images/thumb/4/45/Schauerorden.png/64px-Schauerorden.png", "completed": true }
       ],
       "league": [
-        { "name": "Sidney", "image": "https://www.pokewiki.de/images/1/17/Trainersprite_Ulrich_RSS.png", "completed": false },
-        { "name": "Phoebe", "image": "https://www.pokewiki.de/images/0/0e/Trainersprite_Antonia_RSS.png", "completed": false },
-        { "name": "Glacia", "image": "https://www.pokewiki.de/images/2/24/Trainersprite_Frosina_RSS.png", "completed": false },
-        { "name": "Drake", "image": "https://www.pokewiki.de/images/b/b8/Trainersprite_Dragan_RSS.png", "completed": false },
-        { "name": "Wallace", "image": "https://www.pokewiki.de/images/6/64/Trainersprite_Wassili_Smaragd.png", "completed": false }
+        { "name": "Sidney", "image": "https://www.pokewiki.de/images/1/17/Trainersprite_Ulrich_RSS.png", "completed": true },
+        { "name": "Phoebe", "image": "https://www.pokewiki.de/images/0/0e/Trainersprite_Antonia_RSS.png", "completed": true },
+        { "name": "Glacia", "image": "https://www.pokewiki.de/images/2/24/Trainersprite_Frosina_RSS.png", "completed": true },
+        { "name": "Drake", "image": "https://www.pokewiki.de/images/b/b8/Trainersprite_Dragan_RSS.png", "completed": true },
+        { "name": "Wallace", "image": "https://www.pokewiki.de/images/6/64/Trainersprite_Wassili_Smaragd.png", "completed": true }
       ],
       "postgame": [
         { "name": "Steven Stone", "image": "https://www.pokewiki.de/images/a/ac/Trainersprite_Troy_RSS.png", "completed": false }
@@ -440,7 +440,7 @@
     "team": [
       {
         "name": "Tengulist",
-        "level": 55,
+        "level": 60,
         "image": "https://www.pokewiki.de/images/thumb/a/ab/Hauptartwork_275.png/649px-Hauptartwork_275.png?20190509121448",
         "ability": "Chlorophyll",
         "item": "Wundersaat",
@@ -474,7 +474,7 @@
       },
       {
         "name": "Stolloss",
-        "level": 50,
+        "level": 55,
         "image": "https://www.pokewiki.de/images/thumb/c/cb/Hauptartwork_306.png/374px-Hauptartwork_306.png",
         "ability": "Robustheit",
         "item": "Flinkklaue",
@@ -508,7 +508,7 @@
       },
       {
         "name": "Pelipper",
-        "level": 50,
+        "level": 55,
         "image": "https://www.pokewiki.de/images/thumb/1/1f/Hauptartwork_279.png/586px-Hauptartwork_279.png?20161224112032",
         "ability": "Adlerauge",
         "item": "Zauberwasser",
