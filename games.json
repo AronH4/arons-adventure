@@ -410,7 +410,7 @@
   {
     "id": "emerald",
     "title": "EMERALD",
-    "category": "current",
+    "category": "past",
     "cover": "https://www.pokewiki.de/images/thumb/1/1c/Pok%C3%A9mon_Smaragd-Edition.jpg/290px-Pok%C3%A9mon_Smaragd-Edition.jpg",
     "year": "2010 (2005)",
     "consoleName": "Game Boy Advance SP",
@@ -434,13 +434,13 @@
         { "name": "Wallace", "image": "https://www.pokewiki.de/images/6/64/Trainersprite_Wassili_Smaragd.png", "completed": true }
       ],
       "postgame": [
-        { "name": "Steven Stone", "image": "https://www.pokewiki.de/images/a/ac/Trainersprite_Troy_RSS.png", "completed": false }
+        { "name": "Steven Stone", "image": "https://www.pokewiki.de/images/a/ac/Trainersprite_Troy_RSS.png", "completed": true }
       ]
     },
     "team": [
       {
         "name": "Tengulist",
-        "level": 60,
+        "level": 65,
         "image": "https://www.pokewiki.de/images/thumb/a/ab/Hauptartwork_275.png/649px-Hauptartwork_275.png?20190509121448",
         "ability": "Chlorophyll",
         "item": "Wundersaat",
@@ -474,7 +474,7 @@
       },
       {
         "name": "Stolloss",
-        "level": 55,
+        "level": 71,
         "image": "https://www.pokewiki.de/images/thumb/c/cb/Hauptartwork_306.png/374px-Hauptartwork_306.png",
         "ability": "Robustheit",
         "item": "Flinkklaue",
@@ -508,7 +508,7 @@
       },
       {
         "name": "Pelipper",
-        "level": 55,
+        "level": 60,
         "image": "https://www.pokewiki.de/images/thumb/1/1f/Hauptartwork_279.png/586px-Hauptartwork_279.png?20161224112032",
         "ability": "Adlerauge",
         "item": "Zauberwasser",
@@ -545,7 +545,7 @@
   {
     "id": "white",
     "title": "WHITE",
-    "category": "upcoming",
+    "category": "current",
     "cover": "https://www.pokewiki.de/images/thumb/3/3a/Verpackungsvorderseite_Pok%C3%A9mon_Wei%C3%9Fe_Edition.jpg/290px-Verpackungsvorderseite_Pok%C3%A9mon_Wei%C3%9Fe_Edition.jpg",
     "year": "2011",
     "consoleName": "Nintendo DSi",
