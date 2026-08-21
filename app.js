@@ -162,8 +162,10 @@ function renderPokemonDetails(poke) {
   const stats = d.stats || { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 };
   const totalStats = Object.values(stats).reduce((a, b) => a + b, 0);
 
-  const genderSymbol = d.gender === 'female' ? '<span class="pd-gender-symbol female">♀</span>' : 
-                       d.gender === 'male' ? '<span class="pd-gender-symbol male">♂</span>' : '<div></div>';
+const genderSymbol = d.gender === 'female' ? '<span class="pd-gender-symbol female">♀</span>' : 
+                     d.gender === 'male' ? '<span class="pd-gender-symbol male">♂</span>' : 
+                     d.gender === 'neutral' ? '<span class="pd-gender-symbol neutral">-</span>' : 
+                     '<span class="pd-gender-symbol neutral">-</span>';
 
   const typesHTML = (d.types || []).map(t => `<img src="${t}" alt="Typ">`).join('');
 
