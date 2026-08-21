@@ -79,11 +79,13 @@ function showGameDetails(game) {
 
   // Links: Cover, Jahr & Konsolenname (beide gleicher Style)
   const coverImg = document.getElementById('detail-cover');
+  const regionText = document.getElementById('detail-region');
   const yearText = document.getElementById('detail-year');
   const consoleNameText = document.getElementById('detail-console-name');
   
   coverImg.src = game.cover || '';
   coverImg.alt = game.title || 'Cover';
+  region.textContent = game.region || '';
   yearText.textContent = game.year || '';
   consoleNameText.textContent = game.consoleName || '';
 
