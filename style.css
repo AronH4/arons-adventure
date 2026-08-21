@@ -92,7 +92,7 @@ header {
 }
 
 /* -------------------------------------------------- */
-/* FORTSCHRITT / TOUCH-SCROLLBAR (EINE ZEILE)        */
+/* FORTSCHRITT / TOUCH-SCROLLBAR (EINE ZEILE)         */
 /* -------------------------------------------------- */
 
 .badges-container {
@@ -238,7 +238,7 @@ header {
   margin: 1px 0;
   font-size: 14px;
   color: #aaa;
-  font-weight: normal; /* Gleiche Schriftstärke wie Year */
+  font-weight: normal;
 }
 
 /* -------------------------------------------------- */
@@ -356,7 +356,8 @@ header {
   border-radius: 4px;
 }
 
-.pd-ball-img {
+.pd-ball-img, 
+.pd-info-row-1 > div:first-child {
   width: 24px;
   height: 24px;
   object-fit: contain;
@@ -366,14 +367,21 @@ header {
   text-align: center;
   font-weight: bold;
   font-size: 11px;
+  flex-grow: 1;
 }
 
-.pd-gender-symbol {
+.pd-gender-symbol, 
+.pd-info-row-1 > div:last-child {
+  width: 24px;
   font-size: 18px;
   font-weight: bold;
+  text-align: center;
+  display: inline-block;
 }
+
 .pd-gender-symbol.male { color: #3b82f6; }
 .pd-gender-symbol.female { color: #ec4899; }
+.pd-gender-symbol.neutral { color: #888888; }
 
 /* Kombinierte Zeile 2: Ruf | Kat + Dex + H/W | GIF */
 .pd-combined-row {
@@ -507,8 +515,8 @@ header {
 
 .pd-stat-bar-fill {
   height: 100%;
-  background: #39ff14;
   border-radius: 3px;
+  transition: width 0.3s ease;
 }
 
 /* Showdown Box */
@@ -516,17 +524,11 @@ header {
   background: #222;
   border-radius: 4px;
   padding: 5px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
   box-sizing: border-box;
 }
 
 .pd-showdown-text {
   width: 100%;
-  height: 100%;
-  min-height: 85px;
   background: transparent;
   border: none;
   color: #aaa;
@@ -534,14 +536,11 @@ header {
   font-family: monospace;
   resize: none;
   outline: none;
-  padding-right: 20px; /* Platz für Copy Button */
+  box-sizing: border-box;
 }
 
-/* Vergrößerter Copy Button */
+/* Copy Button */
 .pd-copy-btn {
-  position: absolute;
-  top: 5px;
-  right: 5px;
   background: #333;
   border: 1px solid #666;
   color: #fff;
