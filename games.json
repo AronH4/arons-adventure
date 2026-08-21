@@ -79,7 +79,7 @@
           "ball": "https://www.pokewiki.de/images/6/6a/Itemsprite_Pok%C3%A9ball_KAPU.png",
           "location": "Alte Villa",
           "catchDate": "26.05.2009",
-          "gender": "-",
+          "gender": "neutral",
           "category": "Plasma",
           "dexNumber": 479,
           "height": "0,3 m",
