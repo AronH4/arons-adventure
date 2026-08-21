@@ -85,7 +85,7 @@ function showGameDetails(game) {
   
   coverImg.src = game.cover || '';
   coverImg.alt = game.title || 'Cover';
-  region.textContent = game.region || '';
+  regionText.textContent = game.region || '';
   yearText.textContent = game.year || '';
   consoleNameText.textContent = game.consoleName || '';
 
