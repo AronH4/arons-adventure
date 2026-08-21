@@ -524,31 +524,44 @@ header {
   background: #222;
   border-radius: 4px;
   padding: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   box-sizing: border-box;
 }
 
 .pd-showdown-text {
   width: 100%;
+  height: 100%;
   background: transparent;
   border: none;
   color: #aaa;
-  font-size: 9px;
+  font-size: 8px;           /* Minimal kleiner, damit 10+ Zeilen passen */
+  line-height: 1.1;         /* Enge Zeilenabstände für kompakte Darstellung */
   font-family: monospace;
   resize: none;
   outline: none;
+  overflow: hidden;         /* Blendung von Scrollbalken erzwingen */
+  padding-right: 22px;      /* Platz für den Copy-Button rechts unten */
   box-sizing: border-box;
 }
 
-/* Copy Button */
+/* Copy Button unten rechts fixieren */
 .pd-copy-btn {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
   background: #333;
   border: 1px solid #666;
   color: #fff;
   border-radius: 4px;
-  padding: 3px 6px;
-  font-size: 13px;
+  padding: 2px 5px;
+  font-size: 12px;
   cursor: pointer;
   transition: background 0.2s;
+  z-index: 2;
 }
 
 .pd-copy-btn:hover {
