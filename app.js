@@ -1,6 +1,70 @@
 let allGames = [];
 let currentSelectedPokemon = null;
 
+// Playlist-Variablen für Hintergrundmusik
+let currentPlaylist = [];
+let currentTrackIndex = 0;
+let isMusicMuted = true; // Standardmäßig stummgeschaltet
+
+const audioPlayer = document.getElementById('bg-music');
+const musicBtn = document.getElementById('music-toggle-btn');
+
+// --------------------------------------------------
+// MUSIK-PLAYLIST LOGIK
+// --------------------------------------------------
+
+// Mute-Button Logik
+musicBtn.addEventListener('click', () => {
+  isMusicMuted = !isMusicMuted;
+  
+  if (isMusicMuted) {
+    musicBtn.classList.add('muted');
+    audioPlayer.pause();
+  } else {
+    musicBtn.classList.remove('muted');
+    if (currentPlaylist.length > 0) {
+      audioPlayer.play().catch(e => console.log("Autoplay blockiert:", e));
+    }
+  }
+});
+
+// Wenn ein Lied zu Ende ist -> Nächstes abspielen
+audioPlayer.addEventListener('ended', () => {
+  if (currentPlaylist.length > 0) {
+    currentTrackIndex = (currentTrackIndex + 1) % currentPlaylist.length;
+    playCurrentTrack();
+  }
+});
+
+function playGameMusic(soundtracks) {
+  if (!soundtracks || soundtracks.length === 0) {
+    audioPlayer.pause();
+    currentPlaylist = [];
+    return;
+  }
+
+  currentPlaylist = soundtracks;
+  // Zufälliges Startlied auswählen
+  currentTrackIndex = Math.floor(Math.random() * currentPlaylist.length);
+  
+  playCurrentTrack();
+}
+
+function playCurrentTrack() {
+  if (currentPlaylist.length === 0) return;
+
+  audioPlayer.src = currentPlaylist[currentTrackIndex];
+  audioPlayer.load();
+
+  if (!isMusicMuted) {
+    audioPlayer.play().catch(e => console.log("Audio konnte nicht abgespielt werden:", e));
+  }
+}
+
+// --------------------------------------------------
+// GAMES-DATEN LADEN
+// --------------------------------------------------
+
 fetch('games.json')
   .then(response => {
     if (!response.ok) {
@@ -25,6 +89,10 @@ document.querySelectorAll('.tab-btn').forEach(button => {
     const category = button.getAttribute('data-tab');
     filterGames(category);
     document.getElementById('game-details').classList.add('hidden');
+    
+    // Musik stoppen bei Tab-Wechsel
+    audioPlayer.pause();
+    currentPlaylist = [];
   });
 });
 
@@ -57,6 +125,10 @@ function filterGames(category) {
     card.addEventListener('click', () => {
       document.querySelectorAll('.game-card').forEach(c => c.classList.remove('selected'));
       card.classList.add('selected');
+      
+      // Starte die Musik des gewählten Spiels
+      playGameMusic(game.soundtracks);
+      
       showGameDetails(game);
     });
     grid.appendChild(card);
@@ -77,7 +149,7 @@ function showGameDetails(game) {
   const detailsSection = document.getElementById('game-details');
   detailsSection.classList.remove('hidden');
 
-  // Links: Cover, Jahr & Konsolenname (beide gleicher Style)
+  // Links: Cover, Jahr & Konsolenname
   const coverImg = document.getElementById('detail-cover');
   const regionText = document.getElementById('detail-region');
   const yearText = document.getElementById('detail-year');
@@ -137,7 +209,6 @@ function showGameDetails(game) {
       </ul>
     `;
 
-    // Klick auf Pokémon schaltet das Detail-Fenster
     card.addEventListener('click', () => {
       document.querySelectorAll('.pokemon-card').forEach(c => c.classList.remove('active-poke'));
       
@@ -155,7 +226,6 @@ function showGameDetails(game) {
   });
 }
 
-// Rendert das rechte Detail-Fenster
 function renderPokemonDetails(poke) {
   const panel = document.getElementById('poke-details-panel');
   panel.classList.remove('hidden');
@@ -164,10 +234,9 @@ function renderPokemonDetails(poke) {
   const stats = d.stats || { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 };
   const totalStats = Object.values(stats).reduce((a, b) => a + b, 0);
 
-const genderSymbol = d.gender === 'female' ? '<span class="pd-gender-symbol female">♀</span>' : 
-                     d.gender === 'male' ? '<span class="pd-gender-symbol male">♂</span>' : 
-                     d.gender === 'neutral' ? '<span class="pd-gender-symbol neutral">-</span>' : 
-                     '<span class="pd-gender-symbol neutral">-</span>';
+  const genderSymbol = d.gender === 'female' ? '<span class="pd-gender-symbol female">♀</span>' : 
+                       d.gender === 'male' ? '<span class="pd-gender-symbol male">♂</span>' : 
+                       '<span class="pd-gender-symbol neutral">-</span>';
 
   const typesHTML = (d.types || []).map(t => `<img src="${t}" alt="Typ">`).join('');
 
@@ -206,9 +275,8 @@ const genderSymbol = d.gender === 'female' ? '<span class="pd-gender-symbol fema
       </div>
     </div>
 
-    <!-- Mittleres Grid: Base Stats (Links) & Showdown (Rechts) -->
+    <!-- Mittleres Grid: Base Stats & Showdown -->
     <div class="pd-mid-grid">
-      <!-- Base Stats -->
       <div class="pd-stats-box">
         <div class="pd-stats-title">Base Stats</div>
         ${renderStatRow('HP', stats.hp)}
@@ -224,34 +292,28 @@ const genderSymbol = d.gender === 'female' ? '<span class="pd-gender-symbol fema
         </div>
       </div>
 
-      <!-- Showdown Box (Nutzt Platz rechts komplett, Copy-Button unten rechts) -->
-      <div class="pd-showdown-box" style="display: flex; flex-direction: column; justify-content: space-between; position: relative;">
-        <textarea id="showdown-text" class="pd-showdown-text" readonly style="flex-grow: 1;">${d.showdown || ''}</textarea>
-        <div style="display: flex; justify-content: flex-end; margin-top: 4px;">
-          <button class="pd-copy-btn" onclick="copyShowdown()" title="In Zwischenablage kopieren">📋</button>
-        </div>
+      <div class="pd-showdown-box">
+        <textarea id="showdown-text" class="pd-showdown-text" readonly>${d.showdown || ''}</textarea>
+        <button class="pd-copy-btn" onclick="copyShowdown()" title="In Zwischenablage kopieren">📋</button>
       </div>
     </div>
 
-    <!-- Pokédex-Eintrag ganz unten über die volle Breite -->
     <div class="pd-flavor-box">
       ${d.flavorText || 'Kein Pokédex-Eintrag vorhanden.'}
     </div>
   `;
 }
 
-// Hilfsfunktion zur Ermittlung der Farbe basierend auf dem Wert
 function getStatColor(value) {
-  if (value < 30) return '#ff4d4d';      // Rot (0 - 29)
-  if (value < 60) return '#ff944d';      // Orange (30 - 59)
-  if (value < 90) return '#ffdd4d';      // Gelb (60 - 89)
-  if (value < 120) return '#a3ff4d';     // Hellgrün (90 - 119)
-  if (value < 150) return '#2eb82e';     // Dunkelgrün (120 - 149)
-  return '#00b3b3';                      // Dunkles Türkis (150+)
+  if (value < 30) return '#ff4d4d';
+  if (value < 60) return '#ff944d';
+  if (value < 90) return '#ffdd4d';
+  if (value < 120) return '#a3ff4d';
+  if (value < 150) return '#2eb82e';
+  return '#00b3b3';
 }
 
 function renderStatRow(label, value) {
-  // Prozentualer Anteil bezogen auf den Max-Wert 200 (max. 100%)
   const percent = Math.min(100, Math.round((value / 200) * 100));
   const color = getStatColor(value);
 
