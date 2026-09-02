@@ -591,27 +591,39 @@ header {
 }
 
 /* -------------------------------------------------- */
-/* MUSIK-TOGGLE BUTTON (OBEN LINKS)                   */
+/* MUSIK-STEUERUNG & LAUTSTÄRKEREGLER (OBEN LINKS)     */
 /* -------------------------------------------------- */
 
-.music-toggle-btn {
+.music-control-container {
   position: fixed;
   top: 15px;
   left: 15px;
   z-index: 1000;
-  background: #222;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(34, 34, 34, 0.9);
+  padding: 4px 8px 4px 4px;
+  border-radius: 25px;
   border: 1px solid #444;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.music-toggle-btn {
+  background: #222;
+  border: 1px solid #555;
   color: #fff;
-  font-size: 20px;
-  width: 42px;
-  height: 42px;
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 0.2s, border-color 0.2s, opacity 0.2s;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
 }
 
 .music-toggle-btn:hover {
@@ -619,9 +631,44 @@ header {
   border-color: #ffcb05;
 }
 
-/* Deaktivierter Zustand (durchgestrichen) */
 .music-toggle-btn.muted {
-  opacity: 0.6;
+  opacity: 0.5;
   text-decoration: line-through;
   filter: grayscale(100%);
+}
+
+/* Custom Lautstärkeregler */
+.volume-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 80px;
+  height: 6px;
+  background: #444;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ffcb05;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.volume-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.volume-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ffcb05;
+  border: none;
+  cursor: pointer;
 }
