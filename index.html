@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <link rel="icon" type="image/png" href="https://www.pokewiki.de/images/6/6a/Itemsprite_Pok%C3%A9ball_KAPU.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arons Adventure</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-  
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Musik-Steuerung oben links -->
+  <button id="music-toggle-btn" class="music-toggle-btn muted" title="Hintergrundmusik ein-/ausschalten">
+    🔊
+  </button>
+
+  <!-- Verstecktes Audio-Element -->
+  <audio id="bg-music" style="display: none;"></audio>
+
   <header>
-    <nav class="tabs">
-      <button class="tab-btn" data-tab="past">PAST</button>
-      <button class="tab-btn active" data-tab="current">CURRENT</button>
+    <h1>ARONS ADVENTURE</h1>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="past">PAST</button>
+      <button class="tab-btn" data-tab="current">CURRENT</button>
       <button class="tab-btn" data-tab="upcoming">UPCOMING</button>
-    </nav>
+    </div>
   </header>
 
   <main>
-    <section id="games-grid" class="games-grid"></section>
+    <div id="games-grid" class="games-grid"></div>
 
-    <section id="game-details" class="game-details hidden">
-      <!-- Oben: Orden & Fortschritt in 1 Zeile -->
-      <div id="badges-container" class="badges-container"></div>
+    <div id="game-details" class="hidden">
+      <!-- RESTLICHER CONTENT (Unverändert) -->
+      <div class="badges-container" id="badges-container"></div>
 
-      <!-- Unten: Links Cover | Mitte Pokémon | Rechts Details Panel -->
       <div class="bottom-layout">
+        <!-- Links -->
         <div class="side-card-wrapper left">
           <div class="side-card">
-            <img id="detail-cover" src="" alt="Spiele Cover">
-            <p id="detail-region" class="side-card-text"></p>
-            <p id="detail-year" class="side-card-text"></p>
-            <p id="detail-console-name" class="side-card-text"></p>
+            <img id="detail-cover" src="" alt="Cover">
+            <div id="detail-region" class="side-card-text"></div>
+            <div id="detail-year" class="side-card-text"></div>
+            <div id="detail-console-name" class="side-card-text"></div>
           </div>
         </div>
 
+        <!-- Mitte: Team -->
         <div id="team-container" class="team-grid"></div>
 
-        <!-- Rechts: Interaktives Pokémon Details Fenster -->
+        <!-- Rechts: Detail Panel -->
         <div class="side-card-wrapper right">
-          <div id="poke-details-panel" class="poke-details-card hidden">
-            <!-- Dynamischer Inhalt via JavaScript -->
-          </div>
+          <div id="poke-details-panel" class="poke-details-card hidden"></div>
         </div>
       </div>
-    </section>
+    </div>
   </main>
 
   <script src="app.js"></script>
