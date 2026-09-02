@@ -154,6 +154,16 @@
     "year": "2010",
     "consoleName": "Nintendo DSi",
     "consoleImage": "https://upload.wikimedia.org/wikipedia/commons/8/89/Nintendo-DSi-Bl-Open.png",
+    "soundtracks": [
+      "assets/audio/hgss_championtheme.mp3",
+      "assets/audio/hgss_cianwoodcity.mp3",
+      "assets/audio/hgss_ecruteakcity.mp3",
+      "assets/audio/hgss_goldenrodcity.mp3",
+      "assets/audio/hgss_icecave.mp3",
+      "assets/audio/hgss_route47.mp3",
+      "assets/audio/hgss_summoningdance.mp3",
+      "assets/audio/hgss_unioncave.mp3"
+    ],
     "progress": {
       "badges": [
         { "name": "Zephyr Badge", "image": "https://www.pokewiki.de/images/thumb/2/2e/Fl%C3%BCgelorden.png/70px-Fl%C3%BCgelorden.png", "completed": true },
