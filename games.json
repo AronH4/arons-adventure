@@ -638,6 +638,16 @@
     "year": "2014 (2013)",
     "consoleName": "Nintendo 2DS",
     "consoleImage": "https://i.imgur.com/ki2qROc.png",
+    "soundtracks": [
+      "assets/audio/xy_anistarcity.mp3",
+      "assets/audio/xy_gate.mp3",
+      "assets/audio/xy_geosengetown.mp3",
+      "assets/audio/xy_kalospowerplant.mp3",
+      "assets/audio/xy_lumiosecity.mp3",
+      "assets/audio/xy_pokemonleague.mp3",
+      "assets/audio/xy_route2.mp3",
+      "assets/audio/xy_snowbellecity.mp3"
+    ],
     "progress": {
       "badges": [
         { "name": "Bug Badge", "image": "https://www.pokewiki.de/images/5/55/Krabbelorden.png", "completed": false },
