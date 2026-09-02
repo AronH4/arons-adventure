@@ -8,6 +8,12 @@
     "year": "2009",
     "consoleName": "Nintendo DSi",
     "consoleImage": "https://upload.wikimedia.org/wikipedia/commons/8/89/Nintendo-DSi-Bl-Open.png",
+    "soundtracks": [
+      "assets/audio/route201.mp3",
+      "assets/audio/twinleaf.mp3",
+      "assets/audio/gym_theme.mp3",
+      "asssets/audio/champion_theme.mp3"
+    ],
     "progress": {
       "badges": [
         { "name": "Coal Badge", "image": "https://www.pokewiki.de/images/thumb/e/ef/Kohleorden.png/70px-Kohleorden.png", "completed": true },
