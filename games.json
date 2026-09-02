@@ -449,6 +449,16 @@
     "year": "2010 (2005)",
     "consoleName": "Game Boy Advance SP",
     "consoleImage": "https://upload.wikimedia.org/wikipedia/commons/2/27/Game-Boy-Advance-SP-Mk1-Blue.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "soundtracks": [
+      "assets/audio/em_caveoforigin.mp3",
+      "assets/audio/em_dive.mp3",
+      "assets/audio/em_fortreecity.mp3",
+      "assets/audio/em_lilycovecity.mp3",
+      "assets/audio/em_rivalbattle.mp3",
+      "assets/audio/em_route104.mp3",
+      "assets/audio/em_route113.mp3",
+      "assets/audio/em_littleroottown.mp3"
+    ],
     "progress": {
       "badges": [
         { "name": "Stone Badge", "image": "https://www.pokewiki.de/images/thumb/2/2b/Steinorden.png/70px-Steinorden.png", "completed": true },
