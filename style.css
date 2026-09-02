@@ -589,3 +589,39 @@ header {
     justify-content: center;
   }
 }
+
+/* -------------------------------------------------- */
+/* MUSIK-TOGGLE BUTTON (OBEN LINKS)                   */
+/* -------------------------------------------------- */
+
+.music-toggle-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  z-index: 1000;
+  background: #222;
+  border: 1px solid #444;
+  color: #fff;
+  font-size: 20px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, border-color 0.2s, opacity 0.2s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.music-toggle-btn:hover {
+  background: #333;
+  border-color: #ffcb05;
+}
+
+/* Deaktivierter Zustand (durchgestrichen) */
+.music-toggle-btn.muted {
+  opacity: 0.6;
+  text-decoration: line-through;
+  filter: grayscale(100%);
+}
