@@ -1,52 +1,90 @@
 let allGames = [];
 let currentSelectedPokemon = null;
 
-// Playlist-Variablen für Hintergrundmusik
+// Playlist- & Musik-Variablen
 let currentPlaylist = [];
 let currentTrackIndex = 0;
 let isMusicMuted = true; // Standardmäßig stummgeschaltet
+let currentGameId = null; // Verhindert Musik-Reset beim erneuten Klick auf dasselbe Spiel
 
 const audioPlayer = document.getElementById('bg-music');
 const musicBtn = document.getElementById('music-toggle-btn');
+const volumeSlider = document.getElementById('volume-slider');
+
+// Start-Lautstärke auf den Wert des Sliders setzen (50%)
+if (audioPlayer && volumeSlider) {
+  audioPlayer.volume = volumeSlider.value;
+}
 
 // --------------------------------------------------
-// MUSIK-PLAYLIST LOGIK
+// MUSIK-PLAYLIST & LAUTSTÄRKE LOGIK
 // --------------------------------------------------
 
-// Mute-Button Logik
-musicBtn.addEventListener('click', () => {
-  isMusicMuted = !isMusicMuted;
+// Lautstärkeregler (Slider) Evt-Listener
+if (volumeSlider) {
+  volumeSlider.addEventListener('input', (e) => {
+    const newVolume = parseFloat(e.target.value);
+    audioPlayer.volume = newVolume;
+    
+    // Entmuten, wenn Regler hochgezogen wird & Lautstärke > 0 ist
+    if (newVolume > 0 && isMusicMuted) {
+      toggleMute(false);
+    } else if (newVolume === 0 && !isMusicMuted) {
+      toggleMute(true);
+    }
+  });
+}
+
+// Mute-Button Toggle
+if (musicBtn) {
+  musicBtn.addEventListener('click', () => {
+    toggleMute(!isMusicMuted);
+  });
+}
+
+function toggleMute(muteState) {
+  isMusicMuted = muteState;
   
   if (isMusicMuted) {
     musicBtn.classList.add('muted');
     audioPlayer.pause();
   } else {
     musicBtn.classList.remove('muted');
+    if (audioPlayer.volume === 0) {
+      audioPlayer.volume = 0.5;
+      if (volumeSlider) volumeSlider.value = 0.5;
+    }
     if (currentPlaylist.length > 0) {
       audioPlayer.play().catch(e => console.log("Autoplay blockiert:", e));
     }
   }
-});
+}
 
-// Wenn ein Lied zu Ende ist -> Nächstes abspielen
-audioPlayer.addEventListener('ended', () => {
-  if (currentPlaylist.length > 0) {
-    currentTrackIndex = (currentTrackIndex + 1) % currentPlaylist.length;
-    playCurrentTrack();
-  }
-});
+// Automatisch das nächste Lied der Playlist abspielen
+if (audioPlayer) {
+  audioPlayer.addEventListener('ended', () => {
+    if (currentPlaylist.length > 0) {
+      currentTrackIndex = (currentTrackIndex + 1) % currentPlaylist.length;
+      playCurrentTrack();
+    }
+  });
+}
 
-function playGameMusic(soundtracks) {
-  if (!soundtracks || soundtracks.length === 0) {
+function playGameMusic(game) {
+  // Musik läuft nahtlos weiter, wenn dasselbe Spiel erneut angeklickt wird
+  if (currentGameId === game.id) return; 
+  currentGameId = game.id;
+
+  const soundtracks = game.soundtracks || [];
+  if (soundtracks.length === 0) {
     audioPlayer.pause();
     currentPlaylist = [];
     return;
   }
 
   currentPlaylist = soundtracks;
-  // Zufälliges Startlied auswählen
+  // Zufälliges Startlied der 4 Tracks auswählen
   currentTrackIndex = Math.floor(Math.random() * currentPlaylist.length);
-  
   playCurrentTrack();
 }
 
@@ -90,9 +128,10 @@ document.querySelectorAll('.tab-btn').forEach(button => {
     filterGames(category);
     document.getElementById('game-details').classList.add('hidden');
     
-    // Musik stoppen bei Tab-Wechsel
+    // Musik stoppen bei Haupt-Tab-Wechsel (Past, Current, Upcoming)
     audioPlayer.pause();
     currentPlaylist = [];
+    currentGameId = null;
   });
 });
 
@@ -126,8 +165,8 @@ function filterGames(category) {
       document.querySelectorAll('.game-card').forEach(c => c.classList.remove('selected'));
       card.classList.add('selected');
       
-      // Starte die Musik des gewählten Spiels
-      playGameMusic(game.soundtracks);
+      // Musik starten/wechseln
+      playGameMusic(game);
       
       showGameDetails(game);
     });
@@ -149,7 +188,7 @@ function showGameDetails(game) {
   const detailsSection = document.getElementById('game-details');
   detailsSection.classList.remove('hidden');
 
-  // Links: Cover, Jahr & Konsolenname
+  // Links: Cover, Jahr, Region & Konsolenname
   const coverImg = document.getElementById('detail-cover');
   const regionText = document.getElementById('detail-region');
   const yearText = document.getElementById('detail-year');
@@ -209,6 +248,7 @@ function showGameDetails(game) {
       </ul>
     `;
 
+    // Klick auf ein Pokémon verändert NUR das Pokémon-Detail-Fenster rechts (Musik läuft ungestört)
     card.addEventListener('click', () => {
       document.querySelectorAll('.pokemon-card').forEach(c => c.classList.remove('active-poke'));
       
@@ -226,6 +266,7 @@ function showGameDetails(game) {
   });
 }
 
+// Rendert das rechte Pokémon-Detail-Fenster
 function renderPokemonDetails(poke) {
   const panel = document.getElementById('poke-details-panel');
   panel.classList.remove('hidden');
@@ -275,7 +316,7 @@ function renderPokemonDetails(poke) {
       </div>
     </div>
 
-    <!-- Mittleres Grid: Base Stats & Showdown -->
+    <!-- Mittleres Grid: Base Stats & Showdown Box -->
     <div class="pd-mid-grid">
       <div class="pd-stats-box">
         <div class="pd-stats-title">Base Stats</div>
@@ -292,12 +333,15 @@ function renderPokemonDetails(poke) {
         </div>
       </div>
 
-      <div class="pd-showdown-box">
-        <textarea id="showdown-text" class="pd-showdown-text" readonly>${d.showdown || ''}</textarea>
-        <button class="pd-copy-btn" onclick="copyShowdown()" title="In Zwischenablage kopieren">📋</button>
+      <div class="pd-showdown-box" style="display: flex; flex-direction: column; justify-content: space-between; position: relative;">
+        <textarea id="showdown-text" class="pd-showdown-text" readonly style="flex-grow: 1;">${d.showdown || ''}</textarea>
+        <div style="display: flex; justify-content: flex-end; margin-top: 4px;">
+          <button class="pd-copy-btn" onclick="copyShowdown()" title="In Zwischenablage kopieren">📋</button>
+        </div>
       </div>
     </div>
 
+    <!-- Pokédex-Eintrag ganz unten -->
     <div class="pd-flavor-box">
       ${d.flavorText || 'Kein Pokédex-Eintrag vorhanden.'}
     </div>
