@@ -272,6 +272,16 @@
     "year": "2010 (2000)",
     "consoleName": "Game Boy",
     "consoleImage": "https://i.imgur.com/j6G0Okm.png",
+    "soundtracks": [
+      "assets/audio/ye_intothehall.mp3",
+      "assets/audio/ye_lavendertown.mp3",
+      "assets/audio/ye_opening.mp3",
+      "assets/audio/ye_pallettown.mp3",
+      "assets/audio/ye_rivalappears.mp3",
+      "assets/audio/ye_route1.mp3",
+      "assets/audio/ye_teamrockethideout.mp3",
+      "assets/audio/ye_victoryroad.mp3"
+    ],
     "progress": {
       "badges": [
         { "name": "Boulder Badge", "image": "https://www.pokewiki.de/images/thumb/8/8b/Felsorden.png/70px-Felsorden.png", "completed": true },
