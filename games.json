@@ -595,6 +595,16 @@
     "year": "2011",
     "consoleName": "Nintendo DSi",
     "consoleImage": "https://upload.wikimedia.org/wikipedia/commons/8/89/Nintendo-DSi-Bl-Open.png",
+    "soundtracks": [
+      "assets/audio/bw_accumulatown.mp3",
+      "assets/audio/bw_anvilletown.mp3",
+      "assets/audio/bw_driftveilcity.mp3",
+      "assets/audio/bw_emotions.mp3",
+      "assets/audio/bw_reliccastle.mp3",
+      "assets/audio/bw_undellatown.mp3",
+      "assets/audio/bw_villagebridge.mp3",
+      "assets/audio/bw_pokemonleague.mp3"
+    ],
     "progress": {
       "badges": [
         { "name": "Trio Badge", "image": "https://www.pokewiki.de/images/3/35/Triorden.png", "completed": false },
