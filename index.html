@@ -9,13 +9,16 @@
 </head>
 <body>
 
-  <!-- Musik-Steuerung oben links -->
+<!-- Musik-Steuerung oben links mit Slider -->
+<div class="music-control-container">
   <button id="music-toggle-btn" class="music-toggle-btn muted" title="Hintergrundmusik ein-/ausschalten">
     🔊
   </button>
+  <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" step="0.01" value="0.5">
+</div>
 
-  <!-- Verstecktes Audio-Element -->
-  <audio id="bg-music" style="display: none;"></audio>
+<!-- Verstecktes Audio-Element -->
+<audio id="bg-music" style="display: none;"></audio>
 
   <header>
     <h1>ARONS ADVENTURE</h1>
