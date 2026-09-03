@@ -681,6 +681,16 @@
     "year": "2016",
     "consoleName": "Nintendo 2DS",
     "consoleImage": "https://i.imgur.com/ki2qROc.png",
+    "soundtracks": [
+      "assets/audio/sm_aetherparadise.mp3",
+      "assets/audio/sm_championtitledefense.mp3",
+      "assets/audio/sm_hometown.mp3",
+      "assets/audio/sm_lushjungle.mp3",
+      "assets/audio/sm_mtlanakila.mp3",
+      "assets/audio/sm_ruins.mp3",
+      "assets/audio/sm_seafolkvillage_night.mp3",
+      "assets/audio/sm_welcometoalola.mp3"
+    ],
     "progress": {
       "badges": [
         { "name": "Ilima's Trial", "image": "https://archives.bulbagarden.net/media/upload/thumb/f/f0/Dream_Normalium_Z_Sprite.png/50px-Dream_Normalium_Z_Sprite.png", "completed": false },
