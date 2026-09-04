@@ -770,6 +770,16 @@
     "year": "2022",
     "consoleName": "Nintendo Switch",
     "consoleImage": "https://static.vecteezy.com/system/resources/thumbnails/013/007/607/small/set-of-console-game-device-handheld-portable-free-png.png",
+    "soundtracks": [
+      "assets/audio/pla_arceustheme.mp3",
+      "assets/audio/pla_azureflute.mp3",
+      "assets/audio/pla_firespitisland.mp3",
+      "assets/audio/pla_halloforigin.mp3",
+      "assets/audio/pla_lakecavern.mp3",
+      "assets/audio/pla_obsidianfieldlands_1.mp3",
+      "assets/audio/pla_surveyresults_day.mp3",
+      "assets/audio/pla_volosbetrayal.mp3"
+    ],
     "progress": {
       "badges": [
         { "name": "Mind Plate (Wyrdeer)", "image": "https://www.pokewiki.de/images/thumb/3/3a/Itemsprite_Hirntafel_PLA.png/45px-Itemsprite_Hirntafel_PLA.png", "completed": false },
