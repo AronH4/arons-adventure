@@ -175,7 +175,7 @@ function filterGames(category) {
   });
 }
 
-// Rendert Badge Card inkl. Hover-Tooltip
+// Rendert Badge Card inkl. Hover-Tooltip (nach oben geöffnet)
 function renderBadgeCard(item) {
   const team = item.team || [];
   let tooltipHTML = '';
@@ -205,18 +205,18 @@ function showGameDetails(game) {
   const detailsSection = document.getElementById('game-details');
   detailsSection.classList.remove('hidden');
 
-  // Cover & Map setzen + Card zurückdrehen
   const coverImg = document.getElementById('detail-cover');
   const mapImg = document.getElementById('detail-map');
   const regionText = document.getElementById('detail-region');
   const yearText = document.getElementById('detail-year');
   const consoleNameText = document.getElementById('detail-console-name');
   
-  if (flipCard) flipCard.classList.remove('flipped'); // Immer Front-Cover anzeigen
+  // Dreht Karte immer zwingend auf das Front-Cover zurück bei Spiele-Wechsel
+  if (flipCard) flipCard.classList.remove('flipped');
   
   coverImg.src = game.cover || '';
   coverImg.alt = game.title || 'Cover';
-  mapImg.src = game.map || game.cover || ''; // Fallback auf Cover, falls keine Map eingetragen ist
+  mapImg.src = game.map || game.cover || ''; // Nutzt Map oder sonst Fallback-Cover
   mapImg.alt = (game.title || 'Game') + ' Map';
 
   regionText.textContent = game.region || '';
@@ -228,7 +228,7 @@ function showGameDetails(game) {
   detailsPanel.classList.add('hidden');
   currentSelectedPokemon = null;
 
-  // Progress / Badges
+  // Badges & Fortschritt
   const badgesContainer = document.getElementById('badges-container');
   const progress = game.progress || {};
   
@@ -250,7 +250,7 @@ function showGameDetails(game) {
     </div>
   `;
 
-  // Team
+  // Pokémon Team
   const teamContainer = document.getElementById('team-container');
   const team = game.team || [];
   teamContainer.innerHTML = '';
