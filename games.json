@@ -727,6 +727,16 @@
     "year": "2021 (2019)",
     "consoleName": "Nintendo Switch",
     "consoleImage": "https://static.vecteezy.com/system/resources/thumbnails/013/007/607/small/set-of-console-game-device-handheld-portable-free-png.png",
+    "soundtracks": [
+      "assets/audio/swsh_battletowerbossbattletheme.mp3",
+      "assets/audio/swsh_chairmanrosebattletheme.mp3",
+      "assets/audio/swsh_glimwoodtangle.mp3",
+      "assets/audio/swsh_gymleaderbattletheme_phase3.mp3",
+      "assets/audio/swsh_hammerlocke.mp3",
+      "assets/audio/swsh_route1.mp3",
+      "assets/audio/swsh_slumberingweald.mp3",
+      "assets/audio/swsh_wildarea_north.mp3"
+    ],
     "progress": {
       "badges": [
         { "name": "Grass Badge", "image": "https://www.pokewiki.de/images/thumb/d/d1/Pflanzen-Orden.png/130px-Pflanzen-Orden.png", "completed": false },
