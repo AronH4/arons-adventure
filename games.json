@@ -818,6 +818,16 @@
     "year": "2022",
     "consoleName": "Nintendo Switch",
     "consoleImage": "https://static.vecteezy.com/system/resources/thumbnails/013/007/607/small/set-of-console-game-device-handheld-portable-free-png.png",
+    "soundtracks": [
+      "assets/audio/sv_areazero.mp3",
+      "assets/audio/sv_artazonazapapico.mp3",
+      "assets/audio/sv_cabopoco_interior.mp3",
+      "assets/audio/sv_naranjaacademy.mp3",
+      "assets/audio/sv_pennytheme.mp3",
+      "assets/audio/sv_ruionouslegendaries.mp3",
+      "assets/audio/sv_southprovince.mp3",
+      "assets/audio/sv_welcometopaldea.mp3"
+    ],
     "progress": {
       "badges": [
         { "name": "Gym Badge (Bug)", "image": "https://www.pokewiki.de/images/thumb/7/7f/K%C3%A4fer-Arenaorden.png/130px-K%C3%A4fer-Arenaorden.png", "completed": false },
