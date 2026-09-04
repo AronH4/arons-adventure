@@ -4,20 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arons Adventure</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
 
-  <!-- Musik-Steuerung oben links -->
-  <div class="music-control-container">
-    <button id="music-toggle-btn" class="music-toggle-btn muted" title="Hintergrundmusik ein-/ausschalten">
-      🔊
-    </button>
-    <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" step="0.01" value="0.5">
-  </div>
+<!-- Musik-Steuerung oben links mit Slider -->
+<div class="music-control-container">
+  <button id="music-toggle-btn" class="music-toggle-btn muted" title="Hintergrundmusik ein-/ausschalten">
+    🔊
+  </button>
+  <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" step="0.01" value="0.5">
+</div>
 
-  <audio id="bg-music" style="display: none;"></audio>
+<!-- Verstecktes Audio-Element -->
+<audio id="bg-music" style="display: none;"></audio>
 
   <header>
     <h1>ARONS ADVENTURE</h1>
@@ -32,23 +33,14 @@
     <div id="games-grid" class="games-grid"></div>
 
     <div id="game-details" class="hidden">
-      <!-- Badges / Fortschritt -->
+      <!-- RESTLICHER CONTENT (Unverändert) -->
       <div class="badges-container" id="badges-container"></div>
 
       <div class="bottom-layout">
-        <!-- Links: Cover/Map Flip Card (Ohne Ränder) -->
+        <!-- Links -->
         <div class="side-card-wrapper left">
           <div class="side-card">
-            <div id="cover-flip-card" class="flip-card" title="Klicken für Karte / Cover Wechsel">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img id="detail-cover" src="" alt="Cover">
-                </div>
-                <div class="flip-card-back">
-                  <img id="detail-map" src="" alt="Map">
-                </div>
-              </div>
-            </div>
+            <img id="detail-cover" src="" alt="Cover">
             <div id="detail-region" class="side-card-text"></div>
             <div id="detail-year" class="side-card-text"></div>
             <div id="detail-console-name" class="side-card-text"></div>
