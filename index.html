@@ -38,14 +38,24 @@
 
       <div class="bottom-layout">
         <!-- Links -->
-        <div class="side-card-wrapper left">
-          <div class="side-card">
-            <img id="detail-cover" src="" alt="Cover">
-            <div id="detail-region" class="side-card-text"></div>
-            <div id="detail-year" class="side-card-text"></div>
-            <div id="detail-console-name" class="side-card-text"></div>
-          </div>
+<!-- Links: Cover/Map Flip Card -->
+<div class="side-card-wrapper left">
+  <div class="side-card">
+    <div id="cover-flip-card" class="flip-card" title="Klicken, um Karte / Cover zu drehen">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img id="detail-cover" src="" alt="Cover">
         </div>
+        <div class="flip-card-back">
+          <img id="detail-map" src="" alt="Map">
+        </div>
+      </div>
+    </div>
+    <div id="detail-region" class="side-card-text"></div>
+    <div id="detail-year" class="side-card-text"></div>
+    <div id="detail-console-name" class="side-card-text"></div>
+  </div>
+</div>
 
         <!-- Mitte: Team -->
         <div id="team-container" class="team-grid"></div>
