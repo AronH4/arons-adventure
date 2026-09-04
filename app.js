@@ -4,29 +4,26 @@ let currentSelectedPokemon = null;
 // Playlist- & Musik-Variablen
 let currentPlaylist = [];
 let currentTrackIndex = 0;
-let isMusicMuted = true; // Standardmäßig stummgeschaltet
-let currentGameId = null; // Verhindert Musik-Reset beim erneuten Klick auf dasselbe Spiel
+let isMusicMuted = true;
+let currentGameId = null;
 
 const audioPlayer = document.getElementById('bg-music');
 const musicBtn = document.getElementById('music-toggle-btn');
 const volumeSlider = document.getElementById('volume-slider');
 
-// Start-Lautstärke auf den Wert des Sliders setzen (50%)
 if (audioPlayer && volumeSlider) {
   audioPlayer.volume = volumeSlider.value;
 }
 
 // --------------------------------------------------
-// MUSIK-PLAYLIST & LAUTSTÄRKE LOGIK
+// MUSIK-LOGIK
 // --------------------------------------------------
 
-// Lautstärkeregler (Slider) Evt-Listener
 if (volumeSlider) {
   volumeSlider.addEventListener('input', (e) => {
     const newVolume = parseFloat(e.target.value);
     audioPlayer.volume = newVolume;
     
-    // Entmuten, wenn Regler hochgezogen wird & Lautstärke > 0 ist
     if (newVolume > 0 && isMusicMuted) {
       toggleMute(false);
     } else if (newVolume === 0 && !isMusicMuted) {
@@ -35,7 +32,6 @@ if (volumeSlider) {
   });
 }
 
-// Mute-Button Toggle
 if (musicBtn) {
   musicBtn.addEventListener('click', () => {
     toggleMute(!isMusicMuted);
@@ -60,7 +56,6 @@ function toggleMute(muteState) {
   }
 }
 
-// Automatisch das nächste Lied der Playlist abspielen
 if (audioPlayer) {
   audioPlayer.addEventListener('ended', () => {
     if (currentPlaylist.length > 0) {
@@ -71,7 +66,6 @@ if (audioPlayer) {
 }
 
 function playGameMusic(game) {
-  // Musik läuft nahtlos weiter, wenn dasselbe Spiel erneut angeklickt wird
   if (currentGameId === game.id) return; 
   currentGameId = game.id;
 
@@ -83,7 +77,6 @@ function playGameMusic(game) {
   }
 
   currentPlaylist = soundtracks;
-  // Zufälliges Startlied der 4 Tracks auswählen
   currentTrackIndex = Math.floor(Math.random() * currentPlaylist.length);
   playCurrentTrack();
 }
@@ -97,6 +90,17 @@ function playCurrentTrack() {
   if (!isMusicMuted) {
     audioPlayer.play().catch(e => console.log("Audio konnte nicht abgespielt werden:", e));
   }
+}
+
+// --------------------------------------------------
+// COVER / MAP FLIP LOGIK
+// --------------------------------------------------
+
+const flipCard = document.getElementById('cover-flip-card');
+if (flipCard) {
+  flipCard.addEventListener('click', () => {
+    flipCard.classList.toggle('flipped');
+  });
 }
 
 // --------------------------------------------------
@@ -128,7 +132,6 @@ document.querySelectorAll('.tab-btn').forEach(button => {
     filterGames(category);
     document.getElementById('game-details').classList.add('hidden');
     
-    // Musik stoppen bei Haupt-Tab-Wechsel (Past, Current, Upcoming)
     audioPlayer.pause();
     currentPlaylist = [];
     currentGameId = null;
@@ -165,21 +168,35 @@ function filterGames(category) {
       document.querySelectorAll('.game-card').forEach(c => c.classList.remove('selected'));
       card.classList.add('selected');
       
-      // Musik starten/wechseln
       playGameMusic(game);
-      
       showGameDetails(game);
     });
     grid.appendChild(card);
   });
 }
 
+// Rendert Badge Card inkl. Hover-Tooltip
 function renderBadgeCard(item) {
+  const team = item.team || [];
+  let tooltipHTML = '';
+
+  if (team.length > 0) {
+    const teamListHTML = team.map(p => `
+      <div class="badge-tooltip-item">
+        <span>${p.name || ''}</span>
+        <span>Lv. ${p.level || '-'}</span>
+      </div>
+    `).join('');
+
+    tooltipHTML = `<div class="badge-tooltip">${teamListHTML}</div>`;
+  }
+
   return `
     <div class="badge-card ${item.completed ? 'done' : ''}">
       <p class="badge-name">${item.name || ''}</p>
       <img src="${item.image || ''}" alt="${item.name || ''}">
       <p class="status ${item.completed ? 'done' : ''}">${item.completed ? '✔' : ''}</p>
+      ${tooltipHTML}
     </div>
   `;
 }
@@ -188,24 +205,30 @@ function showGameDetails(game) {
   const detailsSection = document.getElementById('game-details');
   detailsSection.classList.remove('hidden');
 
-  // Links: Cover, Jahr, Region & Konsolenname
+  // Cover & Map setzen + Card zurückdrehen
   const coverImg = document.getElementById('detail-cover');
+  const mapImg = document.getElementById('detail-map');
   const regionText = document.getElementById('detail-region');
   const yearText = document.getElementById('detail-year');
   const consoleNameText = document.getElementById('detail-console-name');
   
+  if (flipCard) flipCard.classList.remove('flipped'); // Immer Front-Cover anzeigen
+  
   coverImg.src = game.cover || '';
   coverImg.alt = game.title || 'Cover';
+  mapImg.src = game.map || game.cover || ''; // Fallback auf Cover, falls keine Map eingetragen ist
+  mapImg.alt = (game.title || 'Game') + ' Map';
+
   regionText.textContent = game.region || '';
   yearText.textContent = game.year || '';
   consoleNameText.textContent = game.consoleName || '';
 
-  // Detail-Panel zurücksetzen/verstecken
+  // Detail-Panel zurücksetzen
   const detailsPanel = document.getElementById('poke-details-panel');
   detailsPanel.classList.add('hidden');
   currentSelectedPokemon = null;
 
-  // Mitte: Badges, Liga & Postgame in 1 Zeile
+  // Progress / Badges
   const badgesContainer = document.getElementById('badges-container');
   const progress = game.progress || {};
   
@@ -227,7 +250,7 @@ function showGameDetails(game) {
     </div>
   `;
 
-  // Mitte: Team
+  // Team
   const teamContainer = document.getElementById('team-container');
   const team = game.team || [];
   teamContainer.innerHTML = '';
@@ -248,7 +271,6 @@ function showGameDetails(game) {
       </ul>
     `;
 
-    // Klick auf ein Pokémon verändert NUR das Pokémon-Detail-Fenster rechts (Musik läuft ungestört)
     card.addEventListener('click', () => {
       document.querySelectorAll('.pokemon-card').forEach(c => c.classList.remove('active-poke'));
       
@@ -266,7 +288,6 @@ function showGameDetails(game) {
   });
 }
 
-// Rendert das rechte Pokémon-Detail-Fenster
 function renderPokemonDetails(poke) {
   const panel = document.getElementById('poke-details-panel');
   panel.classList.remove('hidden');
@@ -282,12 +303,10 @@ function renderPokemonDetails(poke) {
   const typesHTML = (d.types || []).map(t => `<img src="${t}" alt="Typ">`).join('');
 
   panel.innerHTML = `
-    <!-- Header: Typen (Zentriert) -->
     <div class="pd-types-header">
       ${typesHTML}
     </div>
 
-    <!-- Row 1: Ball, Ort/Datum, Geschlecht -->
     <div class="pd-info-row-1">
       ${d.ball ? `<img src="${d.ball}" class="pd-ball-img" alt="Ball">` : '<div></div>'}
       <div class="pd-loc-date">
@@ -297,7 +316,6 @@ function renderPokemonDetails(poke) {
       ${genderSymbol}
     </div>
 
-    <!-- Row 2 (Kombiniert): Ruf | Kat + Dex + H/W | GIF -->
     <div class="pd-combined-row">
       ${d.cry ? `
         <button class="pd-cry-btn" onclick="new Audio('${d.cry}').play()">
@@ -316,7 +334,6 @@ function renderPokemonDetails(poke) {
       </div>
     </div>
 
-    <!-- Mittleres Grid: Base Stats & Showdown Box -->
     <div class="pd-mid-grid">
       <div class="pd-stats-box">
         <div class="pd-stats-title">Base Stats</div>
@@ -341,7 +358,6 @@ function renderPokemonDetails(poke) {
       </div>
     </div>
 
-    <!-- Pokédex-Eintrag ganz unten -->
     <div class="pd-flavor-box">
       ${d.flavorText || 'Kein Pokédex-Eintrag vorhanden.'}
     </div>
