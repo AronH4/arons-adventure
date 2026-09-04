@@ -4,7 +4,6 @@
     "title": "PLATINUM",
     "category": "past",
     "cover": "https://www.pokewiki.de/images/thumb/1/16/Packshot_Pok%C3%A9mon_Platin-Edition.jpg/992px-Packshot_Pok%C3%A9mon_Platin-Edition.jpg?20131201114035",
-    "map": "https://www.pokewiki.de/images/0/05/DPPT-Map_Sinnoh.png",
     "region": "Sinnoh",
     "year": "2009",
     "consoleName": "Nintendo DSi",
@@ -21,7 +20,7 @@
     ],
     "progress": {
       "badges": [
-        { "name": "Coal Badge", "image": "https://www.pokewiki.de/images/thumb/e/ef/Kohleorden.png/70px-Kohleorden.png", "completed": true, "team": [{ "name": "Test", "level": 1 } ] },
+        { "name": "Coal Badge", "image": "https://www.pokewiki.de/images/thumb/e/ef/Kohleorden.png/70px-Kohleorden.png", "completed": true },
         { "name": "Forest Badge", "image": "https://www.pokewiki.de/images/thumb/a/ab/Waldorden.png/70px-Waldorden.png", "completed": true },
         { "name": "Relic Badge", "image": "https://www.pokewiki.de/images/thumb/a/ac/Reliktorden.png/70px-Reliktorden.png", "completed": true },
         { "name": "Cobble Badge", "image": "https://www.pokewiki.de/images/thumb/3/3a/Bergorden.png/69px-Bergorden.png", "completed": true },
