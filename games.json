@@ -607,7 +607,7 @@
     ],
     "progress": {
       "badges": [
-        { "name": "Trio Badge", "image": "https://www.pokewiki.de/images/3/35/Triorden.png", "completed": false },
+        { "name": "Trio Badge", "image": "https://www.pokewiki.de/images/3/35/Triorden.png", "completed": true },
         { "name": "Basic Badge", "image": "https://www.pokewiki.de/images/c/ce/Grundorden.png", "completed": false },
         { "name": "Insect Badge", "image": "https://www.pokewiki.de/images/9/9a/K%C3%A4ferorden.png", "completed": false },
         { "name": "Bolt Badge", "image": "https://www.pokewiki.de/images/d/de/Voltorden.png", "completed": false },
