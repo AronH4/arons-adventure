@@ -55,7 +55,7 @@ header {
   gap: 15px;
   flex-wrap: wrap;
   margin-bottom: 25px;
-  align-items: flex-end; /* Richtet alle Cover unten an einer Linie aus */
+  align-items: stretch; /* Stellt sicher, dass alle Cards gleich hoch sind */
 }
 
 .game-card {
@@ -67,7 +67,7 @@ header {
   padding: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between; /* Vertikaler Raum verteilt sich gleichmäßig */
   align-items: center;
 }
 
@@ -76,12 +76,14 @@ header {
   max-height: 85px;
   width: auto;
   height: auto;
-  object-fit: contain; /* Bild bleibt komplett sichtbar ohne Anschnitt */
+  object-fit: contain;
   border-radius: 6px;
   border: 2px solid transparent;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   box-sizing: border-box;
-  display: block; /* Verhindert Freiräume unter dem Bild */
+  display: block;
+  align-self: center; /* Zentriert das Bild vertikal im Kasten */
+  margin: auto 0;      /* Schiebt quadratische Cover mittig zwischen Oben und Unten */
 }
 
 .game-card.selected img {
@@ -90,7 +92,8 @@ header {
 }
 
 .game-card h4 {
-  margin: 6px 0 0 0;
+  margin-top: auto;   /* Drückt den Text immer fest nach ganz unten */
+  margin-bottom: 0;
   font-size: 13px;
   color: #eee;
 }
