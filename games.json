@@ -627,7 +627,9 @@
         { "name": "Alder", "image": "https://www.pokewiki.de/images/d/da/Trainersprite_Lauro_S2W2.png", "completed": false }
       ]
     },
-    "team": [{
+    "team": 
+    [
+      {
         "name": "Ganovil",
         "level": 20,
         "image": "https://www.pokewiki.de/images/thumb/a/a3/Hauptartwork_551.png/250px-Hauptartwork_551.png",
@@ -660,7 +662,72 @@
           "showdown": "Krookodile (M) @ Chopple Berry\nAbility: Intimidate\nShiny: No\nEVs: 252 Atk / 4 Def / 252 Spe\nJolly Nature\n- Earthquake\n- Knock Off\n- Taunt\n- Stealth Rock",
           "flavorText": "Seine Augen können wie ein Fernglas weit entfernte Objekte näher heranholen. Sein mächtiger Kiefer knackt selbst Karosserien. Es wird auch als 'Tyrann der Wüste' bezeichnet."
         }
-      }]
+      },
+      {
+        "name": ,
+        "level": ,
+        "image": ,
+        "ability": ,
+        "item": ,
+        "moves": [],
+        "details": {
+          "types": [
+          ],
+          "ball": ,
+          "location": ,
+          "catchDate": ,
+          "gender": ,
+          "category": ,
+          "dexNumber": ,
+          "height": ,
+          "weight": ,
+          "cry": ,
+          "stats": {
+            "hp": ,
+            "atk": ,
+            "def": ,
+            "spa": ,
+            "spd": ,
+            "spe": 
+          },
+          "gif": ,
+          "showdown": ,
+          "flavorText": 
+        }
+      },
+      {
+        "name": ,
+        "level": ,
+        "image": ,
+        "ability": ,
+        "item": ,
+        "moves": [],
+        "details": {
+          "types": [
+          ],
+          "ball": ,
+          "location": ,
+          "catchDate": ,
+          "gender": ,
+          "category": ,
+          "dexNumber": ,
+          "height": ,
+          "weight": ,
+          "cry": ,
+          "stats": {
+            "hp": ,
+            "atk": ,
+            "def": ,
+            "spa": ,
+            "spd": ,
+            "spe": 
+          },
+          "gif": ,
+          "showdown": ,
+          "flavorText": 
+        }
+      }
+    ]
   },
   {
     "id": "y",
