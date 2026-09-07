@@ -158,7 +158,7 @@ header {
   border-radius: 6px;
   padding: 6px 4px;
   width: 75px;        /* Breite bleibt unverändert */
-  height: 120px;      /* Anpassung: Von 105px auf 120px verlängert (~14% mehr Höhe) */
+  height: 130px;      /* Anpassung: Von 105px auf 120px verlängert (~14% mehr Höhe) */
   box-sizing: border-box;
   flex-shrink: 0;
 }
@@ -180,8 +180,8 @@ header {
 }
 
 .badge-card img {
-  width: 46px;        /* Anpassung: Bild von 36px auf 46px vergrößert */
-  height: 46px;       /* Anpassung: Bild von 36px auf 46px vergrößert */
+  width: 48px;        /* Anpassung: Bild von 36px auf 46px vergrößert */
+  height: 48px;       /* Anpassung: Bild von 36px auf 46px vergrößert */
   object-fit: contain;
 }
 
