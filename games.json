@@ -660,7 +660,41 @@
           "showdown": "Krookodile (M) @ Chopple Berry\nAbility: Intimidate\nShiny: No\nEVs: 252 Atk / 4 Def / 252 Spe\nJolly Nature\n- Earthquake\n- Knock Off\n- Taunt\n- Stealth Rock",
           "flavorText": "Seine Augen können wie ein Fernglas weit entfernte Objekte näher heranholen. Sein mächtiger Kiefer knackt selbst Karosserien. Es wird auch als 'Tyrann der Wüste' bezeichnet."
         }
-      }]
+      },
+      {
+        "name": "Monozyto",
+        "level": 20,
+        "image": "https://www.pokewiki.de/images/thumb/7/7e/Hauptartwork_577.png/615px-Hauptartwork_577.png?20190427204335",
+        "ability": "Magieschild",
+        "item": "Flinkklaue",
+        "moves": ["Kraftreserve", "Lichtschild", "Charme", "Übernahme"],
+        "details": {
+          "types": [
+            "https://www.pokewiki.de/images/thumb/8/87/Typ-Icon_Psycho_Gen8.png/137px-Typ-Icon_Psycho_Gen8.png"
+          ],
+          "ball": "https://www.pokewiki.de/images/6/6a/Itemsprite_Pok%C3%A9ball_KAPU.png",
+          "location": "Route 5",
+          "catchDate": "11.03.2011",
+          "gender": "male",
+          "category": "Zelle",
+          "dexNumber": 579,
+          "height": "1,0 m",
+          "weight": "20,1 kg",
+          "cry": "https://play.pokemonshowdown.com/audio/cries/reuniclus.mp3",
+          "stats": {
+            "hp": 110,
+            "atk": 65,
+            "def": 75,
+            "spa": 125,
+            "spd": 85,
+            "spe": 30
+          },
+          "gif": "https://play.pokemonshowdown.com/sprites/gen5ani/reuniclus.gif",
+          "showdown": "Reuniclus (M) @ Leftovers\nAbility: Magic Guard\nShiny: No\nEVs: 252 HP / 252 Def / 4 SpA\nBold Nature\n- Psychic\n- Calm Mind\n- Focus Blast\n- Recover",
+          "flavorText": "Sein Kiefer ist so stark wie kaum etwas anderes. Mit seiner Beute verschluckt es auch mal Felsen und Stahlträger. Mit seinem starken Schlag kann es ein Loch in ein Schiff reißen."
+        }
+      }, 
+    ]
   },
   {
     "id": "y",
