@@ -609,7 +609,7 @@
       "badges": [
         { "name": "Trio Badge", "image": "https://www.pokewiki.de/images/3/35/Triorden.png", "completed": true },
         { "name": "Basic Badge", "image": "https://www.pokewiki.de/images/c/ce/Grundorden.png", "completed": true },
-        { "name": "Insect Badge", "image": "https://www.pokewiki.de/images/9/9a/K%C3%A4ferorden.png", "completed": false },
+        { "name": "Insect Badge", "image": "https://www.pokewiki.de/images/9/9a/K%C3%A4ferorden.png", "completed": true },
         { "name": "Bolt Badge", "image": "https://www.pokewiki.de/images/d/de/Voltorden.png", "completed": false },
         { "name": "Quake Badge", "image": "https://www.pokewiki.de/images/0/08/Seismo-Orden.png", "completed": false },
         { "name": "Jet Badge", "image": "https://www.pokewiki.de/images/4/44/Jetorden.png", "completed": false },
@@ -628,12 +628,12 @@
       ]
     },
     "team": [{
-        "name": "Ganovil",
-        "level": 20,
-        "image": "https://www.pokewiki.de/images/thumb/a/a3/Hauptartwork_551.png/250px-Hauptartwork_551.png",
+        "name": "Rokkaiman",
+        "level": 25,
+        "image": "https://www.pokewiki.de/images/thumb/c/c3/Hauptartwork_552.png/551px-Hauptartwork_552.png?20190428081459",
         "ability": "Bedroher",
         "item": "Flinkklaue",
-        "moves": ["Sandgrab", "Lehmschelle", "Gewissheit", "Folterknecht"],
+        "moves": ["Sandgrab", "Lehmschelle", "Knirscher", "Gewissheit"],
         "details": {
           "types": [
             "https://www.pokewiki.de/images/thumb/d/db/Typ-Icon_Boden_Gen8.png/137px-Typ-Icon_Boden_Gen8.png",
