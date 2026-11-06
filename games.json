@@ -611,10 +611,10 @@
         { "name": "Basic Badge", "image": "https://www.pokewiki.de/images/c/ce/Grundorden.png", "completed": true },
         { "name": "Insect Badge", "image": "https://www.pokewiki.de/images/9/9a/K%C3%A4ferorden.png", "completed": true },
         { "name": "Bolt Badge", "image": "https://www.pokewiki.de/images/d/de/Voltorden.png", "completed": true },
-        { "name": "Quake Badge", "image": "https://www.pokewiki.de/images/0/08/Seismo-Orden.png", "completed": false },
-        { "name": "Jet Badge", "image": "https://www.pokewiki.de/images/4/44/Jetorden.png", "completed": false },
-        { "name": "Freeze Badge", "image": "https://www.pokewiki.de/images/0/0d/Eiszapforden.png", "completed": false },
-        { "name": "Legend Badge", "image": "https://www.pokewiki.de/images/a/a2/Legendenorden.png", "completed": false }
+        { "name": "Quake Badge", "image": "https://www.pokewiki.de/images/0/08/Seismo-Orden.png", "completed": true },
+        { "name": "Jet Badge", "image": "https://www.pokewiki.de/images/4/44/Jetorden.png", "completed": true },
+        { "name": "Freeze Badge", "image": "https://www.pokewiki.de/images/0/0d/Eiszapforden.png", "completed": true },
+        { "name": "Legend Badge", "image": "https://www.pokewiki.de/images/a/a2/Legendenorden.png", "completed": true }
       ],
       "league": [
         { "name": "Shauntal", "image": "https://www.pokewiki.de/images/2/2c/Trainersprite_Anissa_S2W2.png", "completed": false },
